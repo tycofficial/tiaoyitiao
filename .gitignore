@@ -1,0 +1,10 @@
+node_modules/
+artifacts/
+repairs/
+source-review.txt
+*.tmp
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+{
+  "name": "tiaoyitiao",
+  "version": "1.0.0",
+  "private": true,
+  "description": "跳一跳浏览器离线复刻与兼容性修复",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "check": "node scripts/check.cjs",
+    "test": "node --test"
+  }
+}
