@@ -79,10 +79,12 @@ try {
     $PagesExists = $LASTEXITCODE -eq 0
     if (-not $PagesExists -and ($PagesOutput -join "`n") -notmatch '404') { throw 'Pushed successfully, but could not inspect Pages configuration.' }
     $Method = if ($PagesExists) { 'PUT' } else { 'POST' }
-    '{"build_type":"legacy","source":{"branch":"main","path":"/"}}' | & gh api --method $Method "repos/$Repository/pages" --input -
-    if ($LASTEXITCODE -ne 0) { throw 'Pushed successfully, but Pages configuration failed. Set main / (root) in Settings > Pages.' }
+    # This project's publication uses the authorized GitHub Actions workflow.
+    # Switch an existing branch-based Pages setup to the same deployment source.
+    '{"build_type":"workflow"}' | & gh api --method $Method "repos/$Repository/pages" --input -
+    if ($LASTEXITCODE -ne 0) { throw 'Pushed successfully, but Pages configuration failed. Choose GitHub Actions in Settings > Pages > Source.' }
     Write-Host "Repository: https://github.com/$Repository"
-    Write-Host 'Pages configured. Wait for GitHub deployment to finish: https://tycofficial.github.io/tiaoyitiao/'
+    Write-Host 'Pages source set to GitHub Actions. Check the deploy job before using: https://tycofficial.github.io/tiaoyitiao/'
 } finally {
     Pop-Location
 }

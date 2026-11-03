@@ -16,15 +16,17 @@ node scripts/serve.cjs
 
 ## GitHub Pages 配置
 
-目标仓库是 `tycofficial/tiaoyitiao`。配置完成并且 Pages 构建成功后，访问地址为：
+项目仓库：[tycofficial/tiaoyitiao](https://github.com/tycofficial/tiaoyitiao)。配置完成并且 Pages 工作流部署成功后，访问地址为：
 
 - `https://tycofficial.github.io/tiaoyitiao/`
 - `https://tycofficial.github.io/tiaoyitiao/index.html`
 - `https://tycofficial.github.io/tiaoyitiao/tiaoyitiao.html`（自动打开游戏）
 
-以上是预定地址，仓库及 Pages 发布状态应以 GitHub 实际结果为准。
+以上是预定访问地址，是否已上线以 GitHub Actions 中的实际部署结果为准。
 
-手动发布时，将项目推送到仓库 `main` 分支，在 **Settings → Pages → Build and deployment** 中选择 **Deploy from a branch**，分支选择 **main**、目录选择 **/(root)**，保存后等待部署完成。`.nojekyll` 让 Pages 直接发布静态文件。
+在 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。然后推送到 `main`，或在 **Actions → Check and deploy game → Run workflow** 中选择 `main` 并运行。
+
+工作流先检查脚本、内嵌资源并运行回归测试，全部通过后再发布。Pull request 只运行检查。部署包仅包含 `index.html`、`tiaoyitiao.html` 和 `.nojekyll`；测试、开发脚本及来源说明不会进入网站部署包。
 
 已安装 Git、Node.js 和 GitHub CLI，并完成 `gh auth login` 后，也可在项目根目录运行：
 
@@ -32,7 +34,7 @@ node scripts/serve.cjs
 pwsh -File scripts/publish.ps1
 ```
 
-脚本会检查账号、运行检查及测试、创建缺失仓库、正常提交推送并配置 Pages。它不会强制推送或覆盖已有不一致的远端历史。已有远端提交但本地未同步时，请先正常克隆或同步仓库。脚本不接收明文访问令牌。
+脚本会检查账号、运行检查及测试、创建缺失仓库、正常提交推送，并将 Pages 配置为 **GitHub Actions**；已有的分支发布配置也会切换到该工作流。它不会强制推送或覆盖已有不一致的远端历史。已有远端提交但本地未同步时，请先正常克隆或同步仓库。脚本不接收明文访问令牌。
 
 ## 验证
 
@@ -41,7 +43,9 @@ node scripts/check.cjs
 node --test
 ```
 
-语法、内嵌资源和离线依赖检查可以在无浏览器环境中执行。音频实际听感、设备静音开关及手机浏览器表现仍应在对应设备上验证。
+已发布代码的 GitHub 检查已通过全部 **17 项回归测试**，以及脚本语法、内嵌资源和离线依赖检查。测试通过不代表 Pages 已完成部署，应查看工作流的 `deploy` 结果。
+
+这些检查可以在无浏览器环境中执行。音频实际听感、设备静音开关及手机浏览器表现仍应在对应设备上验证。
 
 ## 来源
 
