@@ -4,9 +4,11 @@ const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 const output = path.resolve(process.env.QA_OUTPUT || '/tmp/tiaoyitiao-qa/final');
 const baseURL = process.env.QA_URL || 'http://127.0.0.1:4173/';
+const productSha256 = crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,'..','index.html'))).digest('hex');
 const near = (a,b) => assert.ok(Math.abs(a-b)<1e-7,`${a} vs ${b}`);
 fs.mkdirSync(output,{recursive:true});
 function holdFor(distance) {
@@ -48,8 +50,8 @@ function holdFor(distance) {
     assert.equal(oldRects[0].x,oldRects[1].x);assert.equal(oldRects[1].x,oldRects[2].x);
     checks.push('Reproduced baseline: all three skin status labels overlap.');
     await page.unroute(baseURL);await page.reload();await ready();await page.locator('#home-skin').click();
-    const layout=await page.locator('.skin-choice').evaluateAll(es=>es.map(e=>{const c=e.getBoundingClientRect(),s=e.querySelector('.skin-status').getBoundingClientRect();return {inside:s.left>=c.left&&s.right<=c.right&&s.top>=c.top&&s.bottom<=c.bottom,status:getComputedStyle(e.querySelector('.skin-status')).position};}));
-    assert.ok(layout.every(x=>x.inside&&x.status==='static'));
+    const layout=await page.locator('.skin-choice').evaluateAll(es=>es.map(e=>{const c=e.getBoundingClientRect(),s=e.querySelector('.skin-status').getBoundingClientRect();return {inside:s.left>=c.left&&s.right<=c.right&&s.top>=c.top&&s.bottom<=c.bottom,status:getComputedStyle(e.querySelector('.skin-status')).position,ownsStatus:e.querySelector('.skin-status').offsetParent===e};}));
+    assert.ok(layout.every(x=>x.inside&&x.status==='absolute'&&x.ownsStatus));
     assert.equal(await page.locator('#skin-silver').isDisabled(),true);assert.equal(await page.locator('#skin-gold').isDisabled(),true);
     await page.screenshot({path:path.join(output,'after-skins.png')});checks.push('New save: independent labels, complete previews, classic selected, silver/gold locked.');
     await page.locator('#skin-back').click();await start();assert.equal((await snapshot()).invincible,true);
@@ -87,11 +89,16 @@ function holdFor(distance) {
     checks.push('Seven skin switches: preview/selection/material maps correspond; gold survives start, restart and reload; legacy best/records retained.');
     for(const viewport of [{width:320,height:568},{width:736,height:414},{width:1440,height:900}]) {
       await page.setViewportSize(viewport);await page.locator('#home-skin').click();
-      const boxes=await page.locator('#skins .panel,.skin-choice').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom};}));
-      assert.ok(boxes.every(r=>r.left>=0&&r.right<=viewport.width&&r.top>=0&&r.bottom<=viewport.height));
+      const panel=await page.locator('#skins .panel').boundingBox();
+      assert.ok(panel.x>=0&&panel.x+panel.width<=viewport.width&&panel.y>=0&&panel.y+panel.height<=viewport.height);
+      for(const id of ['classic','silver','gold']){
+        await page.locator('#skin-'+id).scrollIntoViewIfNeeded();
+        const card=await page.locator('#skin-'+id).boundingBox();
+        assert.ok(card.x>=0&&card.x+card.width<=viewport.width&&card.y>=0&&card.y+card.height<=viewport.height,'Every card must be fully reachable after scrolling');
+      }
       await page.screenshot({path:path.join(output,`skins-${viewport.width}x${viewport.height}.png`)});await page.locator('#skin-back').click();
     }
-    checks.push('Skin panel fits 320x568, 736x414 landscape and 1440x900.');
+    checks.push('Skin panel fits 320x568, 736x414 landscape and 1440x900; every card remains fully reachable through scrolling.');
     const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
     const touchPage=await mobile.newPage();touchPage.on('pageerror',e=>errors.push(String(e)));
     await touchPage.goto(baseURL);await touchPage.waitForFunction(()=>window.jumpDiagnostics);await touchPage.locator('#start').tap();
@@ -115,7 +122,7 @@ function holdFor(distance) {
       } finally { await offline.close(); }
     }
     assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);checks.push('No page errors or remote runtime requests.');
-    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:true,checks,notRun,flights,errors,requests},null,2));console.log(JSON.stringify({passed:true,checks,notRun,output},null,2));
+    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:true,productSha256,checks,notRun,flights,errors,requests},null,2));console.log(JSON.stringify({passed:true,checks,notRun,output},null,2));
   } catch(error) {
     await page.screenshot({path:path.join(output,'failure.png')}).catch(()=>{});
     fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:false,error:String(error),checks,flights,snapshot:await snapshot().catch(()=>null),errors,requests},null,2));

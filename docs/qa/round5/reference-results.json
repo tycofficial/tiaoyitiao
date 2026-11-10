@@ -1,0 +1,3174 @@
+{
+  "passed": true,
+  "productSha256": "7e0991b245b755973e25d9b655ee08b154dbcada6e4cd6453ce0679e1382c70d",
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "referenceFiles": {
+    "base.js": "9b9065da19c7b1d5c1984c8cfa24959c92734621b03e4e31f38fb8d422506c2f",
+    "skin.js": "e5d739901e8fd0ecc775f4ca9d810c6a6169698fc4842856ad93bf017ecf855e"
+  },
+  "referencePlumbing": "Flat canvas layers replace Three.js upload and route plumbing; actual skin.js and coordinate/drawing functions execute.",
+  "goldSilverAssets": "Existing reconstructed previews supplied as offline fixtures, not claimed original server assets.",
+  "results": [
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "best": 0,
+        "selected": "classic"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 230,
+          "size": 22
+        },
+        "frame": null,
+        "back": {
+          "left": 40,
+          "top": 472,
+          "width": 334,
+          "height": 50
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 40,
+              "top": 268,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 73.328125,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgb(255, 255, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 92.328125,
+              "y": 423
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 154.65625,
+              "top": 268,
+              "width": 104.671875,
+              "height": 184
+            },
+            "preview": {
+              "left": 187.984375,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 206.9921875,
+              "y": 423
+            },
+            "statusText": "1000 分解锁"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 269.328125,
+              "top": 268,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 302.65625,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 321.6484375,
+              "y": 423
+            },
+            "statusText": "3000 分解锁"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 736
+        },
+        "referenceDpr": 1,
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 275,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              344,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "drawText",
+            "text": "1000分",
+            "pos": [
+              290,
+              226
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "3000分",
+            "pos": [
+              123,
+              413
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": [
+        "frame: missing",
+        "return.left: 40 vs 19",
+        "return.top: 472 vs 639",
+        "return.width: 334 vs 70",
+        "return.height: 50 vs 70",
+        "title.y",
+        "classic.left: 40 vs 50",
+        "classic.top: 268 vs 157",
+        "classic.width: 104.65625 vs 147",
+        "classic.height: 184 vs 167",
+        "classic.preview.left: 73.328125 vs 107.5",
+        "classic.preview.top: 283 vs 187",
+        "classic.preview.width: 38 vs 33",
+        "classic.preview.height: 82 vs 66",
+        "classic.background",
+        "classic.selected: missing",
+        "classic.statusCenter.x",
+        "classic.statusCenter.y",
+        "silver.left: 154.65625 vs 217",
+        "silver.top: 268 vs 157",
+        "silver.width: 104.671875 vs 147",
+        "silver.height: 184 vs 167",
+        "silver.preview.left: 187.984375 vs 274.5",
+        "silver.preview.top: 283 vs 187",
+        "silver.preview.width: 38 vs 33",
+        "silver.preview.height: 82 vs 66",
+        "silver.opacity",
+        "silver.background",
+        "silver.statusCenter.x",
+        "silver.statusCenter.y",
+        "gold.left: 269.328125 vs 50",
+        "gold.top: 268 vs 344",
+        "gold.width: 104.65625 vs 147",
+        "gold.height: 184 vs 167",
+        "gold.preview.left: 302.65625 vs 107.5",
+        "gold.preview.top: 283 vs 374",
+        "gold.preview.width: 38 vs 33",
+        "gold.preview.height: 82 vs 66",
+        "gold.opacity",
+        "gold.background",
+        "gold.statusCenter.x",
+        "gold.statusCenter.y"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "best": 3200,
+        "selected": "gold"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 230,
+          "size": 22
+        },
+        "frame": null,
+        "back": {
+          "left": 40,
+          "top": 472,
+          "width": 334,
+          "height": 50
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 40,
+              "top": 268,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 73.328125,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 92.328125,
+              "y": 423
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 154.65625,
+              "top": 268,
+              "width": 104.671875,
+              "height": 184
+            },
+            "preview": {
+              "left": 187.984375,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 206.984375,
+              "y": 423
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 269.328125,
+              "top": 268,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 302.65625,
+              "top": 283,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgb(255, 255, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 321.65625,
+              "y": 423
+            },
+            "statusText": "已使用"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 736
+        },
+        "referenceDpr": 1,
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 462,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              344,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              483,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": [
+        "frame: missing",
+        "return.left: 40 vs 19",
+        "return.top: 472 vs 639",
+        "return.width: 334 vs 70",
+        "return.height: 50 vs 70",
+        "title.y",
+        "classic.left: 40 vs 50",
+        "classic.top: 268 vs 157",
+        "classic.width: 104.65625 vs 147",
+        "classic.height: 184 vs 167",
+        "classic.preview.left: 73.328125 vs 107.5",
+        "classic.preview.top: 283 vs 187",
+        "classic.preview.width: 38 vs 33",
+        "classic.preview.height: 82 vs 66",
+        "classic.background",
+        "classic.statusCenter.x",
+        "classic.statusCenter.y",
+        "silver.left: 154.65625 vs 217",
+        "silver.top: 268 vs 157",
+        "silver.width: 104.671875 vs 147",
+        "silver.height: 184 vs 167",
+        "silver.preview.left: 187.984375 vs 274.5",
+        "silver.preview.top: 283 vs 187",
+        "silver.preview.width: 38 vs 33",
+        "silver.preview.height: 82 vs 66",
+        "silver.background",
+        "silver.statusCenter.x",
+        "silver.statusCenter.y",
+        "gold.left: 269.328125 vs 50",
+        "gold.top: 268 vs 344",
+        "gold.width: 104.65625 vs 147",
+        "gold.height: 184 vs 167",
+        "gold.preview.left: 302.65625 vs 107.5",
+        "gold.preview.top: 283 vs 374",
+        "gold.preview.width: 38 vs 33",
+        "gold.preview.height: 82 vs 66",
+        "gold.background",
+        "gold.selected: missing",
+        "gold.statusCenter.x",
+        "gold.statusCenter.y"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2,
+        "best": 3200,
+        "selected": "silver"
+      },
+      "actual": {
+        "title": {
+          "x": 160,
+          "y": 146,
+          "size": 22
+        },
+        "frame": null,
+        "back": {
+          "left": 40,
+          "top": 388,
+          "width": 240,
+          "height": 50
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 40,
+              "top": 184,
+              "width": 73.328125,
+              "height": 184
+            },
+            "preview": {
+              "left": 57.65625,
+              "top": 199,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 76.65625,
+              "y": 339
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 123.328125,
+              "top": 184,
+              "width": 73.328125,
+              "height": 184
+            },
+            "preview": {
+              "left": 140.984375,
+              "top": 199,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgb(255, 255, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 159.984375,
+              "y": 339
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 206.65625,
+              "top": 184,
+              "width": 73.34375,
+              "height": 184
+            },
+            "preview": {
+              "left": 224.328125,
+              "top": 199,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 243.328125,
+              "y": 339
+            },
+            "statusText": "使用"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 320,
+          "height": 568
+        },
+        "referenceDpr": 2,
+        "title": {
+          "x": 160,
+          "y": 68.68478260869566,
+          "size": 16.97826086956522
+        },
+        "frame": {
+          "left": 23.40217391304347,
+          "top": 97.2391304347826,
+          "width": 273.19565217391306,
+          "height": 379.69565217391306
+        },
+        "back": {
+          "left": 14.913043478260867,
+          "top": 493.1413043478261,
+          "width": 54.02173913043478,
+          "height": 54.02173913043478
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 38.83695652173913,
+              "top": 121.16304347826087,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 83.21195652173914,
+              "top": 144.31521739130437,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.17391304347827,
+              "y": 228.43478260869566
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 167.7173913043478,
+              "top": 121.16304347826087,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 212.09239130434784,
+              "top": 144.31521739130437,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 204.7608695652174,
+              "top": 212.22826086956522,
+              "width": 38.58695652173913,
+              "height": 32.41304347826087
+            },
+            "statusCenter": {
+              "x": 224.05434782608697,
+              "y": 228.43478260869566
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 38.83695652173913,
+              "top": 265.4782608695652,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 83.21195652173914,
+              "top": 288.6304347826087,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.17391304347827,
+              "y": 372.75
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              38.83695652173913,
+              121.16304347826087,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              167.7173913043478,
+              121.16304347826087,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              290,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              38.83695652173913,
+              265.4782608695652,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": [
+        "frame: missing",
+        "return.left: 40 vs 14.913043478260867",
+        "return.top: 388 vs 493.1413043478261",
+        "return.width: 240 vs 54.02173913043478",
+        "return.height: 50 vs 54.02173913043478",
+        "title.y",
+        "title.size",
+        "classic.left: 40 vs 38.83695652173913",
+        "classic.top: 184 vs 121.16304347826087",
+        "classic.width: 73.328125 vs 113.44565217391305",
+        "classic.height: 184 vs 128.8804347826087",
+        "classic.preview.left: 57.65625 vs 83.21195652173914",
+        "classic.preview.top: 199 vs 144.31521739130437",
+        "classic.preview.width: 38 vs 25.467391304347824",
+        "classic.preview.height: 82 vs 50.93478260869565",
+        "classic.background",
+        "classic.statusCenter.x",
+        "classic.statusCenter.y",
+        "silver.left: 123.328125 vs 167.7173913043478",
+        "silver.top: 184 vs 121.16304347826087",
+        "silver.width: 73.328125 vs 113.44565217391305",
+        "silver.height: 184 vs 128.8804347826087",
+        "silver.preview.left: 140.984375 vs 212.09239130434784",
+        "silver.preview.top: 199 vs 144.31521739130437",
+        "silver.preview.width: 38 vs 25.467391304347824",
+        "silver.preview.height: 82 vs 50.93478260869565",
+        "silver.background",
+        "silver.selected: missing",
+        "silver.statusCenter.x",
+        "silver.statusCenter.y",
+        "gold.left: 206.65625 vs 38.83695652173913",
+        "gold.top: 184 vs 265.4782608695652",
+        "gold.width: 73.34375 vs 113.44565217391305",
+        "gold.height: 184 vs 128.8804347826087",
+        "gold.preview.left: 224.328125 vs 83.21195652173914",
+        "gold.preview.top: 199 vs 288.6304347826087",
+        "gold.preview.width: 38 vs 25.467391304347824",
+        "gold.preview.height: 82 vs 50.93478260869565",
+        "gold.background",
+        "gold.statusCenter.x",
+        "gold.statusCenter.y"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 896,
+        "dpr": 3,
+        "best": 0,
+        "selected": "classic"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 310,
+          "size": 22
+        },
+        "frame": null,
+        "back": {
+          "left": 40,
+          "top": 552,
+          "width": 334,
+          "height": 50
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 40,
+              "top": 348,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 73.328125,
+              "top": 363,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgb(255, 255, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 92.328125,
+              "y": 503
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 154.65625,
+              "top": 348,
+              "width": 104.671875,
+              "height": 184
+            },
+            "preview": {
+              "left": 187.984375,
+              "top": 363,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 206.9921875,
+              "y": 503
+            },
+            "statusText": "1000 分解锁"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 269.328125,
+              "top": 348,
+              "width": 104.65625,
+              "height": 184
+            },
+            "preview": {
+              "left": 302.65625,
+              "top": 363,
+              "width": 38,
+              "height": 82
+            },
+            "previewOpacity": 1,
+            "background": "rgba(255, 255, 255, 0.533)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 321.6484375,
+              "y": 503
+            },
+            "statusText": "3000 分解锁"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 896
+        },
+        "referenceDpr": 2,
+        "title": {
+          "x": 207,
+          "y": 169,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 206,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 719,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 355,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 376
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 376
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 424,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 454,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 563
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              237,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              237,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              424,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "drawText",
+            "text": "1000分",
+            "pos": [
+              290,
+              226
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "3000分",
+            "pos": [
+              123,
+              413
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": [
+        "frame: missing",
+        "return.left: 40 vs 19",
+        "return.top: 552 vs 719",
+        "return.width: 334 vs 70",
+        "return.height: 50 vs 70",
+        "title.y",
+        "classic.left: 40 vs 50",
+        "classic.top: 348 vs 237",
+        "classic.width: 104.65625 vs 147",
+        "classic.height: 184 vs 167",
+        "classic.preview.left: 73.328125 vs 107.5",
+        "classic.preview.top: 363 vs 267",
+        "classic.preview.width: 38 vs 33",
+        "classic.preview.height: 82 vs 66",
+        "classic.background",
+        "classic.selected: missing",
+        "classic.statusCenter.x",
+        "classic.statusCenter.y",
+        "silver.left: 154.65625 vs 217",
+        "silver.top: 348 vs 237",
+        "silver.width: 104.671875 vs 147",
+        "silver.height: 184 vs 167",
+        "silver.preview.left: 187.984375 vs 274.5",
+        "silver.preview.top: 363 vs 267",
+        "silver.preview.width: 38 vs 33",
+        "silver.preview.height: 82 vs 66",
+        "silver.opacity",
+        "silver.background",
+        "silver.statusCenter.x",
+        "silver.statusCenter.y",
+        "gold.left: 269.328125 vs 50",
+        "gold.top: 348 vs 424",
+        "gold.width: 104.65625 vs 147",
+        "gold.height: 184 vs 167",
+        "gold.preview.left: 302.65625 vs 107.5",
+        "gold.preview.top: 363 vs 454",
+        "gold.preview.width: 38 vs 33",
+        "gold.preview.height: 82 vs 66",
+        "gold.opacity",
+        "gold.background",
+        "gold.statusCenter.x",
+        "gold.statusCenter.y"
+      ]
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "best": 0,
+        "selected": "classic"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 275,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": "rgb(209, 209, 209)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            },
+            "statusText": "待解锁"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": "rgb(209, 209, 209)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            },
+            "statusText": "待解锁"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 736
+        },
+        "referenceDpr": 1,
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 275,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              344,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "drawText",
+            "text": "1000分",
+            "pos": [
+              290,
+              226
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "3000分",
+            "pos": [
+              123,
+              413
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "best": 3200,
+        "selected": "gold"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 462,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            },
+            "statusText": "已使用"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 736
+        },
+        "referenceDpr": 1,
+        "title": {
+          "x": 207,
+          "y": 89,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 126,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 639,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 296
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 157,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 187,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 296
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 344,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 374,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 462,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 483
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              157,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              344,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              483,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2,
+        "best": 3200,
+        "selected": "silver"
+      },
+      "actual": {
+        "title": {
+          "x": 160,
+          "y": 68.671875,
+          "size": 16.9783
+        },
+        "frame": {
+          "left": 23.390625,
+          "top": 97.234375,
+          "width": 273.1875,
+          "height": 379.6875
+        },
+        "back": {
+          "left": 14.90625,
+          "top": 493.140625,
+          "width": 54.015625,
+          "height": 54.015625
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 38.828125,
+              "top": 121.15625,
+              "width": 113.4375,
+              "height": 128.875
+            },
+            "preview": {
+              "left": 83.1953125,
+              "top": 144.296875,
+              "width": 25.453125,
+              "height": 50.921875
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.15625,
+              "y": 228.421875
+            },
+            "statusText": "使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 167.6875,
+              "top": 121.15625,
+              "width": 113.4375,
+              "height": 128.875
+            },
+            "preview": {
+              "left": 212.0546875,
+              "top": 144.296875,
+              "width": 25.453125,
+              "height": 50.921875
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 204.7265625,
+              "top": 212.2109375,
+              "width": 38.578125,
+              "height": 32.40625
+            },
+            "statusCenter": {
+              "x": 224.015625,
+              "y": 228.421875
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 38.828125,
+              "top": 265.453125,
+              "width": 113.4375,
+              "height": 128.875
+            },
+            "preview": {
+              "left": 83.1953125,
+              "top": 288.59375,
+              "width": 25.453125,
+              "height": 50.921875
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.15625,
+              "y": 372.71875
+            },
+            "statusText": "使用"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 320,
+          "height": 568
+        },
+        "referenceDpr": 2,
+        "title": {
+          "x": 160,
+          "y": 68.68478260869566,
+          "size": 16.97826086956522
+        },
+        "frame": {
+          "left": 23.40217391304347,
+          "top": 97.2391304347826,
+          "width": 273.19565217391306,
+          "height": 379.69565217391306
+        },
+        "back": {
+          "left": 14.913043478260867,
+          "top": 493.1413043478261,
+          "width": 54.02173913043478,
+          "height": 54.02173913043478
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 38.83695652173913,
+              "top": 121.16304347826087,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 83.21195652173914,
+              "top": 144.31521739130437,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.17391304347827,
+              "y": 228.43478260869566
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 167.7173913043478,
+              "top": 121.16304347826087,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 212.09239130434784,
+              "top": 144.31521739130437,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 204.7608695652174,
+              "top": 212.22826086956522,
+              "width": 38.58695652173913,
+              "height": 32.41304347826087
+            },
+            "statusCenter": {
+              "x": 224.05434782608697,
+              "y": 228.43478260869566
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 38.83695652173913,
+              "top": 265.4782608695652,
+              "width": 113.44565217391305,
+              "height": 128.8804347826087
+            },
+            "preview": {
+              "left": 83.21195652173914,
+              "top": 288.6304347826087,
+              "width": 25.467391304347824,
+              "height": 50.93478260869565
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": false,
+            "locked": false,
+            "mark": null,
+            "statusCenter": {
+              "x": 95.17391304347827,
+              "y": 372.75
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              38.83695652173913,
+              121.16304347826087,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              167.7173913043478,
+              121.16304347826087,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              290,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              38.83695652173913,
+              265.4782608695652,
+              113.44565217391305,
+              128.8804347826087
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "使用",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 896,
+        "dpr": 3,
+        "best": 0,
+        "selected": "classic"
+      },
+      "actual": {
+        "title": {
+          "x": 207,
+          "y": 169,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 206,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 719,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": "rgb(247, 230, 255)",
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 355,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 376
+            },
+            "statusText": "已使用"
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": "rgb(209, 209, 209)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 376
+            },
+            "statusText": "待解锁"
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 424,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 454,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": "rgb(209, 209, 209)",
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 563
+            },
+            "statusText": "待解锁"
+          }
+        ]
+      },
+      "reference": {
+        "stage": {
+          "width": 414,
+          "height": 896
+        },
+        "referenceDpr": 2,
+        "title": {
+          "x": 207,
+          "y": 169,
+          "size": 22
+        },
+        "frame": {
+          "left": 30,
+          "top": 206,
+          "width": 354,
+          "height": 492
+        },
+        "back": {
+          "left": 19,
+          "top": 719,
+          "width": 70,
+          "height": 70
+        },
+        "cards": [
+          {
+            "id": "classic",
+            "rect": {
+              "left": 50,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 1,
+            "background": [
+              247,
+              230,
+              255,
+              255
+            ],
+            "selected": true,
+            "locked": false,
+            "mark": {
+              "left": 98,
+              "top": 355,
+              "width": 50,
+              "height": 42
+            },
+            "statusCenter": {
+              "x": 123,
+              "y": 376
+            }
+          },
+          {
+            "id": "silver",
+            "rect": {
+              "left": 217,
+              "top": 237,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 274.5,
+              "top": 267,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 290,
+              "y": 376
+            }
+          },
+          {
+            "id": "gold",
+            "rect": {
+              "left": 50,
+              "top": 424,
+              "width": 147,
+              "height": 167
+            },
+            "preview": {
+              "left": 107.5,
+              "top": 454,
+              "width": 33,
+              "height": 66
+            },
+            "previewOpacity": 0.5,
+            "background": [
+              209,
+              209,
+              209,
+              255
+            ],
+            "selected": false,
+            "locked": true,
+            "mark": null,
+            "statusCenter": {
+              "x": 123,
+              "y": 563
+            }
+          }
+        ],
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "皮肤中心",
+            "pos": [
+              207,
+              89
+            ],
+            "size": 22,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              372,
+              354,
+              492
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_return.png",
+            "pos": [
+              54,
+              674,
+              70,
+              70
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              237,
+              147,
+              167
+            ],
+            "fillStyle": "#f7e6ff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/defaultBottlePoster.png",
+            "pos": [
+              124,
+              220,
+              33,
+              66
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/sel.png",
+            "pos": [
+              123,
+              296,
+              50,
+              42
+            ],
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              217,
+              237,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/silver",
+            "pos": [
+              291,
+              220,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              290,
+              296
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "roundedRect",
+            "bounds": [
+              50,
+              424,
+              147,
+              167
+            ],
+            "fillStyle": "#d1d1d1"
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "qa/gold",
+            "pos": [
+              124,
+              407,
+              33,
+              66
+            ],
+            "alpha": 0.5,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "待解锁",
+            "pos": [
+              123,
+              483
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#3A3743"
+          },
+          {
+            "kind": "drawText",
+            "text": "1000分",
+            "pos": [
+              290,
+              226
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          },
+          {
+            "kind": "drawText",
+            "text": "3000分",
+            "pos": [
+              123,
+              413
+            ],
+            "size": 17,
+            "alpha": 1,
+            "color": "#fff"
+          }
+        ],
+        "loadErrors": []
+      },
+      "differences": []
+    }
+  ]
+}

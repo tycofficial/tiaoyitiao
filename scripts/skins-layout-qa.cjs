@@ -31,7 +31,7 @@ async function painted(page){await page.evaluate(async()=>{await document.fonts.
       for(const [width,height]of sizes){
         await page.setViewportSize({width,height});await painted(page);const r=await measure(page);
         assert.ok(fits(r),`Card overflow at ${width}x${height}, DPR ${dpr}`);assert.ok(headingClear(r),'Heading overlaps the capsule or wraps');if(height<=320)assert.ok(r.panel.top>=r.capsule.bottom+5,'Panel must clear the capsule');assert.equal(r.paused,true);assert.equal(r.cards.filter(c=>c.selected==='true').length,1);
-        assert.equal(r.skin.selected,'classic');if(width>=320&&height>=568)assert.equal(r.columns,3,'Normal size must keep three columns');
+        assert.equal(r.skin.selected,'classic');if(width>=320&&height>=568)assert.equal(r.columns,2,'Normal size must match the historical two columns');
         results.push({version:'current',viewport:{width,height},...r});
         if(dpr===1&&height<=240)await page.screenshot({path:path.join(output,`current-${width}x${height}.png`)});
       }

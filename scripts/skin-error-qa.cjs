@@ -1,6 +1,7 @@
 'use strict';
 // Fault injection affects only isolated test-browser objects, never the HTML file or saved user data.
 const {chromium}=require('playwright');const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const assets=JSON.parse(fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8').match(/<script>const ASSETS=(\{[\s\S]*?\});<\/script>/)[1]);
 const output=path.resolve(process.env.QA_OUTPUT||'/tmp/tiaoyitiao-skin-error-qa');fs.mkdirSync(output,{recursive:true});
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});const results=[];
@@ -11,9 +12,15 @@ const output=path.resolve(process.env.QA_OUTPUT||'/tmp/tiaoyitiao-skin-error-qa'
    await page.keyboard.press('Escape');assert.equal(await page.locator('#menu').isVisible(),false);assert.equal(await page.locator('#home').isVisible(),true);
    return {paused:await page.evaluate(()=>jumpDiagnostics.snapshot().paused),dialogs:await page.locator('[role=dialog]:visible').count()};
  });
- const playable=async page=>{
+ const playable=async (page,unavailable=['classic','silver','gold'])=>{
    await page.waitForFunction(()=>window.jumpDiagnostics);await page.locator('#home-skin').click();await page.waitForTimeout(100);
-   const statuses=await page.locator('.skin-status').allTextContents();assert.ok(statuses.every(s=>s.includes('预览暂不可用')));
+   const statuses=await page.locator('.skin-status').allTextContents();
+   for(const [i,id] of ['classic','silver','gold'].entries()){
+     const failed=unavailable.includes(id);assert.equal(statuses[i].includes('预览暂不可用'),failed);
+     assert.equal(await page.locator('#skin-'+id+' .skin-preview-error').isVisible(),failed);
+     assert.equal(await page.locator('#'+id+'-preview').evaluate(e=>getComputedStyle(e).visibility==='hidden'),failed);
+   }
+   if(!unavailable.includes('classic'))assert.equal(await page.locator('#classic-preview').getAttribute('src'),assets['res/defaultBottlePoster.png'],'The historical classic poster must survive generated-preview faults');
    const diagnostic=await page.evaluate(()=>jumpDiagnostics.snapshot().skin);
    await page.screenshot({path:path.join(output,'fallback-'+Object.values(diagnostic.previewIssues)[0].replace(/[^a-z0-9-]/gi,'-')+'.png')});await page.locator('#skin-back').click();await page.locator('#start').click();
    assert.equal(await page.evaluate(()=>jumpDiagnostics.snapshot().mode),'play');return {statuses,diagnostic};
@@ -24,11 +31,11 @@ const output=path.resolve(process.env.QA_OUTPUT||'/tmp/tiaoyitiao-skin-error-qa'
      if(this.onload&&String(this.onload).includes('images.set(key,image)')&&value.startsWith('data:image/png'))return descriptor.set.call(this,'data:image/png;base64,AAAA');
      return descriptor.set.call(this,value);
    }});
- },playable);
+ },page=>playable(page,['silver','gold']));
  await run('preview-encode-error',()=>{
    const encode=HTMLCanvasElement.prototype.toDataURL;
    HTMLCanvasElement.prototype.toDataURL=function(...args){if(this.width===256&&this.height===512)throw new DOMException('QA encoding failure','EncodingError');return encode.apply(this,args);};
- },playable);
+ },page=>playable(page,['silver','gold']));
  await run('preview-display-error',()=>{
    const descriptor=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');
    Object.defineProperty(HTMLImageElement.prototype,'src',{...descriptor,set(value){
