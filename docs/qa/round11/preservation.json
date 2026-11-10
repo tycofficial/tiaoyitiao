@@ -1,0 +1,9 @@
+{
+  "baseline": "68625b153a7510982b8f2067e687b7c7d7fd6117",
+  "baselineProductSha256": "52efb9c769a225b339e2c6f5416764c568caeb1ac1574243ee1e625e7f0fbcbc",
+  "productSha256": "7639a34cb111c18c9eb7fcf5c4e74d138d97d2b157bfc1e60307a9e0c2783943",
+  "onlyProductChange": "async function buildSkinArt",
+  "outsideBuildSkinArtByteIdentical": true,
+  "changedScope": "Keep classic poster available; degrade generated previews if the additional WebGLRenderer constructor fails.",
+  "priorWholeArtifactSha256": "52efb9c769a225b339e2c6f5416764c568caeb1ac1574243ee1e625e7f0fbcbc"
+}

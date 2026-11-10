@@ -16778,7 +16778,15 @@ async function buildSkinArt(){
     const source=images.get('res/'+part+'.png'),c=document.createElement('canvas');c.width=source.width;c.height=source.height;const ctx=c.getContext('2d');ctx.drawImage(source,0,0);const pixels=ctx.getImageData(0,0,c.width,c.height),p=pixels.data;
     for(let k=0;k<p.length;k+=4){const lum=(p[k]+p[k+1]+p[k+2])/3,shade=Math.min(1.35,.65+lum/180);for(let j=0;j<3;j++)p[k+j]=Math.min(255,color[j]*shade);}ctx.putImageData(pixels,0,0);images.set('reconstructed/'+id+'/'+part,c);
   }
-  const preview=new THREE.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true}),world=new THREE.Scene(),pawn=new Bottle({getSelectedBottleSkinResourceSync:()=>null}),view=new THREE.OrthographicCamera(-1.95,1.95,4.1,-4.1,.1,50);pawn.obj.position.set(0,0,0);world.add(pawn.obj);world.add(new THREE.AmbientLight(0xffffff,.8));const lamp=new THREE.DirectionalLight(0xffffff,.28);lamp.position.set(0,15,10);world.add(lamp);view.position.set(-8,7.76,10);view.lookAt(new THREE.Vector3(0,3.6,0));preview.setSize(256,512);preview.setClearColor(0,0);
+  images.set('preview/classic',images.get('res/defaultBottlePoster.png'));
+  let preview;
+  try{preview=new THREE.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true});}
+  catch(error){
+    // The game renderer can work even when a second WebGL context is unavailable.
+    for(const id of ['gold','silver','scarf'])skinPreviewIssues.set('preview/'+id,'renderer:'+error.name);
+    skinArtReady=true;bottle.checkSkin();return;
+  }
+  const world=new THREE.Scene(),pawn=new Bottle({getSelectedBottleSkinResourceSync:()=>null}),view=new THREE.OrthographicCamera(-1.95,1.95,4.1,-4.1,.1,50);pawn.obj.position.set(0,0,0);world.add(pawn.obj);world.add(new THREE.AmbientLight(0xffffff,.8));const lamp=new THREE.DirectionalLight(0xffffff,.28);lamp.position.set(0,15,10);world.add(lamp);view.position.set(-8,7.76,10);view.lookAt(new THREE.Vector3(0,3.6,0));preview.setSize(256,512);preview.setClearColor(0,0);
   const captures=[];
   function capture(key){
     const image=new Image();
@@ -16796,7 +16804,6 @@ async function buildSkinArt(){
       }catch(error){failed('encode:'+error.name);}
     }));
   }
-  images.set('preview/classic',images.get('res/defaultBottlePoster.png'));
   for(const id of ['gold','silver','scarf']){pawn.checkSkin({bottleSkin:skinResource(id)});preview.render(world,view);capture('preview/'+id);}
   preview.setSize(256,256);view.position.set(-8,3.6,10);view.lookAt(new THREE.Vector3(0,3.6,0));view.left=-4.3;view.right=4.3;view.top=4.3;view.bottom=-4.3;view.updateProjectionMatrix();
   await Promise.all(captures);preview.dispose();preview.forceContextLoss();skinArtReady=true;bottle.checkSkin();
