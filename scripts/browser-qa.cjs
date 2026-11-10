@@ -6,9 +6,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
+const { attach, helperSha256 } = require('./qa-telemetry.cjs');
 const output = path.resolve(process.env.QA_OUTPUT || '/tmp/tiaoyitiao-qa/final');
 const baseURL = process.env.QA_URL || 'http://127.0.0.1:4173/';
 const productSha256 = crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,'..','index.html'))).digest('hex');
+const scriptSha256 = crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex');
 const near = (a,b) => assert.ok(Math.abs(a-b)<1e-7,`${a} vs ${b}`);
 fs.mkdirSync(output,{recursive:true});
 function holdFor(distance) {
@@ -25,17 +27,15 @@ function holdFor(distance) {
   const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   const context=await browser.newContext({viewport:{width:414,height:736},deviceScaleFactor:1,...(process.env.QA_SKIP_VIDEO==='1'?{}:{recordVideo:{dir:output,size:{width:414,height:736}}})});
   const page=await context.newPage(),errors=[],requests=[],checks=[],flights=[],notRun=[];
+  const desktopProbe=await attach(page,'desktop');let desktopTelemetry=null,mobileTelemetry=null,mobileProbe=null,touchPage=null;
   page.on('pageerror',e=>errors.push(String(e)));
   page.on('request',r=>{if(!r.url().startsWith(baseURL)&&!r.url().startsWith('data:'))requests.push(r.url());});
   const snapshot=()=>page.evaluate(()=>jumpDiagnostics.snapshot());
-  const ready=()=>page.waitForFunction(()=>window.jumpDiagnostics);
+  const ready=()=>desktopProbe.ready();
   const settled=()=>page.waitForFunction(()=>{const s=jumpDiagnostics.snapshot();return s.mode==='play'&&!s.flight&&s.status==='stop';},{},{timeout:15000});
   async function press(hold,pointer=false) {
     await settled();await page.locator('#game').focus();
-    if(pointer){await page.mouse.move(200,560);await page.mouse.down();}else await page.keyboard.down('Space');
-    await page.waitForTimeout(hold*1000);
-    if(pointer)await page.mouse.up();else await page.keyboard.up('Space');
-    const s=await snapshot();if(s.flight)flights.push(s.flight);
+    const {snapshot:s}=await desktopProbe.press(hold,{pointer});if(s.flight)flights.push(s.flight);
     return s;
   }
   async function menu(){await page.locator('#menu-button').click();assert.equal((await snapshot()).paused,true);}
@@ -44,7 +44,7 @@ function holdFor(distance) {
     // The exact base commit supplies the before image without changing the working tree.
     const baseline=execFileSync('git',['show','f1e477cb79c95367b76aaf3735fe14303a62f1ce:index.html'],{cwd:path.join(__dirname,'..'),maxBuffer:8*1024*1024});
     await page.route(baseURL,route=>route.fulfill({body:baseline,contentType:'text/html'}));
-    await page.goto(baseURL);await ready();await page.locator('#home-skin').click();
+    await desktopProbe.goto(baseURL);await ready();await page.locator('#home-skin').click();
     await page.screenshot({path:path.join(output,'before-skins.png')});
     const oldRects=await page.locator('.skin-choice .skin-status').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().toJSON()));
     assert.equal(oldRects[0].x,oldRects[1].x);assert.equal(oldRects[1].x,oldRects[2].x);
@@ -55,7 +55,7 @@ function holdFor(distance) {
     assert.equal(await page.locator('#skin-silver').isDisabled(),true);assert.equal(await page.locator('#skin-gold').isDisabled(),true);
     await page.screenshot({path:path.join(output,'after-skins.png')});checks.push('New save: independent labels, complete previews, classic selected, silver/gold locked.');
     await page.locator('#skin-back').click();await start();assert.equal((await snapshot()).invincible,true);
-    await press(.05,true);await settled();let s=await snapshot();assert.equal(s.score,0);assert.equal(s.jumps,0);assert.equal(s.current.order,0);const shortPosition=s.bottle.position[0];checks.push('Short pointer charge: current-platform landing preserves score.');
+    await press(.05,true);assert.equal(desktopProbe.inputs.at(-1).events.find(e=>e.phase==='after-handler'&&e.type==='pointerup')?.hit,2,'Short input must hit the current platform before any invincible recovery');await settled();let s=await snapshot();assert.equal(s.score,0);assert.equal(s.jumps,0);assert.equal(s.current.order,0);const shortPosition=s.bottle.position[0];checks.push('Short pointer charge: current-platform landing preserves score.');
     s=await press(2.2);assert.ok(s.flight&&s.flight.hit===0,'long charge must overshoot');await settled();s=await snapshot();assert.equal(s.score,0);near(s.bottle.position[0],shortPosition);assert.equal(s.mode,'play');
     assert.match(await page.locator('#feedback').innerText(),/分数不变/);checks.push('Long keyboard charge: miss returns to takeoff with unchanged score.');
     for(let i=0;i<6;i++) {
@@ -99,16 +99,14 @@ function holdFor(distance) {
       await page.screenshot({path:path.join(output,`skins-${viewport.width}x${viewport.height}.png`)});await page.locator('#skin-back').click();
     }
     checks.push('Skin panel fits 320x568, 736x414 landscape and 1440x900; every card remains fully reachable through scrolling.');
-    await context.close();
+    desktopTelemetry=await desktopProbe.collect();await context.close();
     const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
-    const touchPage=await mobile.newPage();touchPage.on('pageerror',e=>errors.push(String(e)));
-    await touchPage.goto(baseURL);await touchPage.waitForFunction(()=>window.jumpDiagnostics);await touchPage.locator('#start').tap();
-    const input=await mobile.newCDPSession(touchPage);
-    await input.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:195,y:600}]});
-    await touchPage.waitForTimeout(2200);await input.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+    touchPage=await mobile.newPage();touchPage.on('pageerror',e=>errors.push(String(e)));mobileProbe=await attach(touchPage,'mobile');
+    await mobileProbe.goto(baseURL);await mobileProbe.ready();await touchPage.locator('#start').tap();
+    await mobileProbe.press(2.2,{touch:true,x:195,y:600});
     await touchPage.waitForFunction(()=>{const s=jumpDiagnostics.snapshot();return !s.flight&&s.status==='stop';});
     const touchState=await touchPage.evaluate(()=>jumpDiagnostics.snapshot());assert.equal(touchState.mode,'play');assert.equal(touchState.score,0);near(touchState.bottle.position[0],0);
-    await touchPage.screenshot({path:path.join(output,'touch-retry.png')});await mobile.close();
+    await touchPage.screenshot({path:path.join(output,'touch-retry.png')});mobileTelemetry=await mobileProbe.collect();await mobile.close();
     checks.push('Mobile touch emulation: long touch overshoots and safely retries.');
     if(process.env.QA_SKIP_FILE==='1')notRun.push({action:'Open local index.html through file://',reason:'Skipped after observed managed-browser ERR_BLOCKED_BY_ADMINISTRATOR; no retry or bypass attempted.'});
     else {
@@ -123,10 +121,10 @@ function holdFor(distance) {
       } finally { await offline.close(); }
     }
     assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);checks.push('No page errors or remote runtime requests.');
-    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:true,productSha256,checks,notRun,flights,errors,requests},null,2));console.log(JSON.stringify({passed:true,checks,notRun,output},null,2));
+    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:true,productSha256,scriptSha256,helperSha256,recordVideo:process.env.QA_SKIP_VIDEO!=='1',telemetry:{desktop:desktopTelemetry,mobile:mobileTelemetry},checks,notRun,flights,errors,requests},null,2));console.log(JSON.stringify({passed:true,checks,notRun,output},null,2));
   } catch(error) {
-    await page.screenshot({path:path.join(output,'failure.png')}).catch(()=>{});
-    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:false,error:String(error),checks,flights,snapshot:await snapshot().catch(()=>null),errors,requests},null,2));
+    const failedPage=touchPage&&!touchPage.isClosed()?touchPage:page;await failedPage.screenshot({path:path.join(output,'failure.png'),timeout:3000}).catch(()=>{});
+    fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({passed:false,productSha256,scriptSha256,helperSha256,recordVideo:process.env.QA_SKIP_VIDEO!=='1',error:String(error),telemetry:{desktop:desktopTelemetry||await desktopProbe.collect(),mobile:mobileTelemetry||(mobileProbe?await mobileProbe.collect():null)},checks,flights,snapshot:page.isClosed()?null:await snapshot().catch(()=>null),errors,requests},null,2));
     throw error;
   } finally { await context.close();await browser.close(); }
 })();
