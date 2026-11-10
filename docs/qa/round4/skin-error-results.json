@@ -1,0 +1,104 @@
+{
+  "productSha256": "e017b999c78ee68d0b94f1b5c0458fa716457fdc294d3b25371f5e4dc0912455",
+  "results": [
+    {
+      "name": "skins-menu-escape",
+      "passed": true,
+      "evidence": {
+        "paused": false,
+        "dialogs": 0
+      }
+    },
+    {
+      "name": "preview-decode-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用（预览暂不可用）",
+          "1000 分解锁（预览暂不可用）",
+          "3000 分解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/classic": "decode",
+            "preview/gold": "decode",
+            "preview/silver": "decode",
+            "preview/scarf": "decode"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "preview-encode-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用（预览暂不可用）",
+          "1000 分解锁（预览暂不可用）",
+          "3000 分解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/classic": "encode:EncodingError",
+            "preview/gold": "encode:EncodingError",
+            "preview/silver": "encode:EncodingError",
+            "preview/scarf": "encode:EncodingError"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "preview-display-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用（预览暂不可用）",
+          "1000 分解锁（预览暂不可用）",
+          "3000 分解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/classic": "display",
+            "preview/silver": "display",
+            "preview/gold": "display"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "embedded-image-decode-error",
+      "passed": true,
+      "evidence": "无法启动游戏。请用 Safari、Chrome 或 Edge 直接打开此 HTML。"
+    }
+  ]
+}

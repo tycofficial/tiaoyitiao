@@ -1,0 +1,12 @@
+{
+  "before": {
+    "scrollTop": 148,
+    "clientHeight": 216,
+    "scrollHeight": 364
+  },
+  "after": {
+    "scrollTop": 148,
+    "firstCardY": -76,
+    "panelY": 12
+  }
+}
