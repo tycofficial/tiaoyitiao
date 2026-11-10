@@ -16187,11 +16187,11 @@ function scaleBlock(block){
   if(block.order===27)block.sphere.scale.set(1/scale,1,1/scale);
 }
 function platformTop(){return C.BLOCK.height/2;}
-function squeezeAt(){
+function squeezeAt(preserveScale=false){
   // A short jump can land before the final jump-pose tween has finished.
   const targets=[bottle.body.scale,bottle.head.position,bottle.human.rotation];
   clock.tweens=clock.tweens.filter(t=>!targets.includes(t.target));
-  bottle.human.rotation.set(0,0,0);bottle.body.scale.set(1,1,1);bottle.head.position.set(0,4.725,0);
+  bottle.human.rotation.set(0,0,0);if(!preserveScale)bottle.body.scale.set(1,1,1);bottle.head.position.set(0,4.725,0);
   bottle.squeeze();
 }
 function footprintExtent(block,axis){block.obj.updateMatrixWorld(true);return Math.max(...block.getVertices().map(v=>(v[0]-block.obj.position.x)*axis.x+(v[1]-block.obj.position.z)*axis.z));}
@@ -16588,9 +16588,9 @@ function startBonus(block){
 }
 function land(f){flight=null;if(f.demo){landDemo(f);return;}
   bottle.obj.position.copy(f.end);bottle.obj.position.y=platformTop(next);bottle.human.rotation.set(0,0,0);
-  if(f.hit===2){bottle.stop();squeezeAt(current);return;}
+  if(f.hit===2){bottle.stop();squeezeAt();return;}
   if(f.hit!==1&&f.hit!==7){if(invincible)recoverMiss(f);else fail(f.hit,f);return;}
-  bottle.stop();squeezeAt(next);jumps++;lastSucceed=clock.time;const reached=next,old=current;
+  bottle.stop();squeezeAt(true);jumps++;lastSucceed=clock.time;const reached=next,old=current;
   combo=f.hit===1?combo+1:0;multiplier=f.hit===1?(multiplier===1?2:multiplier+2):1;if(f.quick&&multiplier<=2)multiplier*=2;multiplier=Math.min(32,multiplier);const points=multiplier;increaseScore(points,reached);bottle.showAddScore(points,false,false,true);bottle.double=multiplier;
   if(combo){playSound('combo'+Math.min(combo,8));addWaves(combo);}playSound('success');bottle.scatterParticles();
   if(jumps%15===0)ground.changeColor();if(active.length>=9){const b=active.shift();b.reset();b.obj.visible=false;scene.remove(b.obj);pool.push(b);}

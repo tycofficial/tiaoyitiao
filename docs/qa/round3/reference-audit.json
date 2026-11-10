@@ -1,0 +1,122 @@
+{
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "baseCommit": "f70e0181a5645bdf95aab660673ae9408ba9366f",
+  "methods": [
+    {
+      "key": "_prepare",
+      "referenceHash": "d063c00aee0c593ce759423855dabc7fafc311c5bfd713265eb5628e4b2609cc",
+      "embeddedHash": "d063c00aee0c593ce759423855dabc7fafc311c5bfd713265eb5628e4b2609cc",
+      "equal": true
+    },
+    {
+      "key": "jump",
+      "referenceHash": "e2fa1c4b474d4b0c7e1f92771640ead433380b7a9f182ff9ae55b8ab79d9c179",
+      "embeddedHash": "e2fa1c4b474d4b0c7e1f92771640ead433380b7a9f182ff9ae55b8ab79d9c179",
+      "equal": true
+    },
+    {
+      "key": "squeeze",
+      "referenceHash": "005d72b4719a40eba5ea475bab41159b6f593db3f0f05483babe05bcd4edc48c",
+      "embeddedHash": "005d72b4719a40eba5ea475bab41159b6f593db3f0f05483babe05bcd4edc48c",
+      "equal": true
+    },
+    {
+      "key": "_shrink",
+      "referenceHash": "b833f2d015a90feb77893fd8170281c36ed8d518ab7c2be8341df9862280a2bf",
+      "embeddedHash": "b833f2d015a90feb77893fd8170281c36ed8d518ab7c2be8341df9862280a2bf",
+      "equal": true
+    },
+    {
+      "key": "rebound",
+      "referenceHash": "f514fda0198f6e0c9b7f64f34cbf2f8d5a5d11a95e3fd0c3097349e9d0710e25",
+      "embeddedHash": "f514fda0198f6e0c9b7f64f34cbf2f8d5a5d11a95e3fd0c3097349e9d0710e25",
+      "equal": true
+    }
+  ],
+  "compression": [
+    {
+      "frames": 0,
+      "hold": 0,
+      "reference": {
+        "bodyX": 1,
+        "bodyY": 1,
+        "headY": 4.725,
+        "pawnY": 2.75,
+        "platformY": 0,
+        "platformScale": 1
+      },
+      "adapter": {
+        "bodyX": 1,
+        "bodyY": 1,
+        "headY": 4.725,
+        "pawnY": 2.75,
+        "platformY": 0,
+        "platformScale": 1
+      },
+      "maxAbsoluteDifference": 0
+    },
+    {
+      "frames": 30,
+      "hold": 0.5,
+      "reference": {
+        "bodyX": 1.2099999999999969,
+        "bodyY": 0.8499999999999999,
+        "headY": 4.185000000000006,
+        "pawnY": 1.733749999999997,
+        "platformY": -0.4124999999999999,
+        "platformScale": 0.8499999999999999
+      },
+      "adapter": {
+        "bodyX": 1.21,
+        "bodyY": 0.85,
+        "headY": 4.185,
+        "pawnY": 1.73375,
+        "platformY": -0.4125,
+        "platformScale": 0.85
+      },
+      "maxAbsoluteDifference": 6.217248937900877e-15
+    },
+    {
+      "frames": 60,
+      "hold": 1,
+      "reference": {
+        "bodyX": 1.4199999999999937,
+        "bodyY": 0.6999999999999997,
+        "headY": 3.645000000000012,
+        "pawnY": 0.717499999999995,
+        "platformY": -0.8250000000000007,
+        "platformScale": 0.6999999999999997
+      },
+      "adapter": {
+        "bodyX": 1.42,
+        "bodyY": 0.7,
+        "headY": 3.6449999999999996,
+        "pawnY": 0.7174999999999998,
+        "platformY": -0.825,
+        "platformScale": 0.7
+      },
+      "maxAbsoluteDifference": 1.2434497875801753e-14
+    },
+    {
+      "frames": 99,
+      "hold": 1.65,
+      "reference": {
+        "bodyX": 1.6929999999999896,
+        "bodyY": 0.5049999999999996,
+        "headY": 2.94300000000002,
+        "pawnY": -0.6036250000000046,
+        "platformY": -1.3612499999999994,
+        "platformScale": 0.5049999999999996
+      },
+      "adapter": {
+        "bodyX": 1.693,
+        "bodyY": 0.505,
+        "headY": 2.9429999999999996,
+        "pawnY": -0.6036250000000001,
+        "platformY": -1.36125,
+        "platformScale": 0.505
+      },
+      "maxAbsoluteDifference": 2.042810365310288e-14
+    }
+  ]
+}
