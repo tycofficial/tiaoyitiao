@@ -9,7 +9,7 @@ async function attach(page,label){
   const data=window.__qaTiming={active:null,events:[],longTasks:[],rafGaps:[],marks:[],longTaskSupported:false};
   const stamp=()=>({wallMs:Date.now(),pageMs:performance.now()});
   const mark=name=>data.marks.push({name,...stamp(),visibility:document.visibilityState});
-  for(const type of ['keydown','keyup','pointerdown','pointerup'])window.addEventListener(type,event=>{if(data.active===null||('code'in event&&event.code!=='Space'))return;data.events.push({id:data.active,phase:'capture',type,eventMs:event.timeStamp,...stamp()});},true);
+  for(const type of ['keydown','keyup','pointerdown','pointerup'])window.addEventListener(type,event=>{if(data.active===null||('code'in event&&event.code!=='Space'))return;data.events.push({id:data.active,phase:'capture',type,eventMs:event.timeStamp,trusted:event.isTrusted,pointerType:event.pointerType||null,pointerId:event.pointerId??null,repeat:event.repeat||false,...stamp()});},true);
   for(const type of ['DOMContentLoaded','load','visibilitychange','pagehide'])window.addEventListener(type,()=>mark(type),true);
   try{const observer=new PerformanceObserver(list=>{for(const entry of list.getEntries())if(data.longTasks.length<150)data.longTasks.push({startMs:entry.startTime,durationMs:entry.duration,name:entry.name});});observer.observe({type:'longtask',buffered:true});data.longTaskSupported=true;}catch{}
   let previous;function frame(t){if(previous!==undefined&&t-previous>50&&data.rafGaps.length<150)data.rafGaps.push({startMs:previous,durationMs:t-previous});previous=t;requestAnimationFrame(frame);}requestAnimationFrame(frame);

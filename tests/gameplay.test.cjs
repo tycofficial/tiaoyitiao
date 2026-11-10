@@ -47,7 +47,7 @@ function jumpHarness(hold, left = false) {
   const y = 2.75 - .033875 * Math.min(99, hold * 60);
   const context = vm.createContext({
     Math, performance: { now: () => hold * 1000 },
-    activePointer: 'test', mode: 'play', paused: false, pressWall: 0,
+    activePointer: 'test', mode: 'play', paused: false, pressWall: 0, pressInput: null, inputBoundary: 0,
     centerMode: false, invincible: false, relay: null, lastSucceed: -Infinity,
     clock: { time: 1000, tweens: [], update() {} },
     current: { rebound() {} }, next: { obj: { position: new Vector(left ? 0 : 20, 0, left ? -20 : 0) } },
@@ -66,10 +66,48 @@ function jumpHarness(hold, left = false) {
     updateFailure() {}, updateClockPlatform() {}
   });
   context.land = f => { context.landing = { f, position: context.bottle.obj.position.clone() }; context.flight = null; };
-  vm.runInContext(extractFunction('endCharge') + '\n' + extractFunction('advanceFrame'), context);
+  vm.runInContext(extractFunction('eventInputTime') + '\n' + extractFunction('chargeHoldAt') + '\n' + extractFunction('endCharge') + '\n' + extractFunction('advanceFrame'), context);
   vm.runInContext("endCharge('test')", context);
   return context;
 }
+
+test('event clocks accept page-relative and epoch timestamps and reject unsupported values', () => {
+  const origin=1700000000000,context=vm.createContext({performance:{now:()=>500,timeOrigin:origin}});
+  vm.runInContext(extractFunction('eventInputTime'),context);
+  assert.equal(context.eventInputTime(100),100);assert.equal(context.eventInputTime(origin+100),100);
+  for(const stamp of [undefined,null,0,-1,NaN,Infinity,500.1,origin-1,origin+501,'100'])assert.equal(context.eventInputTime(stamp),null);
+  context.performance.timeOrigin=undefined;assert.equal(context.eventInputTime(origin+100),null);assert.equal(context.eventInputTime(100),100);
+});
+
+test('charge duration uses complete native timestamp pairs and complete processing pairs as fallback', () => {
+  const origin=1700000000000,context=vm.createContext({performance:{now:()=>1000,timeOrigin:origin},pressWall:250,pressInput:{eventTime:100},inputBoundary:50});
+  vm.runInContext(extractFunction('eventInputTime')+'\n'+extractFunction('chargeHoldAt'),context);
+  near(context.chargeHoldAt(150),.05,'Queued release');near(context.chargeHoldAt(origin+150),.05,'Converted epoch release');
+  for(const stamp of [undefined,0,NaN,origin+2000])near(context.chargeHoldAt(stamp),.75,'Invalid release uses both processing samples');
+  context.pressInput.eventTime=null;near(context.chargeHoldAt(150),.75,'Invalid start does not mix clocks');
+  context.pressInput={eventTime:100};near(context.chargeHoldAt(5000,5010),4.9,'Genuine long hold is not truncated');
+});
+
+test('stale or duplicate releases cannot consume a newer active charge', () => {
+  const context=jumpHarness(.05);context.activePointer='test';context.flight=null;context.bottle.status='prepare';context.pressInput={eventTime:100};context.inputBoundary=90;context.pressWall=200;context.performance.now=()=>500;
+  let applied=0;context.applyCharge=()=>applied++;
+  assert.equal(context.endCharge('test',undefined,99),false);assert.equal(context.activePointer,'test');assert.equal(context.flight,null);assert.equal(applied,0);
+  assert.equal(context.endCharge('other',undefined,150),false);assert.equal(context.activePointer,'test');
+  assert.equal(context.endCharge('test',undefined,150),true);assert.equal(context.pressInput,null);assert.equal(applied,1);
+  const flight=context.flight;assert.equal(context.endCharge('test',undefined,151),false);assert.equal(context.flight,flight);assert.equal(applied,1);
+});
+
+test('queued release applies the actual hold to the release pose and unchanged trajectory calculation', () => {
+  const context=jumpHarness(.05),expected=context.flight;context.activePointer='test';context.flight=null;context.bottle.status='prepare';context.pressInput={eventTime:100};context.inputBoundary=0;context.pressWall=300;context.performance.now=()=>900;
+  let applied;context.applyCharge=hold=>{applied=hold;context.bottle.obj.position.y=2.75-.033875*Math.min(99,hold*60);};
+  assert.equal(context.endCharge('test',undefined,150),true);near(applied,.05,'Final compression');near(context.flight.hold,.05,'Physical interval');near(context.flight.vy,expected.vy,'Original vertical speed');near(context.flight.duration,expected.duration,'Original flight time');near(context.flight.end.x,expected.end.x,'Original rounded range');
+});
+
+test('queued starts from before a pause boundary and duplicate starts are rejected before state changes', () => {
+  const context=vm.createContext({performance:{now:()=>1000,timeOrigin:1700000000000},ready:true,mode:'play',paused:false,activePointer:null,bottle:{status:'stop'},flight:null,relay:null,inputBoundary:900,unlockPlatformAudio(){assert.fail('Rejected start must not change state');}});
+  vm.runInContext(extractFunction('eventInputTime')+'\n'+extractFunction('beginCharge'),context);
+  assert.equal(context.beginCharge(1,800),false);context.activePointer=1;assert.equal(context.beginCharge(1,950),false);context.activePointer=null;context.paused=true;assert.equal(context.beginCharge(1,950),false);
+});
 
 test('normal jumps retain the classic rounded range while the visible trajectory reaches the same endpoint', () => {
   for (const left of [false, true]) for (const hold of [.001, .05, .2, .719, 1, 1.65, 2, 3]) {
@@ -136,7 +174,7 @@ test('a cancelled press releases input and cannot turn a later pointer-up into a
   let stopped = 0, rebounded = 0;
   const context = vm.createContext({
     relay: null, mode: 'play', paused: false, activePointer: 'finger', keyHeld: true,
-    score: 12, flight: null, platformTop: () => 2.75,
+    score: 12, flight: null, pressInput: {eventTime:10}, inputBoundary:0, performance:{now:()=>1000}, platformTop: () => 2.75,
     stopAudio(preserve) { assert.equal(preserve, false); stopped++; },
     current: { rebound() { rebounded++; } },
     bottle: { status: 'prepare', obj: { position: new Vector(0, 1.5, 0) }, stopPrepare() { this.status = 'stop'; } }
@@ -147,6 +185,7 @@ test('a cancelled press releases input and cannot turn a later pointer-up into a
   assert.equal(context.activePointer, null); assert.equal(context.keyHeld, false);
   assert.equal(context.bottle.status, 'stop'); assert.equal(context.bottle.obj.position.y, 2.75);
   assert.equal(context.flight, null); assert.equal(context.score, 12);
+  assert.equal(context.pressInput,null);assert.equal(context.inputBoundary,1000);
 });
 
 test('older saves migrate to retry mode, preserving progress without enabling unrelated cheats or locked skins', () => {

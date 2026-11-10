@@ -1,0 +1,1558 @@
+{
+  "passed": true,
+  "productSha256": "e1513b132e82f4c307f7d27a4b704f5d26828f33dcef72ef841ef66d9ce09782",
+  "baselineCommit": "622d96d9b9699d7f39add8020dde3fd4ee750400",
+  "scriptSha256": "cfe8524146c09779cef132b67982a192a3dcb84506497f93a705a435b4174539",
+  "helperSha256": "85583c339fee8ac21e67d955aa200223e068bf6197532d800700fbe704a4b054",
+  "method": "Real CDP/Playwright mouse, keyboard and touch. An actual 200 ms main-thread task runs concurrently with a host release timer; no timestamp argument or property override is used.",
+  "results": [
+    {
+      "events": [
+        {
+          "id": 1,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 2780.4000000003725,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332120293,
+          "pageMs": 2780.9000000003725
+        },
+        {
+          "id": 1,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332120295,
+          "pageMs": 2782.7000000011176
+        },
+        {
+          "id": 1,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 2839.9000000003725,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332120362,
+          "pageMs": 2849.800000000745
+        },
+        {
+          "id": 1,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332120363,
+          "pageMs": 2850.9000000003725,
+          "consumedHoldMs": 68.89999999850988,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.06889999999850989,
+        "duration": 0.37682881767064963,
+        "vy": 136.03,
+        "vz": 4.8563164869185504,
+        "start": [
+          0,
+          2.6099607500030286,
+          0
+        ],
+        "end": [
+          1.83,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "mouse",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 3781.093663,
+        "downAck": 3788.206448,
+        "releaseRequest": 3838.167329,
+        "releaseAck": 3853.792388
+      },
+      "eventHoldMs": 59.5,
+      "captureHoldMs": 68.90000000037253,
+      "releaseQueueMs": 9.900000000372529,
+      "consumedHoldMs": 68.89999999850988,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 2,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 3389.9000000003725,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332120903,
+          "pageMs": 3390.60000000149
+        },
+        {
+          "id": 2,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332120904,
+          "pageMs": 3390.9000000003725
+        },
+        {
+          "id": 2,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 3447,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332121109,
+          "pageMs": 3596.300000000745
+        },
+        {
+          "id": 2,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332121110,
+          "pageMs": 3596.9000000003725,
+          "consumedHoldMs": 205.69999999925494,
+          "hit": 4,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 3394.4000000003725,
+          "endMs": 3594.5
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        },
+        {
+          "startMs": 2853.4000000003725,
+          "durationMs": 56,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0.2,
+        "hold": 0.20569999999925495,
+        "duration": 0.3805329183035215,
+        "vy": 138.09,
+        "vz": 14.374577695895962,
+        "start": [
+          0,
+          2.332118000000757,
+          0
+        ],
+        "end": [
+          5.47,
+          2.75,
+          0
+        ],
+        "hit": 4
+      },
+      "mode": "play",
+      "type": "mouse",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 4391.226168,
+        "downAck": 4393.795082,
+        "releaseRequest": 4448.550331,
+        "releaseAck": 4599.975114
+      },
+      "eventHoldMs": 57.09999999962747,
+      "captureHoldMs": 205.69999999925494,
+      "releaseQueueMs": 149.30000000074506,
+      "consumedHoldMs": 205.69999999925494,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 3,
+          "phase": "capture",
+          "type": "keydown",
+          "eventMs": 4166.9000000003725,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332121680,
+          "pageMs": 4167.300000000745
+        },
+        {
+          "id": 3,
+          "phase": "after-handler",
+          "type": "keydown",
+          "wallMs": 1794332121681,
+          "pageMs": 4168.200000001118
+        },
+        {
+          "id": 3,
+          "phase": "capture",
+          "type": "keyup",
+          "eventMs": 4220.300000000745,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332121733,
+          "pageMs": 4220.60000000149
+        },
+        {
+          "id": 3,
+          "phase": "after-handler",
+          "type": "keyup",
+          "wallMs": 1794332121739,
+          "pageMs": 4226.4000000003725,
+          "consumedHoldMs": 53.09999999962747,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        },
+        {
+          "startMs": 2853.4000000003725,
+          "durationMs": 56,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.05309999999962747,
+        "duration": 0.3764258003251606,
+        "vy": 135.8,
+        "vz": 3.745758124926684,
+        "start": [
+          0,
+          2.642074250000757,
+          0
+        ],
+        "end": [
+          1.41,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "keyboard",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 5167.203213,
+        "downAck": 5171.360824,
+        "releaseRequest": 5220.848864,
+        "releaseAck": 5229.869773
+      },
+      "eventHoldMs": 53.40000000037253,
+      "captureHoldMs": 53.30000000074506,
+      "releaseQueueMs": 0.30000000074505806,
+      "consumedHoldMs": 53.09999999962747,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 4,
+          "phase": "capture",
+          "type": "keydown",
+          "eventMs": 4735.4000000003725,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332122248,
+          "pageMs": 4735.800000000745
+        },
+        {
+          "id": 4,
+          "phase": "after-handler",
+          "type": "keydown",
+          "wallMs": 1794332122249,
+          "pageMs": 4736.200000001118
+        },
+        {
+          "id": 4,
+          "phase": "capture",
+          "type": "keyup",
+          "eventMs": 4787.200000001118,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332122451,
+          "pageMs": 4938.700000001118
+        },
+        {
+          "id": 4,
+          "phase": "after-handler",
+          "type": "keyup",
+          "wallMs": 1794332122452,
+          "pageMs": 4939,
+          "consumedHoldMs": 202.80000000074506,
+          "hit": 4,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 4738.10000000149,
+          "endMs": 4938.10000000149
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        },
+        {
+          "startMs": 2853.4000000003725,
+          "durationMs": 56,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0.19989999999999963,
+        "hold": 0.20280000000074505,
+        "duration": 0.3804347959787765,
+        "vy": 138.04,
+        "vz": 14.19428521543874,
+        "start": [
+          0,
+          2.3378089999984857,
+          0
+        ],
+        "end": [
+          5.4,
+          2.75,
+          0
+        ],
+        "hit": 4
+      },
+      "mode": "play",
+      "type": "keyboard",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 5737.072677,
+        "downAck": 5738.950379,
+        "releaseRequest": 5788.87498,
+        "releaseAck": 5946.291788
+      },
+      "eventHoldMs": 51.80000000074506,
+      "captureHoldMs": 202.90000000037253,
+      "releaseQueueMs": 151.5,
+      "consumedHoldMs": 202.80000000074506,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 5,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 5634.200000001118,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "repeat": false,
+          "wallMs": 1794332123170,
+          "pageMs": 5657
+        },
+        {
+          "id": 5,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332123170,
+          "pageMs": 5657.4000000003725
+        },
+        {
+          "id": 5,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 5710.10000000149,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "repeat": false,
+          "wallMs": 1794332123229,
+          "pageMs": 5716.200000001118
+        },
+        {
+          "id": 5,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332123229,
+          "pageMs": 5716.5,
+          "consumedHoldMs": 59.30000000074506,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        },
+        {
+          "startMs": 2853.4000000003725,
+          "durationMs": 56,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.059300000000745055,
+        "duration": 0.37658318114595296,
+        "vy": 135.89,
+        "vz": 4.195620195230219,
+        "start": [
+          0,
+          2.629472749998486,
+          0
+        ],
+        "end": [
+          1.58,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "touch",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 6635.542415,
+        "downAck": 6660.6777,
+        "releaseRequest": 6710.994072,
+        "releaseAck": 6721.476734
+      },
+      "eventHoldMs": 75.90000000037253,
+      "captureHoldMs": 59.20000000111759,
+      "releaseQueueMs": 6.099999999627471,
+      "consumedHoldMs": 59.30000000074506,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 6,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 6228.5,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "repeat": false,
+          "wallMs": 1794332123750,
+          "pageMs": 6237.200000001118
+        },
+        {
+          "id": 6,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332123750,
+          "pageMs": 6237.60000000149
+        },
+        {
+          "id": 6,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 6291.60000000149,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "repeat": false,
+          "wallMs": 1794332123970,
+          "pageMs": 6457.300000000745
+        },
+        {
+          "id": 6,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332123970,
+          "pageMs": 6457.800000000745,
+          "consumedHoldMs": 220.19999999925494,
+          "hit": 4,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 6241.300000000745,
+          "endMs": 6441.300000000745
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 462.5,
+          "durationMs": 1083,
+          "name": "self"
+        },
+        {
+          "startMs": 1570.1000000014901,
+          "durationMs": 70,
+          "name": "self"
+        },
+        {
+          "startMs": 1640.9000000003725,
+          "durationMs": 346,
+          "name": "self"
+        },
+        {
+          "startMs": 2355.10000000149,
+          "durationMs": 128,
+          "name": "self"
+        },
+        {
+          "startMs": 2483.9000000003725,
+          "durationMs": 112,
+          "name": "self"
+        },
+        {
+          "startMs": 2853.4000000003725,
+          "durationMs": 56,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.22019999999925494,
+        "duration": 0.38090280914144126,
+        "vy": 138.3,
+        "vz": 15.384501923754511,
+        "start": [
+          0,
+          2.302443500001514,
+          0
+        ],
+        "end": [
+          5.86,
+          2.75,
+          0
+        ],
+        "hit": 4
+      },
+      "mode": "play",
+      "type": "touch",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 7229.775365,
+        "downAck": 7242.682469,
+        "releaseRequest": 7293.315037,
+        "releaseAck": 7461.33027
+      },
+      "eventHoldMs": 63.100000001490116,
+      "captureHoldMs": 220.09999999962747,
+      "releaseQueueMs": 165.69999999925494,
+      "consumedHoldMs": 220.19999999925494,
+      "version": "baseline",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 7,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 1875.2000000011176,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332126703,
+          "pageMs": 1875.5999999996275
+        },
+        {
+          "id": 7,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332126705,
+          "pageMs": 1877.2000000011176
+        },
+        {
+          "id": 7,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 1931.300000000745,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332126759,
+          "pageMs": 1931.800000000745
+        },
+        {
+          "id": 7,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332126761,
+          "pageMs": 1933.4000000003725,
+          "consumedHoldMs": 56.09999999962747,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.05609999999962747,
+        "duration": 0.3764920639406062,
+        "vy": 135.84,
+        "vz": 3.9575867400887796,
+        "start": [
+          0,
+          2.6359767500007574,
+          0
+        ],
+        "end": [
+          1.49,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "mouse",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 10188.370078,
+        "downAck": 10197.595844,
+        "releaseRequest": 10247.802972,
+        "releaseAck": 10251.266266
+      },
+      "eventHoldMs": 56.09999999962747,
+      "captureHoldMs": 56.20000000111759,
+      "releaseQueueMs": 0.5,
+      "consumedHoldMs": 56.09999999962747,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 8,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 2440.300000000745,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332127269,
+          "pageMs": 2442
+        },
+        {
+          "id": 8,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332127270,
+          "pageMs": 2442.5
+        },
+        {
+          "id": 8,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 2493.2000000011176,
+          "trusted": true,
+          "pointerType": "mouse",
+          "pointerId": 1,
+          "repeat": false,
+          "wallMs": 1794332127472,
+          "pageMs": 2644.7000000011176
+        },
+        {
+          "id": 8,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332127473,
+          "pageMs": 2645.2000000011176,
+          "consumedHoldMs": 52.90000000037253,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 2444.2000000011176,
+          "endMs": 2644.300000000745
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0.01659999999999991,
+        "hold": 0.05290000000037253,
+        "duration": 0.3764009699127378,
+        "vy": 135.79,
+        "vz": 3.746005225031393,
+        "start": [
+          0,
+          2.6424807499992427,
+          0
+        ],
+        "end": [
+          1.41,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "mouse",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 10756.585733,
+        "downAck": 10760.110822,
+        "releaseRequest": 10809.703158,
+        "releaseAck": 10963.027735
+      },
+      "eventHoldMs": 52.90000000037253,
+      "captureHoldMs": 202.7000000011176,
+      "releaseQueueMs": 151.5,
+      "consumedHoldMs": 52.90000000037253,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 9,
+          "phase": "capture",
+          "type": "keydown",
+          "eventMs": 2956.9000000003725,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332127786,
+          "pageMs": 2958.9000000003725
+        },
+        {
+          "id": 9,
+          "phase": "after-handler",
+          "type": "keydown",
+          "wallMs": 1794332127787,
+          "pageMs": 2959.5999999996275
+        },
+        {
+          "id": 9,
+          "phase": "capture",
+          "type": "keyup",
+          "eventMs": 3010.9000000003725,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332127839,
+          "pageMs": 3011.300000000745
+        },
+        {
+          "id": 9,
+          "phase": "after-handler",
+          "type": "keyup",
+          "wallMs": 1794332127840,
+          "pageMs": 3012.300000000745,
+          "consumedHoldMs": 54,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.054,
+        "duration": 0.3764401102148068,
+        "vy": 135.81,
+        "vz": 3.8253096865217087,
+        "start": [
+          0,
+          2.640245,
+          0
+        ],
+        "end": [
+          1.44,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "keyboard",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 11273.365189,
+        "downAck": 11277.012267,
+        "releaseRequest": 11327.214486,
+        "releaseAck": 11330.229281
+      },
+      "eventHoldMs": 54,
+      "captureHoldMs": 52.40000000037253,
+      "releaseQueueMs": 0.40000000037252903,
+      "consumedHoldMs": 54,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 10,
+          "phase": "capture",
+          "type": "keydown",
+          "eventMs": 3540.300000000745,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332128368,
+          "pageMs": 3540.5
+        },
+        {
+          "id": 10,
+          "phase": "after-handler",
+          "type": "keydown",
+          "wallMs": 1794332128369,
+          "pageMs": 3541
+        },
+        {
+          "id": 10,
+          "phase": "capture",
+          "type": "keyup",
+          "eventMs": 3593.5,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332128572,
+          "pageMs": 3744.800000000745
+        },
+        {
+          "id": 10,
+          "phase": "after-handler",
+          "type": "keyup",
+          "wallMs": 1794332128573,
+          "pageMs": 3745.0999999996275,
+          "consumedHoldMs": 53.19999999925494,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 3544,
+          "endMs": 3744.0999999996275
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0.1999000000000001,
+        "hold": 0.05319999999925494,
+        "duration": 0.37642429728620047,
+        "vy": 135.8,
+        "vz": 3.7457730815074295,
+        "start": [
+          0,
+          2.6418710000015144,
+          0
+        ],
+        "end": [
+          1.41,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "keyboard",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 11856.7366,
+        "downAck": 11860.054701,
+        "releaseRequest": 11909.974071,
+        "releaseAck": 12066.523391
+      },
+      "eventHoldMs": 53.19999999925494,
+      "captureHoldMs": 204.30000000074506,
+      "releaseQueueMs": 151.30000000074506,
+      "consumedHoldMs": 53.19999999925494,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 11,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 4075.2000000011176,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "repeat": false,
+          "wallMs": 1794332128918,
+          "pageMs": 4090.2000000011176
+        },
+        {
+          "id": 11,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332128918,
+          "pageMs": 4090.7000000011176
+        },
+        {
+          "id": 11,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 4147.0999999996275,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 2,
+          "repeat": false,
+          "wallMs": 1794332129021,
+          "pageMs": 4193.200000001118
+        },
+        {
+          "id": 11,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332129021,
+          "pageMs": 4193.5999999996275,
+          "consumedHoldMs": 71.89999999850988,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.07189999999850988,
+        "duration": 0.3769230283476236,
+        "vy": 136.08,
+        "vz": 5.067347591823099,
+        "start": [
+          0,
+          2.6038632500030285,
+          0
+        ],
+        "end": [
+          1.91,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "touch",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 12391.515192,
+        "downAck": 12412.806514,
+        "releaseRequest": 12463.302585,
+        "releaseAck": 12513.900978
+      },
+      "eventHoldMs": 71.89999999850988,
+      "captureHoldMs": 103,
+      "releaseQueueMs": 46.100000001490116,
+      "consumedHoldMs": 71.89999999850988,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": false
+    },
+    {
+      "events": [
+        {
+          "id": 12,
+          "phase": "capture",
+          "type": "pointerdown",
+          "eventMs": 4710.200000001118,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "repeat": false,
+          "wallMs": 1794332129555,
+          "pageMs": 4727.5
+        },
+        {
+          "id": 12,
+          "phase": "after-handler",
+          "type": "pointerdown",
+          "wallMs": 1794332129556,
+          "pageMs": 4728.0999999996275
+        },
+        {
+          "id": 12,
+          "phase": "capture",
+          "type": "pointerup",
+          "eventMs": 4782.300000000745,
+          "trusted": true,
+          "pointerType": "touch",
+          "pointerId": 3,
+          "repeat": false,
+          "wallMs": 1794332129771,
+          "pageMs": 4943.4000000003725
+        },
+        {
+          "id": 12,
+          "phase": "after-handler",
+          "type": "pointerup",
+          "wallMs": 1794332129772,
+          "pageMs": 4944.5,
+          "consumedHoldMs": 72.09999999962747,
+          "hit": 2,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [
+        {
+          "startMs": 4733.0999999996275,
+          "endMs": 4933.0999999996275
+        }
+      ],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 0.07209999999962748,
+        "duration": 0.3769200239907094,
+        "vy": 136.08,
+        "vz": 5.093918809809175,
+        "start": [
+          0,
+          2.603456750000757,
+          0
+        ],
+        "end": [
+          1.92,
+          2.75,
+          0
+        ],
+        "hit": 2
+      },
+      "mode": "play",
+      "type": "touch",
+      "requestedHoldMs": 50,
+      "requestedBlockMs": 200,
+      "node": {
+        "start": 13022.565379,
+        "downAck": 13048.966653,
+        "releaseRequest": 13098.802241,
+        "releaseAck": 13266.628382
+      },
+      "eventHoldMs": 72.09999999962747,
+      "captureHoldMs": 215.90000000037253,
+      "releaseQueueMs": 161.09999999962747,
+      "consumedHoldMs": 72.09999999962747,
+      "version": "current",
+      "attempt": 1,
+      "queueObserved": true
+    },
+    {
+      "events": [
+        {
+          "id": 13,
+          "phase": "capture",
+          "type": "keydown",
+          "eventMs": 5488.9000000003725,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332130317,
+          "pageMs": 5489.5
+        },
+        {
+          "id": 13,
+          "phase": "after-handler",
+          "type": "keydown",
+          "wallMs": 1794332130317,
+          "pageMs": 5489.9000000003725
+        },
+        {
+          "id": 13,
+          "phase": "capture",
+          "type": "keyup",
+          "eventMs": 7694.300000000745,
+          "trusted": true,
+          "pointerType": null,
+          "pointerId": null,
+          "repeat": false,
+          "wallMs": 1794332132522,
+          "pageMs": 7694.5999999996275
+        },
+        {
+          "id": 13,
+          "phase": "after-handler",
+          "type": "keyup",
+          "wallMs": 1794332132523,
+          "pageMs": 7695.0999999996275,
+          "consumedHoldMs": 2205.4000000003725,
+          "hit": 0,
+          "mode": "play",
+          "status": "jump"
+        }
+      ],
+      "blocks": [],
+      "longTasks": [
+        {
+          "startMs": 465,
+          "durationMs": 494,
+          "name": "self"
+        },
+        {
+          "startMs": 1006,
+          "durationMs": 291,
+          "name": "self"
+        },
+        {
+          "startMs": 1554.9000000003725,
+          "durationMs": 52,
+          "name": "self"
+        }
+      ],
+      "flight": {
+        "elapsed": 0,
+        "hold": 2.2054000000003726,
+        "duration": 0.44600192759188706,
+        "vy": 168.08,
+        "vz": 151.34463737512297,
+        "start": [
+          0,
+          -0.6036250000000001,
+          0
+        ],
+        "end": [
+          67.5,
+          2.75,
+          0
+        ],
+        "hit": 0
+      },
+      "mode": "play",
+      "type": "keyboard",
+      "requestedHoldMs": 2200,
+      "requestedBlockMs": 0,
+      "node": {
+        "start": 13804.853823,
+        "downAck": 13807.335687,
+        "releaseRequest": 16008.5427,
+        "releaseAck": 16012.760016
+      },
+      "eventHoldMs": 2205.4000000003725,
+      "captureHoldMs": 2205.0999999996275,
+      "releaseQueueMs": 0.2999999988824129,
+      "consumedHoldMs": 2205.4000000003725,
+      "version": "current"
+    }
+  ],
+  "boundaryResults": [
+    {
+      "checks": [
+        "A real repeated Space keydown does not reset the charge.",
+        "Escape cancels a held Space; late keyup cannot launch after pausing.",
+        "Keyboard restart while the mouse is held rejects its late and duplicate releases.",
+        "A native touch cancellation clears the preparation without jumping.",
+        "The browser lost-capture event cancels the clock and rejects the following release.",
+        "A native Space event queued before resume is consumed after resume without starting a stale charge."
+      ],
+      "repeated": {
+        "events": [
+          {
+            "id": 1000,
+            "phase": "capture",
+            "type": "keydown",
+            "eventMs": 8523,
+            "trusted": true,
+            "pointerType": null,
+            "pointerId": null,
+            "repeat": false,
+            "wallMs": 1794332133352,
+            "pageMs": 8524.300000000745
+          },
+          {
+            "id": 1000,
+            "phase": "after-handler",
+            "type": "keydown",
+            "wallMs": 1794332133352,
+            "pageMs": 8524.599999999627
+          },
+          {
+            "id": 1000,
+            "phase": "capture",
+            "type": "keydown",
+            "eventMs": 8525.300000000745,
+            "trusted": true,
+            "pointerType": null,
+            "pointerId": null,
+            "repeat": true,
+            "wallMs": 1794332133353,
+            "pageMs": 8525.599999999627
+          },
+          {
+            "id": 1000,
+            "phase": "after-handler",
+            "type": "keydown",
+            "wallMs": 1794332133353,
+            "pageMs": 8525.700000001118
+          },
+          {
+            "id": 1000,
+            "phase": "capture",
+            "type": "keyup",
+            "eventMs": 8627.200000001118,
+            "trusted": true,
+            "pointerType": null,
+            "pointerId": null,
+            "repeat": false,
+            "wallMs": 1794332133455,
+            "pageMs": 8627.400000000373
+          },
+          {
+            "id": 1000,
+            "phase": "after-handler",
+            "type": "keyup",
+            "wallMs": 1794332133455,
+            "pageMs": 8627.700000001118,
+            "consumedHoldMs": 104.20000000111759,
+            "hit": 2,
+            "mode": "play",
+            "status": "jump"
+          }
+        ],
+        "blocks": [],
+        "longTasks": [
+          {
+            "startMs": 465,
+            "durationMs": 494,
+            "name": "self"
+          },
+          {
+            "startMs": 1006,
+            "durationMs": 291,
+            "name": "self"
+          },
+          {
+            "startMs": 1554.9000000003725,
+            "durationMs": 52,
+            "name": "self"
+          }
+        ],
+        "flight": {
+          "elapsed": 0,
+          "hold": 0.1042000000011176,
+          "duration": 0.3777760726279444,
+          "vy": 136.56,
+          "vz": 7.332386036868077,
+          "start": [
+            0,
+            2.5382134999977284,
+            0
+          ],
+          "end": [
+            2.77,
+            2.75,
+            0
+          ],
+          "hit": 2
+        },
+        "mode": "play",
+        "type": "keyboard",
+        "requestedHoldMs": 100,
+        "requestedBlockMs": 0,
+        "node": {
+          "start": 16839.157139,
+          "downAck": 16842.00992,
+          "releaseRequest": 16943.325537,
+          "releaseAck": 16945.347682
+        },
+        "eventHoldMs": 104.20000000111759,
+        "captureHoldMs": 103.09999999962747,
+        "releaseQueueMs": 0.19999999925494194,
+        "consumedHoldMs": 104.20000000111759
+      },
+      "resume": {
+        "resumedAt": 10065.300000000745,
+        "space": {
+          "eventMs": 9914.300000000745,
+          "handledMs": 10065.800000000745,
+          "trusted": true,
+          "paused": false,
+          "status": "stop"
+        }
+      },
+      "capture": {
+        "got": {
+          "trusted": true,
+          "eventMs": 9680.599999999627,
+          "id": 1
+        },
+        "lost": {
+          "trusted": true,
+          "eventMs": 9697.599999999627
+        }
+      }
+    }
+  ]
+}

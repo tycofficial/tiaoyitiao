@@ -16220,6 +16220,7 @@ const $=id=>document.getElementById(id), stage=$('stage'), canvas=$('game');
 const images=new Map(), textures=new Map(), sounds=new Map();
 let THREE,C,Block,Bottle,Wave,Tail,Ground,ground,animations,renderer,scene,camera,bottle,tail,light,lightTarget,centerMarker;
 let ready=false, mode='loading',paused=false, activePointer=null,keyHeld=false,pressAt=0,pressWall=0,flight=null;
+let pressInput=null,inputBoundary=0;
 let current=null,next=null,active=[],pool=[],homeBlocks=[],waves=[],score=0,combo=0,jumps=0,lastBonus=-2,lastOrder=-1;
 let bonusTimer=null,menuReturn='home',cameraBase=null,accumulator=0,lastFrame=0,feedbackTimer=null,lastSucceed=-Infinity,multiplier=1,failureHit=0,suspendTimer=null;
 let audio=null,audioGeneration=0,chargeGeneration=0,playing=new Set(),soundEnabled=true,quality='high',invincible=true,centerMode=false,scoreScale=false,blockScale=1,allSkins=false;
@@ -16539,7 +16540,7 @@ function releaseBonus(){
   if(bonusState?.block){bonusState.block.whenLeave?.();bonusState.block.registerEndAudio?.();}
   for(const block of active)block.stopMusic?.();bonusState=null;stopAudio();
 }
-function clearScene(){relay=null;botDriving=false;hide('relay-turn');releaseBonus();if(centerMarker)centerMarker.visible=false;if(scoreText)scoreText.obj.visible=false;clock.reset();activePointer=null;keyHeld=false;flight=null;failedFlight=null;bonusTimer=null;feedbackTimer=null;demoTimer=null;demoPress=null;demoPhase='none';demoJumps=0;accumulator=0;
+function clearScene(){relay=null;botDriving=false;hide('relay-turn');releaseBonus();if(centerMarker)centerMarker.visible=false;if(scoreText)scoreText.obj.visible=false;clock.reset();activePointer=null;keyHeld=false;pressInput=null;inputBoundary=performance.now();flight=null;failedFlight=null;bonusTimer=null;feedbackTimer=null;demoTimer=null;demoPress=null;demoPhase='none';demoJumps=0;accumulator=0;
   nativeUI?.dismiss();
   for(const b of active){b.reset();b.stopMusic?.();if(b.order===24){b.door.position.z=-3.3;b.secondDoor.position.z=-1.7;}if(b.order===17)b.middle.rotation.y=0;scene.remove(b.obj);b.obj.visible=false;}
   active=[];pool=[];suspendTimer=null;for(const b of homeBlocks)scene.remove(b.obj);for(const w of waves)w.reset();
@@ -16584,24 +16585,39 @@ function landDemo(f){bottle.stop();bottle.human.rotation.set(0,0,0);if(f.intro){
   animations.customAnimation.to(bottle.obj.position,seconds,{x:bottle.obj.position.x-19.8,onEnded(){bottle.obj.position.x=-.098;demoPhase='waiting';}});
   for(const block of new Set([...active,homeBlocks[0]]))animations.customAnimation.to(block.obj.position,seconds,{x:block.obj.position.x-19.8});
 }
-function beginCharge(pointer){if(!ready||mode!=='play'||paused||bottle.status!=='stop'||flight||relay&&(!relay.players[relay.turn].human&&!botDriving||relay.transition||relay.players[relay.turn].rank))return false;
+// Normalize reliable native timestamps into this document's monotonic clock.
+function eventInputTime(stamp,now=performance.now()){
+  if(!Number.isFinite(stamp)||stamp<=0)return null;
+  if(stamp<=now)return stamp;
+  const origin=performance.timeOrigin,relative=stamp-origin;
+  return Number.isFinite(origin)&&relative>=0&&relative<=now?relative:null;
+}
+function chargeHoldAt(stamp,now=performance.now()){
+  const end=eventInputTime(stamp,now);
+  if(end!==null&&(end<inputBoundary||(pressInput&&pressInput.eventTime!==null&&end<pressInput.eventTime)))return null;
+  if(pressInput&&pressInput.eventTime!==null&&end!==null)return (end-pressInput.eventTime)/1000;
+  // If either timestamp is unusable, keep the complete processing-time pair.
+  return Math.max(0,(now-pressWall)/1000);
+}
+function beginCharge(pointer,timeStamp){if(!ready||mode!=='play'||paused||activePointer!==null||bottle.status!=='stop'||flight||relay&&(!relay.players[relay.turn].human&&!botDriving||relay.transition||relay.players[relay.turn].rank))return false;
+  const eventTime=eventInputTime(timeStamp);if(eventTime!==null&&eventTime<inputBoundary)return false;
   unlockPlatformAudio();
-  $('capsule').style.color='#222';centerMarker.visible=false;activePointer=pointer;pressAt=clock.time;pressWall=performance.now();
+  $('capsule').style.color='#222';centerMarker.visible=false;activePointer=pointer;pressAt=clock.time;pressWall=performance.now();pressInput={eventTime};
   releaseBonus();clock.tweens=clock.tweens.filter(t=>!t.target||![bottle.body.scale,bottle.head.position,current.body.scale,current.body.position].includes(t.target));
   bottle.obj.rotation.set(0,0,0);bottle.human.rotation.set(0,0,0);bottle.body.scale.set(1,1,1);bottle.head.position.set(0,4.725,0);bottle.obj.position.y=platformTop();bottle.prepare();current.reset();scaleBlock(current);current.shrink();startChargeSound();$('hint').style.opacity=0;return true;
 }
-function applyCharge(hold){if(hold===undefined&&relay?.botPress!==null&&relay?.botPress!==undefined)hold=(clock.time-relay.botPress)/1000;const frames=Math.min(99,hold===undefined?(performance.now()-pressWall)*.06:hold*60),scale=Math.max(.5,1-.005*frames);bottle.scale=scale;bottle.body.scale.set(1+.007*frames,scale,1+.007*frames);bottle.head.position.y=4.725-.018*frames;bottle.obj.position.y=platformTop()-.033875*frames*current.obj.scale.y;
+function applyCharge(hold){if(hold===undefined&&relay?.botPress!==null&&relay?.botPress!==undefined)hold=(clock.time-relay.botPress)/1000;const frames=Math.min(99,hold===undefined?Math.max(0,performance.now()-(pressInput?.eventTime??pressWall))*.06:hold*60),scale=Math.max(.5,1-.005*frames);bottle.scale=scale;bottle.body.scale.set(1+.007*frames,scale,1+.007*frames);bottle.head.position.y=4.725-.018*frames;bottle.obj.position.y=platformTop()-.033875*frames*current.obj.scale.y;
   current.scale=scale;current.body.scale.y=scale;current.body.position.y=2.75-current.height/2-.005*(5.5-current.height/2)*frames;current.shadow.scale.y=current.shadow.initScale-.0025*frames;current.shadow.position.z=current.shadow.initZ+.00125*current.shadowWidth*frames;
 }
-function cancelCharge(){if(relay?.botPress!==null&&relay?.botPress!==undefined)return;if(mode==='play'&&bottle.status==='prepare'){stopAudio(false);bottle.stopPrepare();bottle.obj.position.y=platformTop();current.rebound();}activePointer=null;keyHeld=false;}
-function endCharge(pointer,botHold){if(pointer!==activePointer||mode!=='play'||paused||bottle.status!=='prepare')return;applyCharge(botHold);activePointer=null;const hold=botHold===undefined?Math.max(0,(performance.now()-pressWall)/1000):botHold;stopAudio(false);current.rebound();if(relay)animations.TweenAnimation.kill('progress');
+function cancelCharge(){if(relay?.botPress!==null&&relay?.botPress!==undefined)return;if(mode==='play'&&bottle.status==='prepare'){stopAudio(false);bottle.stopPrepare();bottle.obj.position.y=platformTop();current.rebound();}activePointer=null;keyHeld=false;pressInput=null;inputBoundary=performance.now();}
+function endCharge(pointer,botHold,timeStamp){if(pointer!==activePointer||mode!=='play'||paused||bottle.status!=='prepare')return false;const hold=botHold===undefined?chargeHoldAt(timeStamp):botHold;if(hold===null)return false;applyCharge(hold);activePointer=null;pressInput=null;stopAudio(false);current.rebound();if(relay)animations.TweenAnimation.kill('progress');
   const vy=+(Math.min(135+hold*15,180)).toFixed(2),y=bottle.obj.position.y;let vz=+(Math.min(hold*70,150)).toFixed(2);
   const targetY=platformTop(next),realTime=(vy+Math.sqrt(Math.max(0,vy*vy+1440*(y-targetY))))/720;
   const roundedY=+y.toFixed(2),roundedTime=+((vy/720*2)-+((-vy+Math.sqrt(Math.max(0,vy*vy-1440*(targetY-roundedY))))/-720).toFixed(2)).toFixed(2);
   const axis=next.obj.position.clone().sub(bottle.obj.position);axis.y=0;axis.x=+axis.x.toFixed(2);axis.z=+axis.z.toFixed(2);axis.normalize();let end=bottle.obj.position.clone().add(axis.clone().multiplyScalar(vz*roundedTime));
   end.x=+end.x.toFixed(2);end.z=+end.z.toFixed(2);scene.updateMatrixWorld(true);end.y=targetY;vz=end.clone().sub(bottle.obj.position).dot(axis)/realTime;
   bottle.velocity={vy,vz};bottle.jump(axis);tail.correctPosition();scene.updateMatrixWorld(true);
-  flight={start:bottle.obj.position.clone(),end,vy,vz,duration:realTime,elapsed:0,axis,hit:hitTest(end),hold,quick:!relay&&clock.time-lastSucceed<800};
+  flight={start:bottle.obj.position.clone(),end,vy,vz,duration:realTime,elapsed:0,axis,hit:hitTest(end),hold,quick:!relay&&clock.time-lastSucceed<800};return true;
 }
 const inside=(point,block)=>CORE(30)([point.x,point.z],block.getVertices());
 function hitTest(end){const nx=next.obj.position.x,nz=next.obj.position.z;const d2=(end.x-nx)**2+(end.z-nz)**2;
@@ -16718,7 +16734,7 @@ function endGame(){if(mode!=='falling')return;mode='over';bottle.stop();stopAudi
 }
 function setPaused(value){
   if(value){cancelCharge();if(bonusState?.voice){bonusState.offset=bonusState.voice.position?bonusState.voice.position():bonusState.voice.offset+audio.currentTime-bonusState.voice.startedAt;bonusState.voice=null;}stopAudio();}
-  const wasPaused=paused;paused=value;lastFrame=performance.now();if(wasPaused&&!paused&&bonusState?.triggered&&!bonusState.repeatTimer)playBonusAudio();
+  const wasPaused=paused;paused=value;lastFrame=performance.now();if(wasPaused&&!paused)inputBoundary=lastFrame;if(wasPaused&&!paused&&bonusState?.triggered&&!bonusState.repeatTimer)playBonusAudio();
 }
 function openMenu(){if(!ready||mode==='loading')return;cancelCharge();menuReturn=mode;setPaused(true);
   for(const id of ['skins','rank','about','home-info'])hide(id);
@@ -16821,10 +16837,10 @@ async function load(){readStore();for(const el of document.querySelectorAll('[da
   // Read-only diagnostics for local QA.
   window.jumpDiagnostics=Object.freeze({snapshot(){scene.updateMatrixWorld(true);camera.updateMatrixWorld(true);const projected=bottle.obj.position.clone().add(new THREE.Vector3(0,3,0)).project(camera);return {mode,paused,score,best,jumps,combo,centerMode,invincible,scoreScale,blockScale,multiplayer:relay?{turn:relay.players[relay.turn].seat_no,turns:relay.turns,done:relay.done,transition:relay.transition,level:relay.level,players:relay.players.map(({seat_no,name,rank,points,human})=>({seat_no,name,rank,points,human})),progress:relay.hud?.progressBar.scale.x}:null,demo:{phase:demoPhase,jumps:demoJumps,press:demoPress},render:{quality,width:canvas.width,height:canvas.height,pixelRatio:renderer.getPixelRatio()},skin:{previewIssues:Object.fromEntries(skinPreviewIssues),unlocked:allSkins,selected:selectedSkin,scarf:bottle.scarf.obj.visible,hat:bottle.hat.obj.visible,maps:[bottle.headMaterial,bottle.middleTopMaterial,bottle.middleMaterial,bottle.bottomMaterial].map(m=>[...images].find(([,image])=>image===m.map.image)?.[0])},camera:{position:camera.position.toArray(),target:cameraMotion?.target.toArray(),duration:cameraMotion?.duration,start:cameraMotion?.start,projectedPawn:projected.toArray()},sourceVersion:"4.0.6",releaseVersion:"1.0.0",centerMarker:{visible:centerMarker.visible,position:centerMarker.position.toArray()},ui:{page:nativeUI?.page,messages:localMessages.length},audio:{...getAudioDiagnostics(),nativeMedia,issue:audioIssue,session:navigator.audioSession?.type,context:audio?.state,playing:[...playing].map(s=>({name:s.soundName,offset:s.offset,startedAt:s.startedAt})),bonus:bonusState?{order:bonusState.block.order,triggered:bonusState.triggered,repeatPending:bonusState.repeatTimer!==null}:null},difficulty:{min:C.BLOCK.minRadiusScale,max:C.BLOCK.maxRadiusScale,distance:C.BLOCK.maxDistance},status:bottle.status,time:clock.time,pressAt,current:current?{order:current.order,position:current.obj.position.toArray(),radius:current.radius,scale:current.obj.scale.toArray(),vertices:current.getVertices()}:null,next:next?{order:next.order,position:next.obj.position.toArray(),radius:next.radius,scale:next.obj.scale.toArray(),vertices:next.getVertices()}:null,bottle:{position:bottle.obj.position.toArray(),scale:bottle.body.scale.toArray(),head:bottle.head.position.toArray()},flight:flight?{demo:flight.demo,intro:flight.intro,elapsed:flight.elapsed,hold:flight.hold,duration:flight.duration,vy:flight.vy,vz:flight.vz,start:flight.start.toArray(),end:flight.end?.toArray(),hit:flight.hit}:null,waves:waves.filter(w=>w.obj.visible).map(w=>({position:w.obj.position.toArray(),scale:w.obj.scale.x,opacity:w.obj.material.opacity})),background:{current:ground.current,top:ground.ground.material.uniforms.topColor.value.toArray().map(v=>Math.round(v*255)),bottom:ground.ground.material.uniforms.bottomColor.value.toArray().map(v=>Math.round(v*255))},drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,active:active.length,platforms:active.map(b=>({order:b.order,position:b.obj.position.toArray(),scale:b.obj.scale.toArray(),radius:b.radius,nativeScale:b.nativeRadiusScale,vertices:b.getVertices()})),timers:clock.timers.size,tweens:clock.tweens.length,pool:pool.length,revision:THREE.REVISION};},introSnapshot(){scene.updateMatrixWorld(true);const bounds=box=>({min:box.min.toArray(),max:box.max.toArray()});return {mode,time:clock.time,pawn:bottle.getBox().map(bounds),platforms:homeBlocks.map((b,i)=>({index:i,visible:mode==='home'&&b.obj.visible,y:b.body.position.y,bounds:bounds(new THREE.Box3().setFromObject(b.body))}))};}});
 }
-canvas.addEventListener('pointerdown',e=>{if(e.button!==0||activePointer!==null)return;e.preventDefault();if(beginCharge(e.pointerId)){try{canvas.setPointerCapture(e.pointerId);}catch{}}});
-canvas.addEventListener('pointerup',e=>{e.preventDefault();endCharge(e.pointerId);});canvas.addEventListener('pointercancel',cancelCharge);canvas.addEventListener('lostpointercapture',()=>{if(activePointer!==null)cancelCharge();});canvas.addEventListener('contextmenu',e=>e.preventDefault());
-window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['BUTTON','INPUT'].includes(document.activeElement?.tagName)){e.preventDefault();if(!e.repeat&&!keyHeld&&activePointer===null){keyHeld=beginCharge('space');}}if(e.code==='Escape'){e.preventDefault();if(!$('skins').classList.contains('hidden'))closeSkins();else if(!$('rank').classList.contains('hidden'))closeRank();else if(!$('about').classList.contains('hidden')){hide('about');show('menu');}else if(!$('menu').classList.contains('hidden'))closeMenu();else openMenu();}});
-window.addEventListener('keyup',e=>{if(e.code==='Space'&&keyHeld){e.preventDefault();endCharge('space');keyHeld=false;}});
+canvas.addEventListener('pointerdown',e=>{if(e.button!==0||activePointer!==null)return;e.preventDefault();if(beginCharge(e.pointerId,e.timeStamp)){try{canvas.setPointerCapture(e.pointerId);}catch{}}});
+canvas.addEventListener('pointerup',e=>{e.preventDefault();endCharge(e.pointerId,undefined,e.timeStamp);});canvas.addEventListener('pointercancel',cancelCharge);canvas.addEventListener('lostpointercapture',()=>{if(activePointer!==null)cancelCharge();});canvas.addEventListener('contextmenu',e=>e.preventDefault());
+window.addEventListener('keydown',e=>{if(e.code==='Space'&&!['BUTTON','INPUT'].includes(document.activeElement?.tagName)){e.preventDefault();if(!e.repeat&&!keyHeld&&activePointer===null){keyHeld=beginCharge('space',e.timeStamp);}}if(e.code==='Escape'){e.preventDefault();if(!$('skins').classList.contains('hidden'))closeSkins();else if(!$('rank').classList.contains('hidden'))closeRank();else if(!$('about').classList.contains('hidden')){hide('about');show('menu');}else if(!$('menu').classList.contains('hidden'))closeMenu();else openMenu();}});
+window.addEventListener('keyup',e=>{if(e.code==='Space'&&keyHeld){e.preventDefault();if(endCharge('space',undefined,e.timeStamp))keyHeld=false;}});
 function suspendPage(){if(!ready)return;if(['play','falling'].includes(mode)&&!paused&&!sharing)openMenu();else stopAudio();lastFrame=performance.now();}
 window.addEventListener('blur',suspendPage);window.addEventListener('pagehide',suspendPage);document.addEventListener('visibilitychange',()=>{if(document.hidden)suspendPage();lastFrame=performance.now();});
 canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();suspendPage();$('hint').textContent='画面已暂停，恢复后可继续';});
