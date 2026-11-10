@@ -1,0 +1,20 @@
+[
+  {
+    "hz": 30,
+    "baselineAngleAt200ms": -3.6014730596708384,
+    "fixedAngleAt200ms": -4.1887902047863905,
+    "expected": -4.1887902047863905
+  },
+  {
+    "hz": 60,
+    "baselineAngleAt200ms": -3.906213087796832,
+    "fixedAngleAt200ms": -4.1887902047863905,
+    "expected": -4.1887902047863905
+  },
+  {
+    "hz": 120,
+    "baselineAngleAt200ms": -4.0585831018598295,
+    "fixedAngleAt200ms": -4.1887902047863905,
+    "expected": -4.1887902047863905
+  }
+]

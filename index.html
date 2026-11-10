@@ -34,19 +34,20 @@ body{display:flex;justify-content:center;background:linear-gradient(#d7dbe6,#bcb
 .native-compose{position:absolute;z-index:4;display:flex;gap:calc(8px * var(--ui-scale));left:calc(var(--ui-left) + 50px * var(--ui-scale));top:calc(var(--ui-top) + 571px * var(--ui-scale));width:calc(314px * var(--ui-scale));height:calc(35px * var(--ui-scale))}.native-compose input{font-family:ClassicUI,-apple-system,sans-serif;min-width:0;flex:1;border:0;border-radius:2px;background:#44464b;color:white;padding:0 9px;font-size:calc(14px * var(--ui-scale))}.native-compose button{font-family:ClassicUI,-apple-system,sans-serif;border:0;border-radius:22px;padding:0 calc(15px * var(--ui-scale));background:#fff;color:#00c777;font-size:calc(14px * var(--ui-scale))}.native-compose.hidden{display:none}</style>
 <style>#relay-turn{position:absolute;pointer-events:none;z-index:5;color:#403a5b;left:calc(var(--ui-left) + 34px * var(--ui-scale));top:calc(var(--ui-top) + 220px * var(--ui-scale));font-size:calc(26px * var(--ui-scale));transform:translateY(-50%);font-weight:500}.relay-actions{position:absolute;inset:0;background:#0009;z-index:5;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;gap:6px}.relay-actions button{height:52px;background:white;color:#333;border-radius:12px;font-size:18px}</style><style>
 #home .home-footer button:nth-child(1){left:calc(var(--ui-left) + 95.5px * var(--ui-scale))}#home .home-footer button:nth-child(2){left:calc(var(--ui-left) + 222.5px * var(--ui-scale))}
-.skins-panel{background:#f7e6ff}.skin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.skin-choice{background:#fff8;border:1px solid #0002;border-radius:4px;padding:14px 4px;display:flex;flex-direction:column;align-items:center;gap:10px}.skin-choice[aria-pressed=true]{border-color:#00a469;background:#fff}.skin-choice img{width:38px;height:82px;object-fit:contain}.skin-choice small{font-size:11px;color:#737079}.skin-choice:disabled{opacity:.55;cursor:default}
+.skins-panel{background:#f7e6ff}.skin-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.skin-choice{background:#fff8;border:1px solid #0002;border-radius:4px;padding:14px 4px;display:flex;flex-direction:column;align-items:center;gap:10px}.skin-choice[aria-pressed=true]{border-color:#00a469;background:#fff}.skin-choice img{width:38px;height:82px;object-fit:contain}.skin-choice .skin-status{position:static;inset:auto;height:auto;min-height:28px;border-top:0;font-size:11px;line-height:1.4;color:#737079}.skin-choice:disabled{opacity:.55;cursor:default}
+#play-mode{position:absolute;left:7%;top:max(20px,calc(env(safe-area-inset-top) + 9px));font-size:12px;color:#50525c}#feedback{top:23%;max-width:86%;line-height:1.5}
 .modal{padding:max(18px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}.panel{max-height:90dvh;overflow-y:auto;touch-action:pan-y}
 </style></head>
 <body>
 <main id="stage" aria-label="跳一跳游戏">
 <canvas id="game" tabindex="0" aria-label="长按蓄力，松开跳跃"></canvas>
 <div id="native-ui" class="overlay hidden" role="dialog" aria-modal="true"></div>
-<div id="relay-turn" class="hidden" aria-live="polite"></div><div id="hud" class="overlay hidden"><div id="score" class="screen-reader-score" aria-live="polite">0</div><div id="feedback" class="hidden"></div><div id="hint" class="hidden"></div></div>
+<div id="relay-turn" class="hidden" aria-live="polite"></div><div id="hud" class="overlay hidden"><div id="score" class="screen-reader-score" aria-live="polite">0</div><div id="play-mode">无敌模式</div><div id="feedback" role="status"></div><div id="hint" class="hidden"></div></div>
 <button id="share-button" class="hidden" aria-label="分享成绩"><img data-asset="res/observShare.png" alt=""></button>
 <div id="home" class="overlay"><img class="title" data-asset="res/title.png" alt="跳一跳"><button id="start" class="image-button" aria-label="开始游戏"><img data-asset="res/play.png" alt="开始游戏"></button><div class="home-footer"><button id="home-rank"><img data-asset="res/2d/rank.png" alt=""><span>本机纪录</span></button><button id="home-skin"><img data-asset="res/2d/skin.png" alt=""><span>皮肤中心</span></button></div></div>
 <div id="over" class="overlay hidden"><div id="best-badge" class="hidden">新的历史最高分</div><div class="score-label">本次得分</div><img id="flower" class="hidden" data-asset="res/flower.png" alt=""><div id="final-score">0</div><button id="over-rank" class="rank-link"><img data-asset="res/rank.png" alt=""><span>排行榜</span><span class="chevron">›</span></button><button id="replay" class="image-button" aria-label="再玩一局"><img data-asset="res/replay.png" alt="再玩一局"></button><div id="best-line">历史最高分：0</div></div>
 <div id="capsule"><button id="menu-button" aria-label="打开菜单"><svg class="dots" viewBox="0 0 24 20" aria-hidden="true"><g fill="currentColor"><circle cx="4" cy="10" r="1.55"/><circle cx="12" cy="10" r="2.8"/><circle cx="20" cy="10" r="1.55"/></g></svg></button><span class="separator"></span><button id="home-button" aria-label="返回主页面"><svg class="circle" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="10" r="2.8" fill="currentColor"/></svg></button></div>
-<div id="menu" class="overlay modal hidden" role="dialog" aria-modal="true" aria-label="游戏菜单"><section class="panel menu-panel"><h2 id="menu-title">游戏菜单</h2><button id="sound-button" class="row"><span>声音</span><span id="sound-value" class="setting-value">开启</span></button><button id="quality-button" class="row"><span>画质</span><span id="quality-value" class="setting-value">高清</span></button><button id="fullscreen-button" class="row"><span>全屏</span><span class="setting-value">切换</span></button><button id="restart-button" class="row"><span>重新开始</span><span class="setting-value">›</span></button><button id="resume-button" class="primary">继续游戏</button><button id="menu-home" class="secondary">返回主页面</button><div><button id="about-button" class="info-link">关于此版本</button></div></section></div>
+<div id="menu" class="overlay modal hidden" role="dialog" aria-modal="true" aria-label="游戏菜单"><section class="panel menu-panel"><h2 id="menu-title">游戏菜单</h2><button id="sound-button" class="row"><span>声音</span><span id="sound-value" class="setting-value">开启</span></button><button id="invincible-button" class="row" aria-pressed="true"><span class="center-label">无敌模式<small>失误回到起跳点，分数不变</small></span><span id="invincible-value" class="setting-value">开启</span></button><button id="quality-button" class="row"><span>画质</span><span id="quality-value" class="setting-value">高清</span></button><button id="fullscreen-button" class="row"><span>全屏</span><span class="setting-value">切换</span></button><button id="restart-button" class="row"><span>重新开始</span><span class="setting-value">›</span></button><button id="resume-button" class="primary">继续游戏</button><button id="menu-home" class="secondary">返回主页面</button><div><button id="about-button" class="info-link">关于此版本</button></div></section></div>
 <div id="rank" class="overlay modal hidden" role="dialog" aria-modal="true" aria-label="本机纪录"><section class="panel"><button id="close-rank" class="close" aria-label="关闭">×</button><h2>本机纪录</h2><p>当前浏览器保存的最高成绩</p><div id="rank-list" class="ranking"></div><button id="rank-back" class="primary">返回游戏</button></section></div>
 <div id="about" class="overlay modal hidden" role="dialog" aria-modal="true" aria-label="关于此版本"><section class="panel"><h2>跳一跳</h2><p>单文件浏览器版</p><p>触屏或鼠标长按蓄力，松开跳跃。<br>电脑也可按住空格键。<br>连续落在中心可获得额外分数，<br>特殊平台停留两秒会有惊喜。</p><p class="fine">浏览器兼容修复版，基于公开 4.0.6 源码快照适配，非微信官方版本。<br>纪录仅保存在当前浏览器。金银皮肤为重建材质。<br>本版本不提供微信账号、好友消息和联网接力服务。</p><button id="close-about" class="primary">返回</button></section></div>
 <div id="home-info" class="overlay modal hidden" role="dialog" aria-modal="true"><section class="panel"><h2 id="home-info-title"></h2><p id="home-info-message"></p><button id="home-info-close" class="primary">返回</button></section></div>
@@ -172,7 +173,38 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 
 */
-const clock={time:0,next:1,timers:new Map(),tweens:[],setTimeout(fn,delay=0){const id=this.next++;this.timers.set(id,{fn,due:this.time+delay});return id;},clearTimeout(id){this.timers.delete(id);},setInterval(fn,delay){const id=this.next++;this.timers.set(id,{fn,due:this.time+delay,interval:delay});return id;},clearInterval(id){this.timers.delete(id);},update(ms){this.time+=ms;for(const [id,t] of [...this.timers]){if(t.due>this.time||!this.timers.has(id))continue;if(t.interval)t.due=this.time+t.interval;else this.timers.delete(id);t.fn();}for(const t of [...this.tweens]){if(!this.tweens.includes(t))continue;const elapsed=Math.min(t.duration,Math.max(0,this.time-t.start));const done=elapsed>=t.duration;t.callback(Array.isArray(t.from)?t.from.map((v,i)=>t.ease(elapsed,v,t.to[i]-v,t.duration)):t.ease(elapsed,t.from,t.to-t.from,t.duration),done);if(done){const idx=this.tweens.indexOf(t);if(idx>=0)this.tweens.splice(idx,1);}}},reset(){this.time=0;this.timers.clear();this.tweens.length=0;}};
+const clock={
+  time:0,next:1,timers:new Map(),tweens:[],
+  setTimeout(fn,delay=0){const id=this.next++;this.timers.set(id,{fn,due:this.time+delay});return id;},
+  clearTimeout(id){this.timers.delete(id);},
+  setInterval(fn,delay){const id=this.next++;this.timers.set(id,{fn,due:this.time+delay,interval:delay});return id;},
+  clearInterval(id){this.timers.delete(id);},
+  update(ms){
+    const target=this.time+ms;
+    // Finish the outgoing pose at its exact deadline before a delayed tween
+    // captures its starting pose. Frame boundaries must not change the curve.
+    for(let iterations=0;;iterations++){
+      if(iterations>10000)throw new Error('Animation timer loop');
+      let boundary=target;
+      for(const t of this.timers.values())boundary=Math.min(boundary,Math.max(this.time,t.due));
+      for(const t of this.tweens)if(t.start+t.duration>this.time)boundary=Math.min(boundary,t.start+t.duration);
+      this.time=boundary;
+      for(const t of [...this.tweens]){
+        if(!this.tweens.includes(t))continue;
+        const elapsed=Math.min(t.duration,Math.max(0,this.time-t.start)),done=elapsed>=t.duration;
+        if(done)this.tweens.splice(this.tweens.indexOf(t),1);
+        t.callback(Array.isArray(t.from)?t.from.map((v,i)=>t.ease(elapsed,v,t.to[i]-v,t.duration)):t.ease(elapsed,t.from,t.to-t.from,t.duration),done);
+      }
+      for(const [id,t] of [...this.timers]){
+        if(t.due>this.time||!this.timers.has(id))continue;
+        if(t.interval)t.due+=t.interval;else this.timers.delete(id);
+        t.fn();
+      }
+      if(this.time>=target&&![...this.timers.values()].some(t=>t.due<=this.time))break;
+    }
+  },
+  reset(){this.time=0;this.timers.clear();this.tweens.length=0;}
+};
 const CORE=(()=>{const modules={0:function(module, exports, require) {
 !function(t, e) {
     "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define([ "exports" ], e) : e(t.THREE = t.THREE || {});
@@ -16124,7 +16156,7 @@ let THREE,C,Block,Bottle,Wave,Tail,Ground,ground,animations,renderer,scene,camer
 let ready=false, mode='loading',paused=false, activePointer=null,keyHeld=false,pressAt=0,pressWall=0,flight=null;
 let current=null,next=null,active=[],pool=[],homeBlocks=[],waves=[],score=0,combo=0,jumps=0,lastBonus=-2,lastOrder=-1;
 let bonusTimer=null,menuReturn='home',cameraBase=null,accumulator=0,lastFrame=0,feedbackTimer=null,lastSucceed=-Infinity,multiplier=1,failureHit=0,suspendTimer=null;
-let audio=null,audioGeneration=0,chargeGeneration=0,playing=new Set(),soundEnabled=true,quality='high',invincible=false,centerMode=false,scoreScale=false,blockScale=1,allSkins=false;
+let audio=null,audioGeneration=0,chargeGeneration=0,playing=new Set(),soundEnabled=true,quality='high',invincible=true,centerMode=false,scoreScale=false,blockScale=1,allSkins=false;
 let shadowTime=-Infinity,skinArtReady=false;
 let platformPlayer=null,relay=null,relayRoom=null,botDriving=false;
 let best=0,records=[],prefs={},demoTimer=null,bonusState=null,bonusGeneration=0,scoreText=null,sharing=false,relaxLeft=0,showRelaxScore=0;
@@ -16139,11 +16171,11 @@ function readStore(){
     best=Number.isFinite(raw.best)?Math.max(0,raw.best):0;
     records=Array.isArray(raw.records)?raw.records.filter(x=>Number.isFinite(x.score)&&typeof x.date==='string').slice(0,10):[];
     prefs=raw.prefs&&typeof raw.prefs==='object'?raw.prefs:{};
-    soundEnabled=prefs.sound!==false;quality=prefs.renderVersion===3&&['ultra4k','high','standard'].includes(prefs.quality)?prefs.quality:prefs.quality==='standard'?'standard':'high';invincible=false;centerMode=false;scoreScale=false;selectedSkin=['classic','gold','silver','scarf'].includes(prefs.skin)?prefs.skin:'classic';allSkins=false;if(!skinUnlocked(selectedSkin))selectedSkin='classic';
+    soundEnabled=prefs.sound!==false;quality=prefs.renderVersion===3&&['ultra4k','high','standard'].includes(prefs.quality)?prefs.quality:prefs.quality==='standard'?'standard':'high';invincible=prefs.gameplayMode!=='classic';centerMode=false;scoreScale=false;selectedSkin=['classic','gold','silver','scarf'].includes(prefs.skin)?prefs.skin:'classic';allSkins=false;if(!skinUnlocked(selectedSkin))selectedSkin='classic';
   }catch{} updateSettings();
 }
-function saveStore(){try{localStorage.setItem('jump-classic-offline-v1',JSON.stringify({best,records,prefs:{sound:soundEnabled,quality,renderVersion:3,skin:selectedSkin}}));}catch{}}
-function updateSettings(){$('sound-value').textContent=soundEnabled?'开启':'关闭';$('sound-button').setAttribute('aria-pressed',String(soundEnabled));$('quality-value').textContent={ultra4k:'4K 超高清',high:'高清',standard:'流畅'}[quality];}
+function saveStore(){try{localStorage.setItem('jump-classic-offline-v1',JSON.stringify({best,records,prefs:{sound:soundEnabled,quality,renderVersion:3,skin:selectedSkin,gameplayMode:invincible?'invincible':'classic'}}));}catch{}}
+function updateSettings(){$('invincible-value').textContent=invincible?'开启':'关闭';$('invincible-button').setAttribute('aria-pressed',String(invincible));$('play-mode').textContent=invincible?'无敌模式 · 失误可重试':'普通模式';$('sound-value').textContent=soundEnabled?'开启':'关闭';$('sound-button').setAttribute('aria-pressed',String(soundEnabled));$('quality-value').textContent={ultra4k:'4K 超高清',high:'高清',standard:'流畅'}[quality];}
 function updateScoreDisplay(){
   $('score').textContent=score;
   if(scoreText){scoreText.setScore(score);scoreText.obj.visible=mode==='play'||mode==='falling';}
@@ -16464,7 +16496,7 @@ function home(){if(!ready)return;clearScene();mode='home';current=null;next=null
   current=homeBlocks[0];next=allBlocks[1];next.reset();next.change(null,null,1);next.nativeRadiusScale=1;next.obj.position.set(20,0,0);next.obj.visible=false;active=[current,next];pool=allBlocks.slice(2);demoPhase='numbered';jumps=0;lastBonus=-2;lastOrder=-1;score=0;C.BLOCK.minRadiusScale=.8;C.BLOCK.maxRadiusScale=1;C.BLOCK.maxDistance=17;
   bottle.obj.position.set(-10,-C.BLOCK.height/2,0);demoTimer=clock.setTimeout(introJump,1500);
 }
-function introJump(){if(mode!=='home')return;const start=bottle.obj.position.clone(),vy=141,vz=28,duration=(vy+Math.sqrt(vy*vy-2*C.GAME.gravity*(2.75-start.y)))/C.GAME.gravity;
+function introJump(){if(mode!=='home')return;const start=bottle.obj.position.clone(),vy=141,duration=(vy+Math.sqrt(vy*vy-2*C.GAME.gravity*(2.75-start.y)))/C.GAME.gravity,vz=-start.x/duration;
   bottle.direction='straight';bottle.bottle.rotation.y=0;bottle.velocity={vz,vy};bottle.jump(new THREE.Vector3(1,0,0));tail.correctPosition();demoPhase='arrival';flight={demo:true,intro:true,start,vy,vz,duration,elapsed:0,axis:new THREE.Vector3(1,0,0)};
   for(let i=0;i<7;i++)animations.customAnimation.to(homeBlocks[i].hitObj.material,1,{opacity:0,delay:.2*i+.5});
   for(let i=1;i<7;i++)animations.customAnimation.to(homeBlocks[i].obj.position,.5,{z:i%2===0?60:-60,delay:.1*i+2.2});
@@ -16472,8 +16504,9 @@ function introJump(){if(mode!=='home')return;const start=bottle.obj.position.clo
   demoTimer=clock.setTimeout(demoJump,4500);
 }
 function demoJump(){if(mode!=='home')return;demoPhase='charge';demoPress=clock.time;bottle.prepare();current.shrink();
-  clock.setTimeout(()=>{if(mode!=='home')return;applyCharge(.719);demoPress=null;const start=bottle.obj.position.clone(),vy=135+.719*15,vz=.719*70,axis=next.obj.position.clone().sub(start);axis.y=0;axis.normalize();const roundedY=+start.y.toFixed(2),a=+((-vy+Math.sqrt(vy*vy-1440*(2.75-roundedY)))/-720).toFixed(2),t=+(vy/360-a).toFixed(2),end=start.clone().addScaledVector(axis,vz*t);end.x=+end.x.toFixed(2);end.z=+end.z.toFixed(2);end.y=2.75;
-    bottle.velocity={vz,vy};bottle.jump(axis);current.rebound();tail.correctPosition();demoPhase='jump';flight={demo:true,start,end,vy,vz,duration:(vy+Math.sqrt(vy*vy-1440*(2.75-start.y)))/720,elapsed:0,axis};demoTimer=clock.setTimeout(demoJump,3000);
+  clock.setTimeout(()=>{if(mode!=='home')return;applyCharge(.719);demoPress=null;const start=bottle.obj.position.clone(),vy=135+.719*15,axis=next.obj.position.clone().sub(start);axis.y=0;axis.normalize();const roundedY=+start.y.toFixed(2),a=+((-vy+Math.sqrt(vy*vy-1440*(2.75-roundedY)))/-720).toFixed(2),t=+(vy/360-a).toFixed(2),end=start.clone().addScaledVector(axis,.719*70*t);end.x=+end.x.toFixed(2);end.z=+end.z.toFixed(2);end.y=2.75;
+    const duration=(vy+Math.sqrt(vy*vy-1440*(2.75-start.y)))/720,vz=end.clone().sub(start).dot(axis)/duration;
+    bottle.velocity={vz,vy};bottle.jump(axis);current.rebound();tail.correctPosition();demoPhase='jump';flight={demo:true,start,end,vy,vz,duration,elapsed:0,axis};demoTimer=clock.setTimeout(demoJump,3000);
   },719);
 }
 function landDemo(f){bottle.stop();bottle.human.rotation.set(0,0,0);if(f.intro){bottle.obj.position.set(0,2.75,0);demoPhase='fade';return;}
@@ -16523,7 +16556,7 @@ function selectBlock(){
   block.reset();block.obj.scale.set(1,1,1);block.radiusScale=1;block.change();block.nativeRadiusScale=block.radiusScale;scaleBlock(block);block.obj.visible=true;active.push(block);return block;
 }
 function increaseScore(n,standingBlock=current){
-  score+=n;updateScoreDisplay();
+  score+=n;updateScoreDisplay();if(invincible){best=Math.max(best,score);saveStore();}
   if(!relay){C.BLOCK.minRadiusScale=Math.max(.25,C.BLOCK.minRadiusScale-.005);C.BLOCK.maxRadiusScale=Math.max(.6,C.BLOCK.maxRadiusScale-.005);C.BLOCK.maxDistance=Math.min(22,C.BLOCK.maxDistance+.03);}
 }
 function textFeedback(text){$('feedback').textContent=text;$('feedback').style.opacity=1;if(feedbackTimer!==null)clock.clearTimeout(feedbackTimer);feedbackTimer=clock.setTimeout(()=>{$('feedback').style.opacity=0;},1200);}
@@ -16555,7 +16588,7 @@ function startBonus(block){
 function land(f){flight=null;if(f.demo){landDemo(f);return;}
   bottle.obj.position.copy(f.end);bottle.obj.position.y=platformTop(next);bottle.human.rotation.set(0,0,0);
   if(f.hit===2){bottle.stop();squeezeAt(current);return;}
-  if(f.hit!==1&&f.hit!==7){fail(f.hit);return;}
+  if(f.hit!==1&&f.hit!==7){if(invincible)recoverMiss(f);else fail(f.hit);return;}
   bottle.stop();squeezeAt(next);jumps++;lastSucceed=clock.time;const reached=next,old=current;
   combo=f.hit===1?combo+1:0;multiplier=f.hit===1?(multiplier===1?2:multiplier+2):1;if(f.quick&&multiplier<=2)multiplier*=2;multiplier=Math.min(32,multiplier);const points=multiplier;increaseScore(points,reached);bottle.showAddScore(points,false,false,true);bottle.double=multiplier;
   if(combo){playSound('combo'+Math.min(combo,8));addWaves(combo);}playSound('success');bottle.scatterParticles();
@@ -16564,6 +16597,16 @@ function land(f){flight=null;if(f.demo){landDemo(f);return;}
   b.obj.position.copy(reached.obj.position);const travelAxis=new THREE.Vector3(straight?1:0,0,straight?0:-1),separation=scoreScale?footprintExtent(reached,travelAxis)+distance+footprintExtent(b,travelAxis.clone().negate()):reached.radius+distance+b.radius;b.obj.position.addScaledVector(travelAxis,separation);
   scene.add(b.obj);b.popup();playSound('pop');const move=incoming.add(b.obj.position.clone().sub(reached.obj.position)).multiplyScalar(.5);followPlatforms(move,reached,b);
   current=reached;next=b;bottle.lookAt(straight?'straight':'left',b.obj.position.clone());startBonus(current);if(combo)clock.setTimeout(()=>{if(mode!=='play'||bottle.status==='prepare')return;centerMarker.position.set(next.obj.position.x,C.BLOCK.height/2+.15,next.obj.position.z);centerMarker.scale.setScalar(scoreScale?blockScale:1);centerMarker.visible=true;},200);
+}
+function recoverMiss(f){
+  // Retry the same manual jump; misses never advance platforms or award points.
+  stopAudio();combo=0;multiplier=1;lastSucceed=-Infinity;centerMarker.visible=false;
+  bottle.stop();squeezeAt();bottle.status='recover';
+  const origin=f.start.clone();origin.y=platformTop();
+  animations.customAnimation.to(bottle.obj.position,.22,{x:origin.x,y:origin.y,z:origin.z,onComplete(){
+    bottle.obj.position.copy(origin);bottle.stop();squeezeAt();tail.correctPosition();
+  }});
+  textFeedback('已回到起跳点，分数不变，再试一次');
 }
 function fail(hit){mode='falling';failureHit=hit;stopAudio();if(hit===0||hit===6){bottle.fall();playSound('fall');}else if(hit===3){bottle.hypsokinesis();playSound('fall_2');}else{bottle.forerake();playSound('fall_2');}
   clock.setTimeout(endGame,2000);
@@ -16590,7 +16633,7 @@ function openRank(){cancelCharge();setPaused(true);show('rank');const list=$('ra
   const table=document.createElement('table');records.forEach((r,i)=>{const tr=document.createElement('tr');for(const text of [i+1,new Date(r.date).toLocaleDateString('zh-CN',{month:'2-digit',day:'2-digit'}),r.score]){const td=document.createElement('td');td.textContent=text;tr.append(td);}table.append(tr);});list.append(table);
 }
 function closeRank(){hide('rank');setPaused(false);unlockPlatformAudio();canvas.focus({preventScroll:true});}
-function updateSkins(){for(const id of ['classic','silver','gold']){const button=$('skin-'+id),selected=selectedSkin===id,unlocked=skinUnlocked(id);button.disabled=!unlocked;button.setAttribute('aria-pressed',String(selected));button.querySelector('.skin-status').textContent=selected?'已使用':unlocked?'使用':id==='silver'?'1000 分解锁':'3000 分解锁';$(''+id+'-preview').src=id==='classic'?ASSETS['res/defaultBottlePoster.png']:images.get('preview/'+id)?.src||'';}}
+function updateSkins(){for(const id of ['classic','silver','gold']){const button=$('skin-'+id),selected=selectedSkin===id,unlocked=skinUnlocked(id);button.disabled=!unlocked;button.setAttribute('aria-pressed',String(selected));button.querySelector('.skin-status').textContent=selected?'已使用':unlocked?'使用':id==='silver'?'1000 分解锁':'3000 分解锁';$(''+id+'-preview').src=images.get('preview/'+id)?.src||'';}}
 function skinResource(id){if(id==='classic')return null;if(id==='scarf')return {id,type:2,property:{}};return {id,type:1,property:{images:['head','head','middle','bottom'].map(part=>'reconstructed/'+id+'/'+part)}};}
 function skinUnlocked(id){return id==='classic'||id==='gold'&&Math.max(best,score)>=3000||id==='silver'&&Math.max(best,score)>=1000;}
 function skinList(){return ['classic','gold','silver','scarf'].map(id=>({id,type:id==='scarf'?2:id==='classic'?0:1,img:id==='classic'?'res/defaultBottlePoster.png':'preview/'+id,use_status:skinUnlocked(id)?1:0,unlock_wording:{gold:'3000分',silver:'1000分',scarf:'限时活动'}[id],property:skinResource(id)?.property||{}}));}
@@ -16603,7 +16646,7 @@ async function buildSkinArt(){
   }
   const preview=new THREE.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true}),world=new THREE.Scene(),pawn=new Bottle({getSelectedBottleSkinResourceSync:()=>null}),view=new THREE.OrthographicCamera(-1.95,1.95,4.1,-4.1,.1,50);pawn.obj.position.set(0,0,0);world.add(pawn.obj);world.add(new THREE.AmbientLight(0xffffff,.8));const lamp=new THREE.DirectionalLight(0xffffff,.28);lamp.position.set(0,15,10);world.add(lamp);view.position.set(-8,7.76,10);view.lookAt(new THREE.Vector3(0,3.6,0));preview.setSize(256,512);preview.setClearColor(0,0);
   const captures=[];function capture(key){const image=new Image();captures.push(new Promise(resolve=>{image.onload=()=>{images.set(key,image);resolve();};if(key.startsWith('preview/')){const shape=document.createElement('canvas'),out=document.createElement('canvas');shape.width=out.width=256;shape.height=out.height=512;const a=shape.getContext('2d'),b=out.getContext('2d');a.drawImage(preview.domElement,0,0);a.globalCompositeOperation='source-in';a.fillStyle='#fff';a.fillRect(0,0,256,512);for(let i=0;i<16;i++){const t=i*Math.PI/8;b.drawImage(shape,Math.cos(t)*5,Math.sin(t)*5);}b.drawImage(preview.domElement,0,0);image.src=out.toDataURL('image/png');}else image.src=preview.domElement.toDataURL('image/png');}));}
-  for(const id of ['gold','silver','scarf']){pawn.checkSkin({bottleSkin:skinResource(id)});preview.render(world,view);capture('preview/'+id);}
+  for(const id of ['classic','gold','silver','scarf']){pawn.checkSkin({bottleSkin:skinResource(id)});preview.render(world,view);capture('preview/'+id);}
   preview.setSize(256,256);view.position.set(-8,3.6,10);view.lookAt(new THREE.Vector3(0,3.6,0));view.left=-4.3;view.right=4.3;view.top=4.3;view.bottom=-4.3;view.updateProjectionMatrix();
   await Promise.all(captures);preview.dispose();preview.forceContextLoss();skinArtReady=true;bottle.checkSkin();
 }
@@ -16663,6 +16706,7 @@ canvas.addEventListener('webglcontextrestored',()=>{resize();renderer.shadowMap.
 document.addEventListener('keydown',event=>{if(event.key!=='Tab')return;const dialogs=[...document.querySelectorAll('[role="dialog"]:not(.hidden)')],dialog=dialogs[dialogs.length-1];if(!dialog)return;const buttons=[...dialog.querySelectorAll('button:not([disabled]),input:not([disabled]),[tabindex="0"]')].filter(el=>el.getClientRects().length);if(!buttons.length)return;const first=buttons[0],last=buttons[buttons.length-1];if(!dialog.contains(document.activeElement)){event.preventDefault();first.focus();}else if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}});
 new ResizeObserver(resize).observe(stage);window.addEventListener('orientationchange',resize);
 $('start').onclick=startGame;$('replay').onclick=startGame;$('menu-button').onclick=openMenu;$('home-button').onclick=home;$('menu-home').onclick=home;$('resume-button').onclick=closeMenu;$('restart-button').onclick=startGame;
+$('invincible-button').onclick=()=>{invincible=!invincible;updateSettings();saveStore();};
 $('sound-button').onclick=()=>{soundEnabled=!soundEnabled;stopAudio();updateSettings();saveStore();if(soundEnabled){const ctx=audioContext();if(ctx)requestAudioResume(ctx,true);unlockPlatformAudio();if(!paused)playBonusAudio();}};$('quality-button').onclick=()=>{quality={ultra4k:'high',high:'standard',standard:'ultra4k'}[quality];resize();updateSettings();saveStore();};
 $('fullscreen-button').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(stage.requestFullscreen)await stage.requestFullscreen();}catch{}};
 $('home-rank').onclick=openRank;$('over-rank').onclick=openRank;$('rank-back').onclick=closeRank;$('close-rank').onclick=closeRank;$('about-button').onclick=()=>{hide('menu');show('about');};$('close-about').onclick=()=>{hide('about');show('menu');};
