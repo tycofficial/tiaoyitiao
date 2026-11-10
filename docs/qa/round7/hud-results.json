@@ -1,0 +1,2954 @@
+{
+  "passed": true,
+  "productSha256": "151445a9e995f106df5e0580fbf63a31a3265588a0c0da52e3d561c6d04021fd",
+  "baselineCommit": "8804979fa61d652b7eca233848f5aadfdfc06e55",
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "sourceHashes": {
+    "config.js": "de1e205e1c006404b5b168601861d52a314effc2ee9fc2ba6a87bb8b16bc9feb",
+    "font.js": "c83486d135e456dd6e0529438351378ac44b4e1c177d633df35e95eb32f0a316",
+    "text.js": "0b1479f58571c2186ddaa1eaef40a896baa5350133352b5b3b2cc454f64fb6c5",
+    "ui.js": "3fa1d498f44c943b2f21e0e3f7c6b9c0a31d9a5c83f37aaea727e173155fc112"
+  },
+  "scope": "Historical config/ui/text/font execute in isolated copies with shared Three engine. The probe reads production score geometry and does not change score, gameplay transforms or timers. No background events simulated.",
+  "results": [
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 28.96875,
+        "right": 154.359375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "reference": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 28.96875,
+        "right": 76.984375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "reference": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 22.390625,
+        "right": 147.78125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "reference": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "position": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 22.390625,
+        "right": 70.40625,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "reference": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "position": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 280,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 19.59375,
+        "right": 144.984375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 174,
+        "right": 270,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 280,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "reference": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 280,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 19.59375,
+        "right": 67.609375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 174,
+        "right": 270,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 280,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "reference": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 259,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.125,
+        "right": 143.515625,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 153,
+        "right": 249,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 259,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "reference": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 259,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.125,
+        "right": 66.140625,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 153,
+        "right": 249,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 259,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "reference": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 260,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.1875,
+        "right": 143.578125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 154,
+        "right": 250,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 260,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "reference": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 260,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.1875,
+        "right": 66.203125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 154,
+        "right": 250,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 260,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "reference": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 261,
+        "height": 568,
+        "dpr": 3
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.265625,
+        "right": 143.65625,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 155,
+        "right": 251,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 261,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "reference": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 261,
+        "height": 568,
+        "dpr": 3
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.265625,
+        "right": 66.28125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 155,
+        "right": 251,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 261,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "reference": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 240,
+        "height": 320,
+        "dpr": 3
+      },
+      "invincible": true,
+      "label": {
+        "left": 16.796875,
+        "right": 142.1875,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 27.555555555555557,
+          "right": 42.40355597601998,
+          "top": 45.48266601562494,
+          "bottom": 63.999999999999986
+        },
+        "reference": {
+          "left": 27.55555555555553,
+          "right": 42.40355597601996,
+          "top": 45.48266601562497,
+          "bottom": 64
+        },
+        "position": [
+          -13,
+          13.5,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          13.499999999999996,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": true,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 240,
+        "height": 320,
+        "dpr": 3
+      },
+      "invincible": false,
+      "label": {
+        "left": 16.796875,
+        "right": 64.8125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 27.555555555555557,
+          "right": 42.40355597601998,
+          "top": 45.48266601562494,
+          "bottom": 63.999999999999986
+        },
+        "reference": {
+          "left": 27.55555555555553,
+          "right": 42.40355597601996,
+          "top": 45.48266601562497,
+          "bottom": 64
+        },
+        "position": [
+          -13,
+          13.5,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          13.499999999999996,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 200,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 86.890625,
+        "right": 212.28125,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "reference": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": true,
+      "scoreOverlap": true
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 200,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 86.890625,
+        "right": 134.90625,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "reference": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": true
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 736,
+        "height": 414,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 216.671875,
+        "right": 342.0625,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 437.9375,
+        "right": 533.9375,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 192.046875,
+        "right": 543.9375,
+        "top": 0,
+        "bottom": 414
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 232.4491319444444,
+          "right": 254.21943256093394,
+          "top": 66.68718237876877,
+          "bottom": 93.83749999999989
+        },
+        "reference": {
+          "left": 232.44913194444436,
+          "right": 254.2194325609339,
+          "top": 66.68718237876888,
+          "bottom": 93.83749999999998
+        },
+        "position": [
+          -13,
+          10.853470094578395,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.853470094578391,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 736,
+        "height": 414,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 216.671875,
+        "right": 264.6875,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 437.9375,
+        "right": 533.9375,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 192.046875,
+        "right": 543.9375,
+        "top": 0,
+        "bottom": 414
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 232.4491319444444,
+          "right": 254.21943256093394,
+          "top": 66.68718237876877,
+          "bottom": 93.83749999999989
+        },
+        "reference": {
+          "left": 232.44913194444436,
+          "right": 254.2194325609339,
+          "top": 66.68718237876888,
+          "bottom": 93.83749999999998
+        },
+        "position": [
+          -13,
+          10.853470094578395,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.853470094578391,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 640,
+        "height": 240,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 232.265625,
+        "right": 357.65625,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 316,
+        "right": 412,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 218,
+        "right": 422,
+        "top": 0,
+        "bottom": 240
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961697,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "reference": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961695,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": true,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 640,
+        "height": 240,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 232.265625,
+        "right": 280.28125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 316,
+        "right": 412,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 218,
+        "right": 422,
+        "top": 0,
+        "bottom": 240
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961697,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "reference": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961695,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 27.296875,
+        "right": 152.6875,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 284,
+        "right": 380,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "reference": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 27.296875,
+        "right": 75.3125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 284,
+        "right": 380,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "reference": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 28.96875,
+        "right": 154.359375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "reference": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 28.96875,
+        "right": 76.984375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "reference": {
+          "left": 47.53333333333329,
+          "right": 73.14613405863442,
+          "top": 78.45759887695301,
+          "bottom": 110.39999999999998
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 22.390625,
+        "right": 147.78125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "reference": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "position": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 22.390625,
+        "right": 70.40625,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "reference": {
+          "left": 36.740740740740705,
+          "right": 56.538074634693274,
+          "top": 60.643554687499886,
+          "bottom": 85.3333333333333
+        },
+        "position": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          20.953125,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 280,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 19.59375,
+        "right": 144.984375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 174,
+        "right": 270,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 280,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "reference": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 280,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 19.59375,
+        "right": 67.609375,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 174,
+        "right": 270,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 280,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "reference": {
+          "left": 32.14814814814812,
+          "right": 49.470815305356616,
+          "top": 88.1742214626735,
+          "bottom": 109.77777777777773
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 259,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.125,
+        "right": 240.875,
+        "top": 539.203125,
+        "bottom": 556
+      },
+      "capsule": {
+        "left": 153,
+        "right": 249,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 259,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "reference": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 259,
+        "height": 568,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.125,
+        "right": 240.875,
+        "top": 539.203125,
+        "bottom": 556
+      },
+      "capsule": {
+        "left": 153,
+        "right": 249,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 259,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "reference": {
+          "left": 29.73703703703701,
+          "right": 45.76050415745487,
+          "top": 102.86115485297303,
+          "bottom": 122.84444444444445
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 260,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.1875,
+        "right": 241.8125,
+        "top": 539.203125,
+        "bottom": 556
+      },
+      "capsule": {
+        "left": 154,
+        "right": 250,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 260,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "reference": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 260,
+        "height": 568,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.1875,
+        "right": 241.8125,
+        "top": 539.203125,
+        "bottom": 556
+      },
+      "capsule": {
+        "left": 154,
+        "right": 250,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 260,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "reference": {
+          "left": 29.851851851851823,
+          "right": 45.937185640688284,
+          "top": 102.16177707248262,
+          "bottom": 122.22222222222221
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 261,
+        "height": 568,
+        "dpr": 3
+      },
+      "invincible": true,
+      "label": {
+        "left": 18.265625,
+        "right": 143.65625,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 155,
+        "right": 251,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 261,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "reference": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 261,
+        "height": 568,
+        "dpr": 3
+      },
+      "invincible": false,
+      "label": {
+        "left": 18.265625,
+        "right": 66.28125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 155,
+        "right": 251,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 261,
+        "top": 0,
+        "bottom": 568
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "reference": {
+          "left": 29.966666666666637,
+          "right": 46.1138671239217,
+          "top": 101.4623992919921,
+          "bottom": 121.6
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 240,
+        "height": 320,
+        "dpr": 3
+      },
+      "invincible": true,
+      "label": {
+        "left": 16.796875,
+        "right": 223.203125,
+        "top": 291.203125,
+        "bottom": 308
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 27.555555555555557,
+          "right": 42.40355597601998,
+          "top": 45.48266601562494,
+          "bottom": 63.999999999999986
+        },
+        "reference": {
+          "left": 27.55555555555553,
+          "right": 42.40355597601996,
+          "top": 45.48266601562497,
+          "bottom": 64
+        },
+        "position": [
+          -13,
+          13.5,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          13.499999999999996,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 240,
+        "height": 320,
+        "dpr": 3
+      },
+      "invincible": false,
+      "label": {
+        "left": 16.796875,
+        "right": 223.203125,
+        "top": 291.203125,
+        "bottom": 308
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 27.555555555555557,
+          "right": 42.40355597601998,
+          "top": 45.48266601562494,
+          "bottom": 63.999999999999986
+        },
+        "reference": {
+          "left": 27.55555555555553,
+          "right": 42.40355597601996,
+          "top": 45.48266601562497,
+          "bottom": 64
+        },
+        "position": [
+          -13,
+          13.5,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          13.499999999999996,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 200,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 86.890625,
+        "right": 233.109375,
+        "top": 171.203125,
+        "bottom": 188
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "reference": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 200,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 86.890625,
+        "right": 233.109375,
+        "top": 171.203125,
+        "bottom": 188
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "reference": {
+          "left": 94.5185185185185,
+          "right": 105.0358521496808,
+          "top": 32.21688842773436,
+          "bottom": 45.33333333333333
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 736,
+        "height": 414,
+        "dpr": 1
+      },
+      "invincible": true,
+      "label": {
+        "left": 216.671875,
+        "right": 342.0625,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 437.9375,
+        "right": 533.9375,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 192.046875,
+        "right": 543.9375,
+        "top": 0,
+        "bottom": 414
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 232.4491319444444,
+          "right": 254.21943256093394,
+          "top": 66.68718237876877,
+          "bottom": 93.83749999999989
+        },
+        "reference": {
+          "left": 232.44913194444436,
+          "right": 254.2194325609339,
+          "top": 66.68718237876888,
+          "bottom": 93.83749999999998
+        },
+        "position": [
+          -13,
+          10.853470094578395,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.853470094578391,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 736,
+        "height": 414,
+        "dpr": 1
+      },
+      "invincible": false,
+      "label": {
+        "left": 216.671875,
+        "right": 264.6875,
+        "top": 20,
+        "bottom": 37
+      },
+      "capsule": {
+        "left": 437.9375,
+        "right": 533.9375,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 192.046875,
+        "right": 543.9375,
+        "top": 0,
+        "bottom": 414
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 232.4491319444444,
+          "right": 254.21943256093394,
+          "top": 66.68718237876877,
+          "bottom": 93.83749999999989
+        },
+        "reference": {
+          "left": 232.44913194444436,
+          "right": 254.2194325609339,
+          "top": 66.68718237876888,
+          "bottom": 93.83749999999998
+        },
+        "position": [
+          -13,
+          10.853470094578395,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.853470094578391,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 640,
+        "height": 240,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 232.265625,
+        "right": 407.734375,
+        "top": 211.203125,
+        "bottom": 228
+      },
+      "capsule": {
+        "left": 316,
+        "right": 412,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 218,
+        "right": 422,
+        "top": 0,
+        "bottom": 240
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961697,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "reference": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961695,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 640,
+        "height": 240,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 232.265625,
+        "right": 407.734375,
+        "top": 211.203125,
+        "bottom": 228
+      },
+      "capsule": {
+        "left": 316,
+        "right": 412,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 218,
+        "right": 422,
+        "top": 0,
+        "bottom": 240
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961697,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "reference": {
+          "left": 241.4222222222222,
+          "right": 254.04302257961695,
+          "top": 38.66026611328123,
+          "bottom": 54.39999999999999
+        },
+        "position": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          10.852941176470587,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "invincible": true,
+      "label": {
+        "left": 27.296875,
+        "right": 152.6875,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 284,
+        "right": 380,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844
+      },
+      "text": "无敌模式 · 失误可重试",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "reference": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "invincible": false,
+      "label": {
+        "left": 27.296875,
+        "right": 75.3125,
+        "top": 20,
+        "bottom": 38
+      },
+      "capsule": {
+        "left": 284,
+        "right": 380,
+        "top": 17,
+        "bottom": 49
+      },
+      "stage": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844
+      },
+      "text": "普通模式",
+      "fontSize": "12px",
+      "visible": true,
+      "state": "play",
+      "native": {
+        "actual": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "reference": {
+          "left": 44.777777777777736,
+          "right": 68.90577846103243,
+          "top": 149.24266560872385,
+          "bottom": 179.33333333333334
+        },
+        "position": [
+          -13,
+          21,
+          -10
+        ],
+        "referencePosition": [
+          -13,
+          21,
+          -10
+        ],
+        "color": 2434341,
+        "referenceColor": 2434341,
+        "opacity": 0.8,
+        "referenceOpacity": 0.8,
+        "fontMatches": true
+      },
+      "capsuleOverlap": false,
+      "scoreOverlap": false
+    }
+  ],
+  "flows": {
+    "checks": [
+      "Real keyboard jump earns points; historical score geometry still matches for the earned value.",
+      "Portrait/short/portrait/narrow rotation keeps score and mode readable without changing the historical score position.",
+      "Touch hold through the bottom label reaches the game canvas; an invincible miss returns without changing the earned score.",
+      "Touch menu toggles to normal mode; the compact label updates without overlapping controls or score.",
+      "Normal failure hides the gameplay HUD, retains the real settlement score, and replay restores a readable normal-mode HUD.",
+      "Home and skins keep the gameplay HUD hidden; returning to play preserves normal mode and saved best."
+    ],
+    "snapshots": [
+      {
+        "viewport": {
+          "width": 320,
+          "height": 200
+        },
+        "label": {
+          "left": 86.890625,
+          "right": 233.109375,
+          "top": 171.203125,
+          "bottom": 188
+        },
+        "capsule": {
+          "left": 139,
+          "right": 235,
+          "top": 17,
+          "bottom": 49
+        },
+        "stage": {
+          "left": 75,
+          "right": 245,
+          "top": 0,
+          "bottom": 200
+        },
+        "text": "无敌模式 · 失误可重试",
+        "fontSize": "12px",
+        "visible": true,
+        "state": "play",
+        "invincible": true,
+        "native": {
+          "actual": {
+            "left": 94.5185185185185,
+            "right": 105.0056297160961,
+            "top": 32.21688842773437,
+            "bottom": 45.33333333333335
+          },
+          "reference": {
+            "left": 94.5185185185185,
+            "right": 105.0056297160961,
+            "top": 32.21688842773436,
+            "bottom": 45.333333333333336
+          },
+          "position": [
+            -13,
+            10.852941176470587,
+            -10
+          ],
+          "referencePosition": [
+            -13,
+            10.852941176470587,
+            -10
+          ],
+          "color": 2434341,
+          "referenceColor": 2434341,
+          "opacity": 0.8,
+          "referenceOpacity": 0.8,
+          "fontMatches": true
+        },
+        "capsuleOverlap": false,
+        "scoreOverlap": false
+      },
+      {
+        "viewport": {
+          "width": 414,
+          "height": 736
+        },
+        "label": {
+          "left": 28.96875,
+          "right": 154.359375,
+          "top": 20,
+          "bottom": 38
+        },
+        "capsule": {
+          "left": 308,
+          "right": 404,
+          "top": 17,
+          "bottom": 49
+        },
+        "stage": {
+          "left": 0,
+          "right": 414,
+          "top": 0,
+          "bottom": 736
+        },
+        "text": "无敌模式 · 失误可重试",
+        "fontSize": "12px",
+        "visible": true,
+        "state": "play",
+        "invincible": true,
+        "native": {
+          "actual": {
+            "left": 47.53333333333331,
+            "right": 73.07253354390461,
+            "top": 78.45759887695301,
+            "bottom": 110.40000000000002
+          },
+          "reference": {
+            "left": 47.53333333333329,
+            "right": 73.07253354390461,
+            "top": 78.45759887695301,
+            "bottom": 110.39999999999998
+          },
+          "position": [
+            -13,
+            21,
+            -10
+          ],
+          "referencePosition": [
+            -13,
+            21,
+            -10
+          ],
+          "color": 2434341,
+          "referenceColor": 2434341,
+          "opacity": 0.8,
+          "referenceOpacity": 0.8,
+          "fontMatches": true
+        },
+        "capsuleOverlap": false,
+        "scoreOverlap": false
+      },
+      {
+        "viewport": {
+          "width": 240,
+          "height": 320
+        },
+        "label": {
+          "left": 16.796875,
+          "right": 223.203125,
+          "top": 291.203125,
+          "bottom": 308
+        },
+        "capsule": {
+          "left": 134,
+          "right": 230,
+          "top": 17,
+          "bottom": 49
+        },
+        "stage": {
+          "left": 0,
+          "right": 240,
+          "top": 0,
+          "bottom": 320
+        },
+        "text": "无敌模式 · 失误可重试",
+        "fontSize": "12px",
+        "visible": true,
+        "state": "play",
+        "invincible": true,
+        "native": {
+          "actual": {
+            "left": 27.555555555555557,
+            "right": 42.36088901095922,
+            "top": 45.48266601562494,
+            "bottom": 64
+          },
+          "reference": {
+            "left": 27.55555555555553,
+            "right": 42.36088901095919,
+            "top": 45.48266601562497,
+            "bottom": 64
+          },
+          "position": [
+            -13,
+            13.5,
+            -10
+          ],
+          "referencePosition": [
+            -13,
+            13.499999999999996,
+            -10
+          ],
+          "color": 2434341,
+          "referenceColor": 2434341,
+          "opacity": 0.8,
+          "referenceOpacity": 0.8,
+          "fontMatches": true
+        },
+        "capsuleOverlap": false,
+        "scoreOverlap": false
+      }
+    ],
+    "earned": 2,
+    "stored": {
+      "best": 2,
+      "records": [
+        {
+          "score": 2,
+          "date": "2026-11-10T16:30:48.529Z"
+        }
+      ],
+      "prefs": {
+        "sound": true,
+        "quality": "high",
+        "renderVersion": 3,
+        "skin": "classic",
+        "gameplayMode": "classic"
+      }
+    },
+    "errors": []
+  },
+  "errors": []
+}

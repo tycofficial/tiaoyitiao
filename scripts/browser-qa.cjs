@@ -23,7 +23,7 @@ function holdFor(distance) {
 }
 (async()=>{
   const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-  const context=await browser.newContext({viewport:{width:414,height:736},deviceScaleFactor:1,recordVideo:{dir:output,size:{width:414,height:736}}});
+  const context=await browser.newContext({viewport:{width:414,height:736},deviceScaleFactor:1,...(process.env.QA_SKIP_VIDEO==='1'?{}:{recordVideo:{dir:output,size:{width:414,height:736}}})});
   const page=await context.newPage(),errors=[],requests=[],checks=[],flights=[],notRun=[];
   page.on('pageerror',e=>errors.push(String(e)));
   page.on('request',r=>{if(!r.url().startsWith(baseURL)&&!r.url().startsWith('data:'))requests.push(r.url());});
@@ -99,6 +99,7 @@ function holdFor(distance) {
       await page.screenshot({path:path.join(output,`skins-${viewport.width}x${viewport.height}.png`)});await page.locator('#skin-back').click();
     }
     checks.push('Skin panel fits 320x568, 736x414 landscape and 1440x900; every card remains fully reachable through scrolling.');
+    await context.close();
     const mobile=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
     const touchPage=await mobile.newPage();touchPage.on('pageerror',e=>errors.push(String(e)));
     await touchPage.goto(baseURL);await touchPage.waitForFunction(()=>window.jumpDiagnostics);await touchPage.locator('#start').tap();

@@ -98,7 +98,9 @@ body{display:flex;justify-content:center;background:linear-gradient(#d7dbe6,#bcb
   #skins .skin-return{position:static;display:block;width:70px;height:70px;margin-top:20px}
 }
 @media(max-height:320px){#skins{padding-top:calc(56px + env(safe-area-inset-top))}}
-#play-mode{position:absolute;left:7%;top:max(20px,calc(env(safe-area-inset-top) + 9px));font-size:12px;color:#50525c}#feedback{top:23%;max-width:86%;line-height:1.5}
+#play-mode{position:absolute;left:7%;top:max(20px,calc(env(safe-area-inset-top) + 9px));font-size:12px;color:#50525c}
+@container(max-width:260px){#play-mode{top:auto;bottom:max(12px,calc(env(safe-area-inset-bottom) + 6px));right:7%;line-height:1.4}}
+#feedback{top:23%;max-width:86%;line-height:1.5}
 .modal{padding:max(18px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}.panel{max-height:90dvh;overflow-y:auto;touch-action:pan-y}
 
 </style></head>
