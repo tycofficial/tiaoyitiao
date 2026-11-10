@@ -16157,7 +16157,8 @@ let ready=false, mode='loading',paused=false, activePointer=null,keyHeld=false,p
 let current=null,next=null,active=[],pool=[],homeBlocks=[],waves=[],score=0,combo=0,jumps=0,lastBonus=-2,lastOrder=-1;
 let bonusTimer=null,menuReturn='home',cameraBase=null,accumulator=0,lastFrame=0,feedbackTimer=null,lastSucceed=-Infinity,multiplier=1,failureHit=0,suspendTimer=null;
 let audio=null,audioGeneration=0,chargeGeneration=0,playing=new Set(),soundEnabled=true,quality='high',invincible=true,centerMode=false,scoreScale=false,blockScale=1,allSkins=false;
-let shadowTime=-Infinity,skinArtReady=false;
+let shadowTime=-Infinity,skinArtReady=false,failedFlight=null;
+const skinPreviewIssues=new Map();
 let platformPlayer=null,relay=null,relayRoom=null,botDriving=false;
 let best=0,records=[],prefs={},demoTimer=null,bonusState=null,bonusGeneration=0,scoreText=null,sharing=false,relaxLeft=0,showRelaxScore=0;
 let demoPress=null,demoPhase='none',demoJumps=0,cameraMotion=null,selectedSkin='classic';
@@ -16472,7 +16473,7 @@ function releaseBonus(){
   if(bonusState?.block){bonusState.block.whenLeave?.();bonusState.block.registerEndAudio?.();}
   for(const block of active)block.stopMusic?.();bonusState=null;stopAudio();
 }
-function clearScene(){relay=null;botDriving=false;hide('relay-turn');releaseBonus();if(centerMarker)centerMarker.visible=false;if(scoreText)scoreText.obj.visible=false;clock.reset();activePointer=null;keyHeld=false;flight=null;bonusTimer=null;feedbackTimer=null;demoTimer=null;demoPress=null;demoPhase='none';demoJumps=0;accumulator=0;
+function clearScene(){relay=null;botDriving=false;hide('relay-turn');releaseBonus();if(centerMarker)centerMarker.visible=false;if(scoreText)scoreText.obj.visible=false;clock.reset();activePointer=null;keyHeld=false;flight=null;failedFlight=null;bonusTimer=null;feedbackTimer=null;demoTimer=null;demoPress=null;demoPhase='none';demoJumps=0;accumulator=0;
   nativeUI?.dismiss();
   for(const b of active){b.reset();b.stopMusic?.();if(b.order===24){b.door.position.z=-3.3;b.secondDoor.position.z=-1.7;}if(b.order===17)b.middle.rotation.y=0;scene.remove(b.obj);b.obj.visible=false;}
   active=[];pool=[];suspendTimer=null;for(const b of homeBlocks)scene.remove(b.obj);for(const w of waves)w.reset();
@@ -16588,7 +16589,7 @@ function startBonus(block){
 function land(f){flight=null;if(f.demo){landDemo(f);return;}
   bottle.obj.position.copy(f.end);bottle.obj.position.y=platformTop(next);bottle.human.rotation.set(0,0,0);
   if(f.hit===2){bottle.stop();squeezeAt(current);return;}
-  if(f.hit!==1&&f.hit!==7){if(invincible)recoverMiss(f);else fail(f.hit);return;}
+  if(f.hit!==1&&f.hit!==7){if(invincible)recoverMiss(f);else fail(f.hit,f);return;}
   bottle.stop();squeezeAt(next);jumps++;lastSucceed=clock.time;const reached=next,old=current;
   combo=f.hit===1?combo+1:0;multiplier=f.hit===1?(multiplier===1?2:multiplier+2):1;if(f.quick&&multiplier<=2)multiplier*=2;multiplier=Math.min(32,multiplier);const points=multiplier;increaseScore(points,reached);bottle.showAddScore(points,false,false,true);bottle.double=multiplier;
   if(combo){playSound('combo'+Math.min(combo,8));addWaves(combo);}playSound('success');bottle.scatterParticles();
@@ -16600,16 +16601,42 @@ function land(f){flight=null;if(f.demo){landDemo(f);return;}
 }
 function recoverMiss(f){
   // Retry the same manual jump; misses never advance platforms or award points.
+  const failed=failedFlight;failedFlight=null;
+  if(failed){
+    for(const [id,timer] of clock.timers)if(timer.failure===failed)clock.clearTimeout(id);
+    clock.tweens=clock.tweens.filter(tween=>tween.failure!==failed);
+    if(suspendTimer!==null){clock.clearTimeout(suspendTimer);suspendTimer=null;}
+  }
   stopAudio();combo=0;multiplier=1;lastSucceed=-Infinity;centerMarker.visible=false;
-  bottle.stop();squeezeAt();bottle.status='recover';
+  bottle.stop();bottle.obj.rotation.set(0,0,0);squeezeAt();bottle.status='recover';
   const origin=f.start.clone();origin.y=platformTop();
   animations.customAnimation.to(bottle.obj.position,.22,{x:origin.x,y:origin.y,z:origin.z,onComplete(){
     bottle.obj.position.copy(origin);bottle.stop();squeezeAt();tail.correctPosition();
   }});
   textFeedback('已回到起跳点，分数不变，再试一次');
 }
-function fail(hit){mode='falling';failureHit=hit;stopAudio();if(hit===0||hit===6){bottle.fall();playSound('fall');}else if(hit===3){bottle.hypsokinesis();playSound('fall_2');}else{bottle.forerake();playSound('fall_2');}
-  clock.setTimeout(endGame,2000);
+function runFailureWork(f,action){
+  if(mode!=='falling'||failedFlight!==f)return;
+  const timers=new Set(clock.timers.keys()),tweens=new Set(clock.tweens);
+  action();
+  // Native fall poses schedule further delayed poses. Keep every descendant
+  // attached to this failed jump so a rescue can cancel just that work.
+  for(const [id,timer] of clock.timers)if(!timers.has(id)){
+    const callback=timer.fn;timer.failure=f;timer.fn=()=>runFailureWork(f,callback);
+  }
+  for(const tween of clock.tweens)if(!tweens.has(tween))tween.failure=f;
+}
+function fail(hit,f){mode='falling';failureHit=hit;failedFlight=f;stopAudio();
+  runFailureWork(f,()=>{
+    if(hit===0||hit===6){bottle.fall();playSound('fall');}else if(hit===3){bottle.hypsokinesis();playSound('fall_2');}else{bottle.forerake();playSound('fall_2');}
+    clock.setTimeout(endGame,2000);
+  });
+}
+function setInvincible(value){
+  invincible=value;
+  if(invincible&&mode==='falling'&&failedFlight){const f=failedFlight;mode='play';recoverMiss(f);}
+  if(invincible&&mode==='play')best=Math.max(best,score);
+  updateSettings();saveStore();
 }
 function updateFailure(){if(failureHit===5||!['forerake','hypsokinesis'].includes(bottle.status))return;scene.updateMatrixWorld(true);const parts=bottle.getBox(),block=(bottle.status==='forerake'?next:current).getBox();
   for(let i=0;i<parts.length;i++){if(!parts[i].intersectsBox(block))continue;
@@ -16627,13 +16654,24 @@ function setPaused(value){
   if(value){cancelCharge();if(bonusState?.voice){bonusState.offset=bonusState.voice.position?bonusState.voice.position():bonusState.voice.offset+audio.currentTime-bonusState.voice.startedAt;bonusState.voice=null;}stopAudio();}
   const wasPaused=paused;paused=value;lastFrame=performance.now();if(wasPaused&&!paused&&bonusState?.triggered&&!bonusState.repeatTimer)playBonusAudio();
 }
-function openMenu(){if(!ready||mode==='loading')return;cancelCharge();menuReturn=mode;setPaused(true);show('menu');$('menu-title').textContent=mode==='play'||mode==='falling'?'游戏已暂停':'游戏菜单';$('resume-button').textContent=mode==='play'||mode==='falling'?'继续游戏':'返回';}
+function openMenu(){if(!ready||mode==='loading')return;cancelCharge();menuReturn=mode;setPaused(true);
+  for(const id of ['skins','rank','about','home-info'])hide(id);
+  if(mode==='home')show('home');
+  show('menu');$('menu-title').textContent=mode==='play'||mode==='falling'?'游戏已暂停':'游戏菜单';$('resume-button').textContent=mode==='play'||mode==='falling'?'继续游戏':'返回';}
 function closeMenu(){hide('menu');hide('about');setPaused(false);unlockPlatformAudio();canvas.focus({preventScroll:true});}
 function openRank(){cancelCharge();setPaused(true);show('rank');const list=$('rank-list');list.replaceChildren();if(!records.length){const el=document.createElement('div');el.className='empty';el.textContent='还没有纪录，跳一局吧';list.append(el);return;}
   const table=document.createElement('table');records.forEach((r,i)=>{const tr=document.createElement('tr');for(const text of [i+1,new Date(r.date).toLocaleDateString('zh-CN',{month:'2-digit',day:'2-digit'}),r.score]){const td=document.createElement('td');td.textContent=text;tr.append(td);}table.append(tr);});list.append(table);
 }
 function closeRank(){hide('rank');setPaused(false);unlockPlatformAudio();canvas.focus({preventScroll:true});}
-function updateSkins(){for(const id of ['classic','silver','gold']){const button=$('skin-'+id),selected=selectedSkin===id,unlocked=skinUnlocked(id);button.disabled=!unlocked;button.setAttribute('aria-pressed',String(selected));button.querySelector('.skin-status').textContent=selected?'已使用':unlocked?'使用':id==='silver'?'1000 分解锁':'3000 分解锁';$(''+id+'-preview').src=images.get('preview/'+id)?.src||'';}}
+function updateSkins(){for(const id of ['classic','silver','gold']){
+  const button=$('skin-'+id),selected=selectedSkin===id,unlocked=skinUnlocked(id),key='preview/'+id,image=images.get(key),preview=$(id+'-preview'),available=Boolean(image)&&!skinPreviewIssues.has(key);
+  button.disabled=!unlocked;button.setAttribute('aria-pressed',String(selected));
+  const status=selected?'已使用':unlocked?'使用':id==='silver'?'1000 分解锁':'3000 分解锁';
+  button.querySelector('.skin-status').textContent=status+(available?'':'（预览暂不可用）');
+  preview.style.visibility=available?'visible':'hidden';
+  preview.onerror=()=>{skinPreviewIssues.set(key,'display');updateSkins();};
+  if(available){if(preview.getAttribute('src')!==image.src)preview.src=image.src;}else preview.removeAttribute('src');
+}}
 function skinResource(id){if(id==='classic')return null;if(id==='scarf')return {id,type:2,property:{}};return {id,type:1,property:{images:['head','head','middle','bottom'].map(part=>'reconstructed/'+id+'/'+part)}};}
 function skinUnlocked(id){return id==='classic'||id==='gold'&&Math.max(best,score)>=3000||id==='silver'&&Math.max(best,score)>=1000;}
 function skinList(){return ['classic','gold','silver','scarf'].map(id=>({id,type:id==='scarf'?2:id==='classic'?0:1,img:id==='classic'?'res/defaultBottlePoster.png':'preview/'+id,use_status:skinUnlocked(id)?1:0,unlock_wording:{gold:'3000分',silver:'1000分',scarf:'限时活动'}[id],property:skinResource(id)?.property||{}}));}
@@ -16645,7 +16683,23 @@ async function buildSkinArt(){
     for(let k=0;k<p.length;k+=4){const lum=(p[k]+p[k+1]+p[k+2])/3,shade=Math.min(1.35,.65+lum/180);for(let j=0;j<3;j++)p[k+j]=Math.min(255,color[j]*shade);}ctx.putImageData(pixels,0,0);images.set('reconstructed/'+id+'/'+part,c);
   }
   const preview=new THREE.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true}),world=new THREE.Scene(),pawn=new Bottle({getSelectedBottleSkinResourceSync:()=>null}),view=new THREE.OrthographicCamera(-1.95,1.95,4.1,-4.1,.1,50);pawn.obj.position.set(0,0,0);world.add(pawn.obj);world.add(new THREE.AmbientLight(0xffffff,.8));const lamp=new THREE.DirectionalLight(0xffffff,.28);lamp.position.set(0,15,10);world.add(lamp);view.position.set(-8,7.76,10);view.lookAt(new THREE.Vector3(0,3.6,0));preview.setSize(256,512);preview.setClearColor(0,0);
-  const captures=[];function capture(key){const image=new Image();captures.push(new Promise(resolve=>{image.onload=()=>{images.set(key,image);resolve();};if(key.startsWith('preview/')){const shape=document.createElement('canvas'),out=document.createElement('canvas');shape.width=out.width=256;shape.height=out.height=512;const a=shape.getContext('2d'),b=out.getContext('2d');a.drawImage(preview.domElement,0,0);a.globalCompositeOperation='source-in';a.fillStyle='#fff';a.fillRect(0,0,256,512);for(let i=0;i<16;i++){const t=i*Math.PI/8;b.drawImage(shape,Math.cos(t)*5,Math.sin(t)*5);}b.drawImage(preview.domElement,0,0);image.src=out.toDataURL('image/png');}else image.src=preview.domElement.toDataURL('image/png');}));}
+  const captures=[];
+  function capture(key){
+    const image=new Image();
+    captures.push(new Promise(resolve=>{
+      const failed=reason=>{skinPreviewIssues.set(key,reason);image.onload=image.onerror=null;resolve();};
+      image.onload=()=>{images.set(key,image);image.onload=image.onerror=null;resolve();};
+      image.onerror=()=>failed('decode');
+      try{
+        const shape=document.createElement('canvas'),out=document.createElement('canvas');
+        shape.width=out.width=256;shape.height=out.height=512;
+        const a=shape.getContext('2d'),b=out.getContext('2d');
+        a.drawImage(preview.domElement,0,0);a.globalCompositeOperation='source-in';a.fillStyle='#fff';a.fillRect(0,0,256,512);
+        for(let i=0;i<16;i++){const t=i*Math.PI/8;b.drawImage(shape,Math.cos(t)*5,Math.sin(t)*5);}
+        b.drawImage(preview.domElement,0,0);image.src=out.toDataURL('image/png');
+      }catch(error){failed('encode:'+error.name);}
+    }));
+  }
   for(const id of ['classic','gold','silver','scarf']){pawn.checkSkin({bottleSkin:skinResource(id)});preview.render(world,view);capture('preview/'+id);}
   preview.setSize(256,256);view.position.set(-8,3.6,10);view.lookAt(new THREE.Vector3(0,3.6,0));view.left=-4.3;view.right=4.3;view.top=4.3;view.bottom=-4.3;view.updateProjectionMatrix();
   await Promise.all(captures);preview.dispose();preview.forceContextLoss();skinArtReady=true;bottle.checkSkin();
@@ -16673,7 +16727,7 @@ function advanceFrame(dt){
     if(f.elapsed>=f.duration-1e-9)land(f);
   }
   else if(bottle.status==='turn'){const step=Math.sign(bottle.turnAngle)*Math.min(Math.abs(bottle.turnAngle),12*dt);bottle.bottle.rotation.y+=step;bottle.turnAngle-=step;if(Math.abs(bottle.turnAngle)<=.2){bottle.bottle.rotation.y=bottle.angle;bottle.status='stop';}}
-  if(mode==='falling')updateFailure();for(const b of active){updateClockPlatform(b);if(b.order===19)b.record.rotation.y+=.6*dt;else if(b.order===32)b.board.rotation.y+=.6*dt;else b.perFrame?.();}
+  if(mode==='falling')runFailureWork(failedFlight,updateFailure);for(const b of active){updateClockPlatform(b);if(b.order===19)b.record.rotation.y+=.6*dt;else if(b.order===32)b.board.rotation.y+=.6*dt;else b.perFrame?.();}
   tail.update(dt*1000);
 }
 function drawFrame(){lightTarget.position.set(bottle.obj.position.x,0,bottle.obj.position.z);light.position.set(bottle.obj.position.x,15,bottle.obj.position.z+10);lightTarget.updateMatrixWorld();
@@ -16693,7 +16747,7 @@ async function load(){readStore();for(const el of document.querySelectorAll('[da
   light=new THREE.DirectionalLight(0xffffff,.28);light.castShadow=true;light.shadow.mapSize.set(512,512);Object.assign(light.shadow.camera,{near:5,far:30,left:-10,right:10,top:10,bottom:-10});light.shadow.bias=-.001;scene.add(light);lightTarget=new THREE.Object3D();scene.add(lightTarget);light.target=lightTarget;
   bottle=new Bottle({getSelectedBottleSkinResourceSync:()=>skinArtReady?skinResource(selectedSkin):null});bottle.reset();scene.add(bottle.obj);scoreText=new(CORE(7).default)('0',{fillStyle:2434341,sumScore:true,opacity:.8});camera.add(scoreText.obj);scoreText.obj.visible=false;resize();tail=new Tail(scene,bottle);for(let i=0;i<12;i++){const w=new Wave();w.reset();waves.push(w);scene.add(w.obj);}makeBlocks();await buildSkinArt();resize();ready=true;hide('loading');home();lastFrame=performance.now();requestAnimationFrame(frame);
   // Read-only diagnostics for local QA.
-  window.jumpDiagnostics=Object.freeze({snapshot(){scene.updateMatrixWorld(true);camera.updateMatrixWorld(true);const projected=bottle.obj.position.clone().add(new THREE.Vector3(0,3,0)).project(camera);return {mode,paused,score,best,jumps,combo,centerMode,invincible,scoreScale,blockScale,multiplayer:relay?{turn:relay.players[relay.turn].seat_no,turns:relay.turns,done:relay.done,transition:relay.transition,level:relay.level,players:relay.players.map(({seat_no,name,rank,points,human})=>({seat_no,name,rank,points,human})),progress:relay.hud?.progressBar.scale.x}:null,demo:{phase:demoPhase,jumps:demoJumps,press:demoPress},render:{quality,width:canvas.width,height:canvas.height,pixelRatio:renderer.getPixelRatio()},skin:{unlocked:allSkins,selected:selectedSkin,scarf:bottle.scarf.obj.visible,hat:bottle.hat.obj.visible,maps:[bottle.headMaterial,bottle.middleTopMaterial,bottle.middleMaterial,bottle.bottomMaterial].map(m=>[...images].find(([,image])=>image===m.map.image)?.[0])},camera:{position:camera.position.toArray(),target:cameraMotion?.target.toArray(),duration:cameraMotion?.duration,start:cameraMotion?.start,projectedPawn:projected.toArray()},sourceVersion:"4.0.6",releaseVersion:"1.0.0",centerMarker:{visible:centerMarker.visible,position:centerMarker.position.toArray()},ui:{page:nativeUI?.page,messages:localMessages.length},audio:{...getAudioDiagnostics(),nativeMedia,issue:audioIssue,session:navigator.audioSession?.type,context:audio?.state,playing:[...playing].map(s=>({name:s.soundName,offset:s.offset,startedAt:s.startedAt})),bonus:bonusState?{order:bonusState.block.order,triggered:bonusState.triggered,repeatPending:bonusState.repeatTimer!==null}:null},difficulty:{min:C.BLOCK.minRadiusScale,max:C.BLOCK.maxRadiusScale,distance:C.BLOCK.maxDistance},status:bottle.status,time:clock.time,pressAt,current:current?{order:current.order,position:current.obj.position.toArray(),radius:current.radius,scale:current.obj.scale.toArray(),vertices:current.getVertices()}:null,next:next?{order:next.order,position:next.obj.position.toArray(),radius:next.radius,scale:next.obj.scale.toArray(),vertices:next.getVertices()}:null,bottle:{position:bottle.obj.position.toArray(),scale:bottle.body.scale.toArray(),head:bottle.head.position.toArray()},flight:flight?{demo:flight.demo,intro:flight.intro,elapsed:flight.elapsed,hold:flight.hold,duration:flight.duration,vy:flight.vy,vz:flight.vz,start:flight.start.toArray(),end:flight.end?.toArray(),hit:flight.hit}:null,waves:waves.filter(w=>w.obj.visible).map(w=>({position:w.obj.position.toArray(),scale:w.obj.scale.x,opacity:w.obj.material.opacity})),background:{current:ground.current,top:ground.ground.material.uniforms.topColor.value.toArray().map(v=>Math.round(v*255)),bottom:ground.ground.material.uniforms.bottomColor.value.toArray().map(v=>Math.round(v*255))},drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,active:active.length,platforms:active.map(b=>({order:b.order,position:b.obj.position.toArray(),scale:b.obj.scale.toArray(),radius:b.radius,nativeScale:b.nativeRadiusScale,vertices:b.getVertices()})),timers:clock.timers.size,tweens:clock.tweens.length,pool:pool.length,revision:THREE.REVISION};},introSnapshot(){scene.updateMatrixWorld(true);const bounds=box=>({min:box.min.toArray(),max:box.max.toArray()});return {mode,time:clock.time,pawn:bottle.getBox().map(bounds),platforms:homeBlocks.map((b,i)=>({index:i,visible:mode==='home'&&b.obj.visible,y:b.body.position.y,bounds:bounds(new THREE.Box3().setFromObject(b.body))}))};}});
+  window.jumpDiagnostics=Object.freeze({snapshot(){scene.updateMatrixWorld(true);camera.updateMatrixWorld(true);const projected=bottle.obj.position.clone().add(new THREE.Vector3(0,3,0)).project(camera);return {mode,paused,score,best,jumps,combo,centerMode,invincible,scoreScale,blockScale,multiplayer:relay?{turn:relay.players[relay.turn].seat_no,turns:relay.turns,done:relay.done,transition:relay.transition,level:relay.level,players:relay.players.map(({seat_no,name,rank,points,human})=>({seat_no,name,rank,points,human})),progress:relay.hud?.progressBar.scale.x}:null,demo:{phase:demoPhase,jumps:demoJumps,press:demoPress},render:{quality,width:canvas.width,height:canvas.height,pixelRatio:renderer.getPixelRatio()},skin:{previewIssues:Object.fromEntries(skinPreviewIssues),unlocked:allSkins,selected:selectedSkin,scarf:bottle.scarf.obj.visible,hat:bottle.hat.obj.visible,maps:[bottle.headMaterial,bottle.middleTopMaterial,bottle.middleMaterial,bottle.bottomMaterial].map(m=>[...images].find(([,image])=>image===m.map.image)?.[0])},camera:{position:camera.position.toArray(),target:cameraMotion?.target.toArray(),duration:cameraMotion?.duration,start:cameraMotion?.start,projectedPawn:projected.toArray()},sourceVersion:"4.0.6",releaseVersion:"1.0.0",centerMarker:{visible:centerMarker.visible,position:centerMarker.position.toArray()},ui:{page:nativeUI?.page,messages:localMessages.length},audio:{...getAudioDiagnostics(),nativeMedia,issue:audioIssue,session:navigator.audioSession?.type,context:audio?.state,playing:[...playing].map(s=>({name:s.soundName,offset:s.offset,startedAt:s.startedAt})),bonus:bonusState?{order:bonusState.block.order,triggered:bonusState.triggered,repeatPending:bonusState.repeatTimer!==null}:null},difficulty:{min:C.BLOCK.minRadiusScale,max:C.BLOCK.maxRadiusScale,distance:C.BLOCK.maxDistance},status:bottle.status,time:clock.time,pressAt,current:current?{order:current.order,position:current.obj.position.toArray(),radius:current.radius,scale:current.obj.scale.toArray(),vertices:current.getVertices()}:null,next:next?{order:next.order,position:next.obj.position.toArray(),radius:next.radius,scale:next.obj.scale.toArray(),vertices:next.getVertices()}:null,bottle:{position:bottle.obj.position.toArray(),scale:bottle.body.scale.toArray(),head:bottle.head.position.toArray()},flight:flight?{demo:flight.demo,intro:flight.intro,elapsed:flight.elapsed,hold:flight.hold,duration:flight.duration,vy:flight.vy,vz:flight.vz,start:flight.start.toArray(),end:flight.end?.toArray(),hit:flight.hit}:null,waves:waves.filter(w=>w.obj.visible).map(w=>({position:w.obj.position.toArray(),scale:w.obj.scale.x,opacity:w.obj.material.opacity})),background:{current:ground.current,top:ground.ground.material.uniforms.topColor.value.toArray().map(v=>Math.round(v*255)),bottom:ground.ground.material.uniforms.bottomColor.value.toArray().map(v=>Math.round(v*255))},drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,active:active.length,platforms:active.map(b=>({order:b.order,position:b.obj.position.toArray(),scale:b.obj.scale.toArray(),radius:b.radius,nativeScale:b.nativeRadiusScale,vertices:b.getVertices()})),timers:clock.timers.size,tweens:clock.tweens.length,pool:pool.length,revision:THREE.REVISION};},introSnapshot(){scene.updateMatrixWorld(true);const bounds=box=>({min:box.min.toArray(),max:box.max.toArray()});return {mode,time:clock.time,pawn:bottle.getBox().map(bounds),platforms:homeBlocks.map((b,i)=>({index:i,visible:mode==='home'&&b.obj.visible,y:b.body.position.y,bounds:bounds(new THREE.Box3().setFromObject(b.body))}))};}});
 }
 canvas.addEventListener('pointerdown',e=>{if(e.button!==0||activePointer!==null)return;e.preventDefault();if(beginCharge(e.pointerId)){try{canvas.setPointerCapture(e.pointerId);}catch{}}});
 canvas.addEventListener('pointerup',e=>{e.preventDefault();endCharge(e.pointerId);});canvas.addEventListener('pointercancel',cancelCharge);canvas.addEventListener('lostpointercapture',()=>{if(activePointer!==null)cancelCharge();});canvas.addEventListener('contextmenu',e=>e.preventDefault());
@@ -16706,7 +16760,7 @@ canvas.addEventListener('webglcontextrestored',()=>{resize();renderer.shadowMap.
 document.addEventListener('keydown',event=>{if(event.key!=='Tab')return;const dialogs=[...document.querySelectorAll('[role="dialog"]:not(.hidden)')],dialog=dialogs[dialogs.length-1];if(!dialog)return;const buttons=[...dialog.querySelectorAll('button:not([disabled]),input:not([disabled]),[tabindex="0"]')].filter(el=>el.getClientRects().length);if(!buttons.length)return;const first=buttons[0],last=buttons[buttons.length-1];if(!dialog.contains(document.activeElement)){event.preventDefault();first.focus();}else if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}});
 new ResizeObserver(resize).observe(stage);window.addEventListener('orientationchange',resize);
 $('start').onclick=startGame;$('replay').onclick=startGame;$('menu-button').onclick=openMenu;$('home-button').onclick=home;$('menu-home').onclick=home;$('resume-button').onclick=closeMenu;$('restart-button').onclick=startGame;
-$('invincible-button').onclick=()=>{invincible=!invincible;updateSettings();saveStore();};
+$('invincible-button').onclick=()=>setInvincible(!invincible);
 $('sound-button').onclick=()=>{soundEnabled=!soundEnabled;stopAudio();updateSettings();saveStore();if(soundEnabled){const ctx=audioContext();if(ctx)requestAudioResume(ctx,true);unlockPlatformAudio();if(!paused)playBonusAudio();}};$('quality-button').onclick=()=>{quality={ultra4k:'high',high:'standard',standard:'ultra4k'}[quality];resize();updateSettings();saveStore();};
 $('fullscreen-button').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(stage.requestFullscreen)await stage.requestFullscreen();}catch{}};
 $('home-rank').onclick=openRank;$('over-rank').onclick=openRank;$('rank-back').onclick=closeRank;$('close-rank').onclick=closeRank;$('about-button').onclick=()=>{hide('menu');show('about');};$('close-about').onclick=()=>{hide('about');show('menu');};

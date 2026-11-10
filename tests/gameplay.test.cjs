@@ -217,9 +217,10 @@ test('miss recovery returns to the actual takeoff position and resets the combo 
   let tween, settled = 0, tailCorrections = 0;
   const context = vm.createContext({
     score: 17, combo: 4, multiplier: 8, lastSucceed: 1200, centerMarker: { visible: true },
+    failedFlight: null, clock: {timers: new Map(),tweens: []}, suspendTimer: null,
     stopAudio() {}, squeezeAt() { settled++; }, platformTop: () => 2.75, textFeedback() {},
     tail: { correctPosition() { tailCorrections++; } },
-    bottle: { obj: { position: new Vector(60,2.75,-20) }, stop() { this.status='stop'; } },
+    bottle: { obj: { position: new Vector(60,2.75,-20), rotation: new Vector() }, stop() { this.status='stop'; } },
     animations: { customAnimation: { to(target, duration, props) { tween={target,duration,props}; } } }
   });
   vm.runInContext(extractFunction('recoverMiss'), context);
