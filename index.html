@@ -65,6 +65,15 @@ body{display:flex;justify-content:center;background:linear-gradient(#d7dbe6,#bcb
 .native-compose{position:absolute;z-index:4;display:flex;gap:calc(8px * var(--ui-scale));left:calc(var(--ui-left) + 50px * var(--ui-scale));top:calc(var(--ui-top) + 571px * var(--ui-scale));width:calc(314px * var(--ui-scale));height:calc(35px * var(--ui-scale))}.native-compose input{font-family:ClassicUI,-apple-system,sans-serif;min-width:0;flex:1;border:0;border-radius:2px;background:#44464b;color:white;padding:0 9px;font-size:calc(14px * var(--ui-scale))}.native-compose button{font-family:ClassicUI,-apple-system,sans-serif;border:0;border-radius:22px;padding:0 calc(15px * var(--ui-scale));background:#fff;color:#00c777;font-size:calc(14px * var(--ui-scale))}.native-compose.hidden{display:none}</style>
 <style>#relay-turn{position:absolute;pointer-events:none;z-index:5;color:#403a5b;left:calc(var(--ui-left) + 34px * var(--ui-scale));top:calc(var(--ui-top) + 220px * var(--ui-scale));font-size:calc(26px * var(--ui-scale));transform:translateY(-50%);font-weight:500}.relay-actions{position:absolute;inset:0;background:#0009;z-index:5;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;gap:6px}.relay-actions button{height:52px;background:white;color:#333;border-radius:12px;font-size:18px}</style><style>
 #home .home-footer button:nth-child(1){left:calc(var(--ui-left) + 95.5px * var(--ui-scale))}#home .home-footer button:nth-child(2){left:calc(var(--ui-left) + 222.5px * var(--ui-scale))}
+@media(max-height:320px){
+ #home{display:flex;flex-direction:column;align-items:center;gap:24px;padding:calc(64px + env(safe-area-inset-top)) 18px max(20px,env(safe-area-inset-bottom));overflow-y:auto;touch-action:pan-y}
+ #home .title,#home #start{position:static;transform:none;flex:none;width:min(207px,100%);height:auto}
+ #home #start{width:min(212px,100%)}#home #start:active{transform:scale(.94)}
+ #home .home-footer{position:static;flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;height:auto;padding:12px 0}
+ #home .home-footer button{position:static;width:100%;height:auto;gap:10px;min-height:44px}
+ #home .home-footer img{position:static;width:min(74px,100%);height:auto}
+ #home .home-footer span{position:static;transform:none;font-size:12px;line-height:1.2}
+}
 #skins{z-index:9;display:block;padding:0;background:rgba(0,0,0,.45);--skin-scale:var(--ui-scale)}
 #skins .skins-panel{position:absolute;inset:0;width:100%;height:100%;max-height:none;padding:0;overflow:visible;background:none;border-radius:0;box-shadow:none;font-family:Helvetica,Arial,sans-serif}
 #skins .skin-title{position:absolute;left:calc(var(--ui-left) + 207px * var(--skin-scale));top:calc(var(--ui-top) + 89px * var(--skin-scale));transform:translate(-50%,-50%);margin:0;color:#fff;font-size:calc(22px * var(--skin-scale));font-weight:700;line-height:1;letter-spacing:0}
@@ -16558,7 +16567,7 @@ function startGame(){if(!ready)return;clearScene();unlockPlatformAudio();mode='p
   bottle.reset();bottle.obj.position.set(0,2.75,0);tail.correctPosition();show('hud');updateScoreDisplay();$('hint').style.opacity=0;$('menu-title').textContent='游戏已暂停';canvas.focus({preventScroll:true});playSound('start');
   for(const n of new Set([...Object.keys(C.AUDIO),'start','turn']))decodeSound(n);
 }
-function home(){if(!ready)return;clearScene();mode='home';current=null;next=null;show('home');$('capsule').style.color='#fff';$('menu-title').textContent='游戏菜单';
+function home(){if(!ready)return;clearScene();mode='home';current=null;next=null;show('home');$('home').scrollTop=0;$('capsule').style.color='#fff';$('menu-title').textContent='游戏菜单';
   if(!homeBlocks.length)for(let i=0;i<7;i++)homeBlocks.push(new Block(-1,i));
   for(let i=0;i<7;i++){const b=homeBlocks[i];b.reset();b.obj.scale.set(.7,1,.7);b.nativeRadiusScale=.7;b.hitObj.material.opacity=1;b.obj.visible=false;scene.add(b.obj);const drop=()=>{if(mode!=='home')return;b.obj.visible=true;b.showup(i);};if(i===0)drop();else clock.setTimeout(drop,200*i);}
   current=homeBlocks[0];next=allBlocks[1];next.reset();next.change(null,null,1);next.nativeRadiusScale=1;next.obj.position.set(20,0,0);next.obj.visible=false;active=[current,next];pool=allBlocks.slice(2);demoPhase='numbered';jumps=0;lastBonus=-2;lastOrder=-1;score=0;C.BLOCK.minRadiusScale=.8;C.BLOCK.maxRadiusScale=1;C.BLOCK.maxDistance=17;

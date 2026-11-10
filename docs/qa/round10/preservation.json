@@ -1,0 +1,13 @@
+{
+  "productSha256": "52efb9c769a225b339e2c6f5416764c568caeb1ac1574243ee1e625e7f0fbcbc",
+  "baseline": "42b3404c592574b7e45d23261b81a3d4f66f8107",
+  "inlineScripts": 3,
+  "assetsIdentical": true,
+  "otherEmbeddedScriptIdentical": true,
+  "gameScriptOnlyChange": "$('home').scrollTop=0;",
+  "assetsScriptSha256": "56885a30a46c7fc63e88feeacfb6b68ec6c97f6712eb0133ab8bca4502c02ecb",
+  "otherEmbeddedScriptSha256": "9f8998dc9f3911bcb728b6fbd7ec20efe9148b23bc7c0b5477d87e3f75ce7ba4",
+  "gameScriptSha256": "63a28bd21041f2e599b90eabb158a0499a0ceaec714e8967bf62d218883f818d",
+  "unchangedGameScriptSha256": "ddb0cb09c8f0df2a9230ceebe860bc88b95144615f5d62f47ac1a92f4e7ee731",
+  "qaScriptSha256": "df660cf26d833a1fd27e81db3c171c34911e10cd13d27262181eba339464f556"
+}

@@ -1,0 +1,1302 @@
+{
+  "passed": false,
+  "productSha256": "52efb9c769a225b339e2c6f5416764c568caeb1ac1574243ee1e625e7f0fbcbc",
+  "baselineCommit": "42b3404c592574b7e45d23261b81a3d4f66f8107",
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "sourceHashes": {
+    "base.js": "9b9065da19c7b1d5c1984c8cfa24959c92734621b03e4e31f38fb8d422506c2f",
+    "start.js": "f2abfc1cdd7c7afcbf33bab35f36a100e222ea4f1a3d6ec8a5e886f8526db792",
+    "index.js": "e71e3478192b5f04c4a8fe945a40e518fba3ae3568fab4becba755e1f4195b4a"
+  },
+  "scriptSha256": "4870668a1604ed281620961b36d6435ec59a7a7949a191349a140eed622d903d",
+  "layout": [
+    {
+      "version": "baseline",
+      "viewport": {
+        "width": 320,
+        "height": 240,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 58,
+        "width": 204,
+        "height": 240
+      },
+      "title": {
+        "left": 67.265625,
+        "top": 46.265625,
+        "width": 67.5,
+        "height": 17.03125,
+        "x": 101.015625,
+        "y": 54.78125
+      },
+      "start": {
+        "left": 67.4375,
+        "top": 151.046875,
+        "width": 69.125,
+        "height": 27.25,
+        "x": 102,
+        "y": 164.671875
+      },
+      "capsule": {
+        "left": 98,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 146,
+        "y": 33
+      },
+      "overlap": true,
+      "footer": {
+        "left": 0,
+        "top": 201.1875,
+        "width": 204,
+        "height": 81.515625,
+        "x": 102,
+        "y": 241.9453125
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 65.640625,
+            "top": 201.1875,
+            "width": 31.296875,
+            "height": 81.515625,
+            "x": 81.2890625,
+            "y": 241.9453125
+          },
+          "image": {
+            "left": 69.21875,
+            "top": 206.71875,
+            "width": 24.125,
+            "height": 24.125,
+            "x": 81.28125,
+            "y": 218.78125
+          },
+          "label": {
+            "left": 73.46875,
+            "top": 229,
+            "width": 15.625,
+            "height": 6,
+            "x": 81.28125,
+            "y": 232,
+            "text": "本机纪录",
+            "size": 3.91304,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 107.046875,
+            "top": 201.1875,
+            "width": 31.296875,
+            "height": 81.515625,
+            "x": 122.6953125,
+            "y": 241.9453125
+          },
+          "image": {
+            "left": 110.625,
+            "top": 206.71875,
+            "width": 24.125,
+            "height": 24.125,
+            "x": 122.6875,
+            "y": 218.78125
+          },
+          "label": {
+            "left": 114.875,
+            "top": 229,
+            "width": 15.625,
+            "height": 6,
+            "x": 122.6875,
+            "y": 232,
+            "text": "皮肤中心",
+            "size": 3.91304,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 240,
+        "content": 283,
+        "width": 204,
+        "contentWidth": 204
+      }
+    },
+    {
+      "version": "baseline",
+      "viewport": {
+        "width": 320,
+        "height": 200,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 75,
+        "width": 170,
+        "height": 200
+      },
+      "title": {
+        "left": 56.046875,
+        "top": 38.546875,
+        "width": 56.25,
+        "height": 14.1875,
+        "x": 84.171875,
+        "y": 45.640625
+      },
+      "start": {
+        "left": 56.203125,
+        "top": 125.8671875,
+        "width": 57.59375,
+        "height": 22.703125,
+        "x": 85,
+        "y": 137.21875
+      },
+      "capsule": {
+        "left": 64,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 112,
+        "y": 33
+      },
+      "overlap": true,
+      "footer": {
+        "left": 0,
+        "top": 167.65625,
+        "width": 170,
+        "height": 67.921875,
+        "x": 85,
+        "y": 201.6171875
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 54.6875,
+            "top": 167.65625,
+            "width": 26.078125,
+            "height": 67.921875,
+            "x": 67.7265625,
+            "y": 201.6171875
+          },
+          "image": {
+            "left": 57.671875,
+            "top": 172.265625,
+            "width": 20.09375,
+            "height": 20.09375,
+            "x": 67.71875,
+            "y": 182.3125
+          },
+          "label": {
+            "left": 61.21875,
+            "top": 190.828125,
+            "width": 13,
+            "height": 5,
+            "x": 67.71875,
+            "y": 193.328125,
+            "text": "本机纪录",
+            "size": 3.26087,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 89.203125,
+            "top": 167.65625,
+            "width": 26.078125,
+            "height": 67.921875,
+            "x": 102.2421875,
+            "y": 201.6171875
+          },
+          "image": {
+            "left": 92.1875,
+            "top": 172.265625,
+            "width": 20.09375,
+            "height": 20.09375,
+            "x": 102.234375,
+            "y": 182.3125
+          },
+          "label": {
+            "left": 95.734375,
+            "top": 190.828125,
+            "width": 13,
+            "height": 5,
+            "x": 102.234375,
+            "y": 193.328125,
+            "text": "皮肤中心",
+            "size": 3.26087,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 200,
+        "content": 236,
+        "width": 170,
+        "contentWidth": 170
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 414,
+        "height": 736,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 0,
+        "width": 414,
+        "height": 736
+      },
+      "title": {
+        "left": 100.5,
+        "top": 141.875,
+        "width": 207,
+        "height": 52.25,
+        "x": 204,
+        "y": 168
+      },
+      "start": {
+        "left": 101,
+        "top": 463.21875,
+        "width": 212,
+        "height": 83.5625,
+        "x": 207,
+        "y": 505
+      },
+      "capsule": {
+        "left": 308,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 356,
+        "y": 33
+      },
+      "overlap": false,
+      "footer": {
+        "left": 0,
+        "top": 617,
+        "width": 414,
+        "height": 250,
+        "x": 207,
+        "y": 742
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 95.5,
+            "top": 617,
+            "width": 96,
+            "height": 250,
+            "x": 143.5,
+            "y": 742
+          },
+          "image": {
+            "left": 106.5,
+            "top": 634,
+            "width": 74,
+            "height": 74,
+            "x": 143.5,
+            "y": 671
+          },
+          "label": {
+            "left": 119.484375,
+            "top": 703,
+            "width": 48.015625,
+            "height": 17,
+            "x": 143.4921875,
+            "y": 711.5,
+            "text": "本机纪录",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 222.5,
+            "top": 617,
+            "width": 96,
+            "height": 250,
+            "x": 270.5,
+            "y": 742
+          },
+          "image": {
+            "left": 233.5,
+            "top": 634,
+            "width": 74,
+            "height": 74,
+            "x": 270.5,
+            "y": 671
+          },
+          "label": {
+            "left": 246.484375,
+            "top": 703,
+            "width": 48.015625,
+            "height": 17,
+            "x": 270.4921875,
+            "y": 711.5,
+            "text": "皮肤中心",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 736,
+        "content": 867,
+        "width": 414,
+        "contentWidth": 414
+      },
+      "reference": {
+        "images": {
+          "res/title.png": {
+            "x": 204,
+            "y": 168,
+            "width": 207,
+            "height": 52
+          },
+          "res/play.png": {
+            "x": 207,
+            "y": 505,
+            "width": 212,
+            "height": 84
+          },
+          "res/r_arr.png": {
+            "x": 247,
+            "y": 571,
+            "width": 6.599999999999999,
+            "height": 10
+          },
+          "res/2d/rank.png": {
+            "x": 111.5,
+            "y": 671,
+            "width": 74,
+            "height": 74
+          },
+          "res/2d/msg.png": {
+            "x": 207.5,
+            "y": 671,
+            "width": 74,
+            "height": 74
+          },
+          "res/2d/skin.png": {
+            "x": 303.5,
+            "y": 671,
+            "width": 74,
+            "height": 74
+          }
+        },
+        "texts": [
+          {
+            "text": "多人游戏",
+            "x": 163,
+            "y": 571,
+            "size": 17
+          },
+          {
+            "text": "排行榜",
+            "x": 111.5,
+            "y": 711.5,
+            "size": 12
+          },
+          {
+            "text": "消息",
+            "x": 207.5,
+            "y": 711.5,
+            "size": 12
+          },
+          {
+            "text": "皮肤中心",
+            "x": 303.5,
+            "y": 711.5,
+            "size": 12
+          }
+        ],
+        "footerTop": 617,
+        "backdrop": "rgba(0, 0, 0, 0.3)",
+        "referenceBackdrop": "rgba(0, 0, 0, 0.3)",
+        "font": "Helvetica"
+      },
+      "sharedDeltas": {
+        "title": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0.25
+        },
+        "start": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": -0.4375
+        }
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 0,
+        "width": 320,
+        "height": 568
+      },
+      "title": {
+        "left": 77.796875,
+        "top": 109.484375,
+        "width": 159.75,
+        "height": 40.3125,
+        "x": 157.671875,
+        "y": 129.640625
+      },
+      "start": {
+        "left": 78.203125,
+        "top": 357.4765625,
+        "width": 163.59375,
+        "height": 64.484375,
+        "x": 160,
+        "y": 389.71875
+      },
+      "capsule": {
+        "left": 214,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 262,
+        "y": 33
+      },
+      "overlap": false,
+      "footer": {
+        "left": 0,
+        "top": 476.15625,
+        "width": 320,
+        "height": 192.921875,
+        "x": 160,
+        "y": 572.6171875
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 73.9375,
+            "top": 476.15625,
+            "width": 74.078125,
+            "height": 192.921875,
+            "x": 110.9765625,
+            "y": 572.6171875
+          },
+          "image": {
+            "left": 82.421875,
+            "top": 489.265625,
+            "width": 57.09375,
+            "height": 57.09375,
+            "x": 110.96875,
+            "y": 517.8125
+          },
+          "label": {
+            "left": 92.46875,
+            "top": 542.078125,
+            "width": 37,
+            "height": 14,
+            "x": 110.96875,
+            "y": 549.078125,
+            "text": "本机纪录",
+            "size": 9.26087,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 171.953125,
+            "top": 476.15625,
+            "width": 74.078125,
+            "height": 192.921875,
+            "x": 208.9921875,
+            "y": 572.6171875
+          },
+          "image": {
+            "left": 180.4375,
+            "top": 489.265625,
+            "width": 57.09375,
+            "height": 57.09375,
+            "x": 208.984375,
+            "y": 517.8125
+          },
+          "label": {
+            "left": 190.484375,
+            "top": 542.078125,
+            "width": 37,
+            "height": 14,
+            "x": 208.984375,
+            "y": 549.078125,
+            "text": "皮肤中心",
+            "size": 9.26087,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 568,
+        "content": 669,
+        "width": 320,
+        "contentWidth": 320
+      },
+      "reference": {
+        "images": {
+          "res/title.png": {
+            "x": 157.68478260869566,
+            "y": 129.65217391304347,
+            "width": 159.75,
+            "height": 40.130434782608695
+          },
+          "res/play.png": {
+            "x": 160,
+            "y": 389.7282608695652,
+            "width": 163.6086956521739,
+            "height": 64.82608695652173
+          },
+          "res/r_arr.png": {
+            "x": 190.8695652173913,
+            "y": 440.6630434782609,
+            "width": 5.093478260869565,
+            "height": 7.717391304347826
+          },
+          "res/2d/rank.png": {
+            "x": 86.29891304347827,
+            "y": 517.8369565217391,
+            "width": 57.108695652173914,
+            "height": 57.108695652173914
+          },
+          "res/2d/msg.png": {
+            "x": 160.3858695652174,
+            "y": 517.8369565217391,
+            "width": 57.108695652173914,
+            "height": 57.108695652173914
+          },
+          "res/2d/skin.png": {
+            "x": 234.47282608695653,
+            "y": 517.8369565217391,
+            "width": 57.108695652173914,
+            "height": 57.108695652173914
+          }
+        },
+        "texts": [
+          {
+            "text": "多人游戏",
+            "x": 126.04347826086956,
+            "y": 440.6630434782609,
+            "size": 13.119565217391305
+          },
+          {
+            "text": "排行榜",
+            "x": 86.29891304347827,
+            "y": 549.0923913043479,
+            "size": 9.26086956521739
+          },
+          {
+            "text": "消息",
+            "x": 160.3858695652174,
+            "y": 549.0923913043479,
+            "size": 9.26086956521739
+          },
+          {
+            "text": "皮肤中心",
+            "x": 234.47282608695653,
+            "y": 549.0923913043479,
+            "size": 9.26086956521739
+          }
+        ],
+        "footerTop": 476.1630434782609,
+        "backdrop": "rgba(0, 0, 0, 0.3)",
+        "referenceBackdrop": "rgba(0, 0, 0, 0.3)",
+        "font": "Helvetica"
+      },
+      "sharedDeltas": {
+        "title": {
+          "x": -0.012907608695655881,
+          "y": -0.01154891304346961,
+          "width": 0,
+          "height": 0.18206521739130466
+        },
+        "start": {
+          "x": 0,
+          "y": -0.009510869565190205,
+          "width": -0.014945652173906865,
+          "height": -0.3417119565217348
+        }
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 736,
+        "height": 414,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 192.046875,
+        "width": 351.890625,
+        "height": 414
+      },
+      "title": {
+        "left": 116.03125,
+        "top": 79.8046875,
+        "width": 116.4375,
+        "height": 29.390625,
+        "x": 174.25,
+        "y": 94.5
+      },
+      "start": {
+        "left": 116.3125,
+        "top": 260.5625,
+        "width": 119.25,
+        "height": 47,
+        "x": 175.9375,
+        "y": 284.0625
+      },
+      "capsule": {
+        "left": 245.890625,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 293.890625,
+        "y": 33
+      },
+      "overlap": false,
+      "footer": {
+        "left": 0,
+        "top": 347.0625,
+        "width": 351.890625,
+        "height": 140.625,
+        "x": 175.9453125,
+        "y": 417.375
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 113.21875,
+            "top": 347.0625,
+            "width": 54,
+            "height": 140.625,
+            "x": 140.21875,
+            "y": 417.375
+          },
+          "image": {
+            "left": 119.40625,
+            "top": 356.625,
+            "width": 41.625,
+            "height": 41.625,
+            "x": 140.21875,
+            "y": 377.4375
+          },
+          "label": {
+            "left": 126.703125,
+            "top": 395.21875,
+            "width": 27.015625,
+            "height": 10,
+            "x": 140.2109375,
+            "y": 400.21875,
+            "text": "本机纪录",
+            "size": 6.75,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 184.65625,
+            "top": 347.0625,
+            "width": 54,
+            "height": 140.625,
+            "x": 211.65625,
+            "y": 417.375
+          },
+          "image": {
+            "left": 190.84375,
+            "top": 356.625,
+            "width": 41.625,
+            "height": 41.625,
+            "x": 211.65625,
+            "y": 377.4375
+          },
+          "label": {
+            "left": 198.140625,
+            "top": 395.21875,
+            "width": 27.015625,
+            "height": 10,
+            "x": 211.6484375,
+            "y": 400.21875,
+            "text": "皮肤中心",
+            "size": 6.75,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 414,
+        "content": 488,
+        "width": 352,
+        "contentWidth": 352
+      },
+      "reference": {
+        "images": {
+          "res/title.png": {
+            "x": 174.2578125,
+            "y": 94.5,
+            "width": 116.4375,
+            "height": 29.25
+          },
+          "res/play.png": {
+            "x": 175.9453125,
+            "y": 284.0625,
+            "width": 119.25,
+            "height": 47.25
+          },
+          "res/r_arr.png": {
+            "x": 198.4453125,
+            "y": 321.1875,
+            "width": 3.7124999999999995,
+            "height": 5.625
+          },
+          "res/2d/rank.png": {
+            "x": 122.2265625,
+            "y": 377.4375,
+            "width": 41.625,
+            "height": 41.625
+          },
+          "res/2d/msg.png": {
+            "x": 176.2265625,
+            "y": 377.4375,
+            "width": 41.625,
+            "height": 41.625
+          },
+          "res/2d/skin.png": {
+            "x": 230.2265625,
+            "y": 377.4375,
+            "width": 41.625,
+            "height": 41.625
+          }
+        },
+        "texts": [
+          {
+            "text": "多人游戏",
+            "x": 151.1953125,
+            "y": 321.1875,
+            "size": 9.5625
+          },
+          {
+            "text": "排行榜",
+            "x": 122.2265625,
+            "y": 400.21875,
+            "size": 6.75
+          },
+          {
+            "text": "消息",
+            "x": 176.2265625,
+            "y": 400.21875,
+            "size": 6.75
+          },
+          {
+            "text": "皮肤中心",
+            "x": 230.2265625,
+            "y": 400.21875,
+            "size": 6.75
+          }
+        ],
+        "footerTop": 347.0625,
+        "backdrop": "rgba(0, 0, 0, 0.3)",
+        "referenceBackdrop": "rgba(0, 0, 0, 0.3)",
+        "font": "Helvetica"
+      },
+      "sharedDeltas": {
+        "title": {
+          "x": -0.0078125,
+          "y": 0,
+          "width": 0,
+          "height": 0.140625
+        },
+        "start": {
+          "x": -0.0078125,
+          "y": 0,
+          "width": 0,
+          "height": -0.25
+        }
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 240,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 58,
+        "width": 204,
+        "height": 240
+      },
+      "title": {
+        "left": 18,
+        "top": 64,
+        "width": 168,
+        "height": 42.40625,
+        "x": 102,
+        "y": 85.203125
+      },
+      "start": {
+        "left": 18,
+        "top": 130.40625,
+        "width": 168,
+        "height": 66.21875,
+        "x": 102,
+        "y": 163.515625
+      },
+      "capsule": {
+        "left": 98,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 146,
+        "y": 33
+      },
+      "overlap": false,
+      "footer": {
+        "left": 18,
+        "top": 220.625,
+        "width": 168,
+        "height": 122.390625,
+        "x": 102,
+        "y": 281.8203125
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 18,
+            "top": 232.625,
+            "width": 78,
+            "height": 98.390625,
+            "x": 57,
+            "y": 281.8203125
+          },
+          "image": {
+            "left": 20,
+            "top": 232.625,
+            "width": 74,
+            "height": 74,
+            "x": 57,
+            "y": 269.625
+          },
+          "label": {
+            "left": 32.984375,
+            "top": 316.625,
+            "width": 48.015625,
+            "height": 14.390625,
+            "x": 56.9921875,
+            "y": 323.8203125,
+            "text": "本机纪录",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 108,
+            "top": 232.625,
+            "width": 78,
+            "height": 98.390625,
+            "x": 147,
+            "y": 281.8203125
+          },
+          "image": {
+            "left": 110,
+            "top": 232.625,
+            "width": 74,
+            "height": 74,
+            "x": 147,
+            "y": 269.625
+          },
+          "label": {
+            "left": 122.984375,
+            "top": 316.625,
+            "width": 48.015625,
+            "height": 14.390625,
+            "x": 146.9921875,
+            "y": 323.8203125,
+            "text": "皮肤中心",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 240,
+        "content": 363,
+        "width": 204,
+        "contentWidth": 204
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 200,
+        "dpr": 2
+      },
+      "stage": {
+        "left": 75,
+        "width": 170,
+        "height": 200
+      },
+      "title": {
+        "left": 18,
+        "top": 64,
+        "width": 134,
+        "height": 33.8125,
+        "x": 85,
+        "y": 80.90625
+      },
+      "start": {
+        "left": 18,
+        "top": 121.8125,
+        "width": 134,
+        "height": 52.8125,
+        "x": 85,
+        "y": 148.21875
+      },
+      "capsule": {
+        "left": 64,
+        "top": 17,
+        "width": 96,
+        "height": 32,
+        "x": 112,
+        "y": 33
+      },
+      "overlap": false,
+      "footer": {
+        "left": 18,
+        "top": 198.625,
+        "width": 134,
+        "height": 109.390625,
+        "x": 85,
+        "y": 253.3203125
+      },
+      "entries": [
+        {
+          "id": "home-rank",
+          "rect": {
+            "left": 18,
+            "top": 210.625,
+            "width": 61,
+            "height": 85.390625,
+            "x": 48.5,
+            "y": 253.3203125
+          },
+          "image": {
+            "left": 18,
+            "top": 210.625,
+            "width": 61,
+            "height": 61,
+            "x": 48.5,
+            "y": 241.125
+          },
+          "label": {
+            "left": 24.484375,
+            "top": 281.625,
+            "width": 48.015625,
+            "height": 14.390625,
+            "x": 48.4921875,
+            "y": 288.8203125,
+            "text": "本机纪录",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        },
+        {
+          "id": "home-skin",
+          "rect": {
+            "left": 91,
+            "top": 210.625,
+            "width": 61,
+            "height": 85.390625,
+            "x": 121.5,
+            "y": 253.3203125
+          },
+          "image": {
+            "left": 91,
+            "top": 210.625,
+            "width": 61,
+            "height": 61,
+            "x": 121.5,
+            "y": 241.125
+          },
+          "label": {
+            "left": 97.484375,
+            "top": 281.625,
+            "width": 48.015625,
+            "height": 14.390625,
+            "x": 121.4921875,
+            "y": 288.8203125,
+            "text": "皮肤中心",
+            "size": 12,
+            "font": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", \"Microsoft YaHei\", ClassicUI, sans-serif"
+          }
+        }
+      ],
+      "scroll": {
+        "top": 0,
+        "height": 200,
+        "content": 328,
+        "width": 170,
+        "contentWidth": 170
+      }
+    }
+  ],
+  "checks": [
+    "Original animate/loopAnimate scheduling matches actual block, arrival, popup, charge and release frame intervals.",
+    "Native touch swipe scrolls the compact home; exactly two real offline entries remain reachable.",
+    "Home menu freezes the demo and resume preserves its clock and scroll position."
+  ],
+  "errors": [],
+  "historicalSchedule": [
+    {
+      "kind": "block",
+      "time": 0,
+      "index": 0
+    },
+    {
+      "kind": "block",
+      "time": 200,
+      "index": 1
+    },
+    {
+      "kind": "block",
+      "time": 400,
+      "index": 2
+    },
+    {
+      "kind": "block",
+      "time": 600,
+      "index": 3
+    },
+    {
+      "kind": "block",
+      "time": 800,
+      "index": 4
+    },
+    {
+      "kind": "block",
+      "time": 1000,
+      "index": 5
+    },
+    {
+      "kind": "block",
+      "time": 1200,
+      "index": 6
+    },
+    {
+      "kind": "arrival",
+      "time": 1500
+    },
+    {
+      "kind": "popup",
+      "time": 4500
+    },
+    {
+      "kind": "charge",
+      "time": 6000
+    },
+    {
+      "kind": "jump",
+      "time": 6719
+    }
+  ],
+  "schedule": {
+    "comparisons": [
+      {
+        "expected": {
+          "kind": "block",
+          "time": 0,
+          "index": 0
+        },
+        "actual": {
+          "kind": "block",
+          "index": 0,
+          "before": 0,
+          "after": 0
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 200,
+          "index": 1
+        },
+        "actual": {
+          "kind": "block",
+          "index": 1,
+          "before": 183.19999999999985,
+          "after": 200.00000000000006
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 400,
+          "index": 2
+        },
+        "actual": {
+          "kind": "block",
+          "index": 2,
+          "before": 399.90000000000043,
+          "after": 433.19999999999965
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 600,
+          "index": 3
+        },
+        "actual": {
+          "kind": "block",
+          "index": 3,
+          "before": 583.3000000000003,
+          "after": 600.0000000000011
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 800,
+          "index": 4
+        },
+        "actual": {
+          "kind": "block",
+          "index": 4,
+          "before": 783.2000000000006,
+          "after": 833.2000000000008
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 1000,
+          "index": 5
+        },
+        "actual": {
+          "kind": "block",
+          "index": 5,
+          "before": 983.2000000000014,
+          "after": 1016.6000000000012
+        }
+      },
+      {
+        "expected": {
+          "kind": "block",
+          "time": 1200,
+          "index": 6
+        },
+        "actual": {
+          "kind": "block",
+          "index": 6,
+          "before": 1199.900000000001,
+          "after": 1216.5999999999997
+        }
+      },
+      {
+        "expected": {
+          "kind": "arrival",
+          "time": 1500
+        },
+        "actual": {
+          "kind": "arrival",
+          "before": 1499.8999999999985,
+          "after": 1516.4999999999989
+        }
+      },
+      {
+        "expected": {
+          "kind": "popup",
+          "time": 4500
+        },
+        "actual": {
+          "kind": "popup",
+          "before": 4483.100000000014,
+          "after": 4516.400000000014
+        }
+      },
+      {
+        "expected": {
+          "kind": "charge",
+          "time": 6000
+        },
+        "actual": {
+          "kind": "charge",
+          "before": 5999.699999999965,
+          "after": 6016.299999999966
+        }
+      },
+      {
+        "expected": {
+          "kind": "jump",
+          "time": 6719
+        },
+        "actual": {
+          "kind": "jump",
+          "before": 6716.299999999944,
+          "after": 6733.099999999942
+        }
+      }
+    ],
+    "transitions": [
+      {
+        "kind": "arrival",
+        "before": 1499.8999999999985,
+        "after": 1516.4999999999989
+      },
+      {
+        "kind": "fade",
+        "before": 1833.2999999999954,
+        "after": 1849.7999999999954
+      },
+      {
+        "kind": "waiting",
+        "before": 4483.100000000014,
+        "after": 4516.400000000014
+      },
+      {
+        "kind": "charge",
+        "before": 5999.699999999965,
+        "after": 6016.299999999966
+      },
+      {
+        "kind": "jump",
+        "before": 6716.299999999944,
+        "after": 6733.099999999942
+      }
+    ],
+    "clock": "Scene milliseconds; each expected instant must lie between the two real observed frames."
+  },
+  "touchScroll": {
+    "initial": 0,
+    "scrolled": 95
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n96 !== 95\n"
+}
