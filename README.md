@@ -45,7 +45,7 @@ node scripts/check.cjs
 node --test
 ```
 
-当前分支包含 **33 项回归测试**，覆盖跳跃射程、运动中间位置、动画衔接、无敌重试、普通失败、存档及音频生命周期。中断、模式切换与皮肤资源异常的复现和结果见 [第二批验收](docs/ACCEPTANCE-ROUND2.md)。落地形变与历史运动参数的核对见 [第三批验收](docs/ACCEPTANCE-ROUND3.md)。皮肤中心的小窗口布局与选择状态见 [第四批验收](docs/ACCEPTANCE-ROUND4.md)。两列皮肤页、历史可执行源码对照、原始海报与键盘/触控验证见 [第五批验收](docs/ACCEPTANCE-ROUND5.md)。另有可选真实浏览器脚本 `node scripts/browser-qa.cjs`；复现条件、画面和未完成对照项见 [本批验收记录](docs/ACCEPTANCE.md)。测试通过不代表 Pages 已完成部署，应查看工作流的 `deploy` 结果。
+当前分支包含 **33 项回归测试**，覆盖跳跃射程、运动中间位置、动画衔接、无敌重试、普通失败、存档及音频生命周期。中断、模式切换与皮肤资源异常的复现和结果见 [第二批验收](docs/ACCEPTANCE-ROUND2.md)。落地形变与历史运动参数的核对见 [第三批验收](docs/ACCEPTANCE-ROUND3.md)。皮肤中心的小窗口布局与选择状态见 [第四批验收](docs/ACCEPTANCE-ROUND4.md)。两列皮肤页、历史可执行源码对照、原始海报与键盘/触控验证见 [第五批验收](docs/ACCEPTANCE-ROUND5.md)。普通模式结算得分区与导航对照见 [第六批验收](docs/ACCEPTANCE-ROUND6.md)。另有可选真实浏览器脚本 `node scripts/browser-qa.cjs`；复现条件、画面和未完成对照项见 [本批验收记录](docs/ACCEPTANCE.md)。测试通过不代表 Pages 已完成部署，应查看工作流的 `deploy` 结果。
 
 这些检查可以在无浏览器环境中执行。音频实际听感、设备静音开关及手机浏览器表现仍应在对应设备上验证。
 
