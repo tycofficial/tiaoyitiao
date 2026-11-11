@@ -1,0 +1,3064 @@
+{
+  "passed": true,
+  "productSha256": "7639a34cb111c18c9eb7fcf5c4e74d138d97d2b157bfc1e60307a9e0c2783943",
+  "scriptSha256": "a0cd0c1c172d72b772ab29ff80db67d20437c9c63753be003f5b1c3d08de52b7",
+  "helperSha256": "85583c339fee8ac21e67d955aa200223e068bf6197532d800700fbe704a4b054",
+  "recordVideo": true,
+  "telemetry": {
+    "desktop": {
+      "label": "desktop",
+      "inputs": [
+        {
+          "id": 1,
+          "requestedHoldMs": 50,
+          "pointer": true,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334641412,
+            "monotonicMs": 5948.468936
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334641432,
+                "monotonicMs": 5967.623141
+              },
+              "end": {
+                "wallMs": 1794334641439,
+                "monotonicMs": 5975.21888
+              },
+              "elapsedMs": 7.5957390000003215
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334641439,
+                "monotonicMs": 5975.236952
+              },
+              "end": {
+                "wallMs": 1794334641492,
+                "monotonicMs": 6027.747649
+              },
+              "elapsedMs": 52.51069699999971
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334641492,
+                "monotonicMs": 6027.763932
+              },
+              "end": {
+                "wallMs": 1794334641532,
+                "monotonicMs": 6068.075132
+              },
+              "elapsedMs": 40.3112000000001
+            }
+          ],
+          "end": {
+            "wallMs": 1794334641593,
+            "monotonicMs": 6129.273239
+          },
+          "events": [
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerdown",
+              "eventMs": 2089.5999999996275,
+              "trusted": true,
+              "pointerType": "mouse",
+              "pointerId": 1,
+              "repeat": false,
+              "wallMs": 1794334641435,
+              "pageMs": 2092.2000000011176
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerdown",
+              "wallMs": 1794334641437,
+              "pageMs": 2093.5999999996275
+            },
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerup",
+              "eventMs": 2149.5999999996275,
+              "trusted": true,
+              "pointerType": "mouse",
+              "pointerId": 1,
+              "repeat": false,
+              "wallMs": 1794334641529,
+              "pageMs": 2185.800000000745
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerup",
+              "wallMs": 1794334641531,
+              "pageMs": 2188,
+              "consumedHoldMs": 60,
+              "hit": 2,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334641581,
+            "pageMs": 2238.4000000003725
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 0,
+            "jumps": 0,
+            "flight": {
+              "elapsed": 0.049999999999999996,
+              "hold": 0.06,
+              "duration": 0.3766005057219703,
+              "vy": 135.9,
+              "vz": 4.248533859328428,
+              "start": [
+                0,
+                2.62805,
+                0
+              ],
+              "end": [
+                1.6,
+                2.75,
+                0
+              ],
+              "hit": 2
+            }
+          },
+          "consumedHoldMs": 60,
+          "captureIntervalMs": 93.59999999962747,
+          "eventTimestampIntervalMs": 60,
+          "longTasks": [
+            {
+              "startMs": 2125.800000000745,
+              "durationMs": 59,
+              "name": "self"
+            }
+          ],
+          "rafGaps": []
+        },
+        {
+          "id": 2,
+          "requestedHoldMs": 2200,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334641954,
+            "monotonicMs": 6489.60997
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334641955,
+                "monotonicMs": 6490.719433
+              },
+              "end": {
+                "wallMs": 1794334641968,
+                "monotonicMs": 6504.304748
+              },
+              "elapsedMs": 13.585314999999355
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334641968,
+                "monotonicMs": 6504.318548
+              },
+              "end": {
+                "wallMs": 1794334644173,
+                "monotonicMs": 8709.10882
+              },
+              "elapsedMs": 2204.7902719999993
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334644173,
+                "monotonicMs": 8709.132137
+              },
+              "end": {
+                "wallMs": 1794334644179,
+                "monotonicMs": 8715.136639
+              },
+              "elapsedMs": 6.004501999999775
+            }
+          ],
+          "end": {
+            "wallMs": 1794334644216,
+            "monotonicMs": 8752.119369
+          },
+          "events": [
+            {
+              "id": 2,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 2612.5,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334641958,
+              "pageMs": 2615.300000000745
+            },
+            {
+              "id": 2,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334641964,
+              "pageMs": 2620.800000000745
+            },
+            {
+              "id": 2,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 4831.200000001118,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334644174,
+              "pageMs": 4831.5
+            },
+            {
+              "id": 2,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334644175,
+              "pageMs": 4832.0999999996275,
+              "consumedHoldMs": 2218.7000000011176,
+              "hit": 0,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334644200,
+            "pageMs": 4857.300000000745
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 0,
+            "jumps": 0,
+            "flight": {
+              "elapsed": 0,
+              "hold": 2.2187000000011174,
+              "duration": 0.4465847416108967,
+              "vy": 168.28,
+              "vz": 151.14712552989965,
+              "start": [
+                1.6,
+                -0.6036250000000001,
+                0
+              ],
+              "end": [
+                69.1,
+                2.75,
+                0
+              ],
+              "hit": 0
+            }
+          },
+          "consumedHoldMs": 2218.7000000011176,
+          "captureIntervalMs": 2216.199999999255,
+          "eventTimestampIntervalMs": 2218.7000000011176,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 3437.5,
+              "durationMs": 50.09999999999991
+            },
+            {
+              "startMs": 3620.8,
+              "durationMs": 50.09999999999991
+            },
+            {
+              "startMs": 3754.2,
+              "durationMs": 133.30000000000018
+            },
+            {
+              "startMs": 4187.5,
+              "durationMs": 50.100000000000364
+            },
+            {
+              "startMs": 4670.8,
+              "durationMs": 100.09999999999945
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "requestedHoldMs": 673.9285716321319,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334644938,
+            "monotonicMs": 9474.112054
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334644939,
+                "monotonicMs": 9475.26395
+              },
+              "end": {
+                "wallMs": 1794334644941,
+                "monotonicMs": 9476.605416
+              },
+              "elapsedMs": 1.3414659999998548
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334644941,
+                "monotonicMs": 9476.615462
+              },
+              "end": {
+                "wallMs": 1794334645614,
+                "monotonicMs": 10150.180933
+              },
+              "elapsedMs": 673.5654709999999
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334645614,
+                "monotonicMs": 10150.208589
+              },
+              "end": {
+                "wallMs": 1794334645619,
+                "monotonicMs": 10155.540905
+              },
+              "elapsedMs": 5.332315999999992
+            }
+          ],
+          "end": {
+            "wallMs": 1794334645629,
+            "monotonicMs": 10165.399495
+          },
+          "events": [
+            {
+              "id": 3,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 5596.5999999996275,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334644940,
+              "pageMs": 5596.9000000003725
+            },
+            {
+              "id": 3,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334644940,
+              "pageMs": 5597.200000001118
+            },
+            {
+              "id": 3,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 6272.0999999996275,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334645616,
+              "pageMs": 6272.700000001118
+            },
+            {
+              "id": 3,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334645616,
+              "pageMs": 6273.0999999996275,
+              "consumedHoldMs": 675.5,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334645621,
+            "pageMs": 6278.4000000003725
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 0,
+            "jumps": 0,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.6755,
+              "duration": 0.3934456558855069,
+              "vy": 145.13,
+              "vz": 46.867972041775595,
+              "start": [
+                1.6,
+                1.3770462499999998,
+                0
+              ],
+              "end": [
+                20.04,
+                2.75,
+                0
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 675.5,
+          "captureIntervalMs": 675.8000000007451,
+          "eventTimestampIntervalMs": 675.5,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 5537.4,
+              "durationMs": 66.70000000000073
+            },
+            {
+              "startMs": 5720.8,
+              "durationMs": 83.39999999999964
+            },
+            {
+              "startMs": 5904.1,
+              "durationMs": 50.099999999999454
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "requestedHoldMs": 760.3571426589042,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334646376,
+            "monotonicMs": 10912.465769
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334646378,
+                "monotonicMs": 10913.6206
+              },
+              "end": {
+                "wallMs": 1794334646380,
+                "monotonicMs": 10915.874797
+              },
+              "elapsedMs": 2.254197000000204
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334646380,
+                "monotonicMs": 10915.891222
+              },
+              "end": {
+                "wallMs": 1794334647143,
+                "monotonicMs": 11679.227279
+              },
+              "elapsedMs": 763.3360570000004
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334647143,
+                "monotonicMs": 11679.233225
+              },
+              "end": {
+                "wallMs": 1794334647148,
+                "monotonicMs": 11683.76831
+              },
+              "elapsedMs": 4.535084999999526
+            }
+          ],
+          "end": {
+            "wallMs": 1794334647156,
+            "monotonicMs": 11691.696983
+          },
+          "events": [
+            {
+              "id": 4,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 7034.9000000003725,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334646378,
+              "pageMs": 7035.4000000003725
+            },
+            {
+              "id": 4,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334646379,
+              "pageMs": 7036
+            },
+            {
+              "id": 4,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 7800.9000000003725,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334647146,
+              "pageMs": 7803.5
+            },
+            {
+              "id": 4,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334647147,
+              "pageMs": 7804,
+              "consumedHoldMs": 766,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334647149,
+            "pageMs": 7806.300000000745
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 2,
+            "jumps": 1,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.766,
+              "duration": 0.395995563679686,
+              "vy": 146.49,
+              "vz": 54.16736767093937,
+              "start": [
+                20.04,
+                1.1931049999999999,
+                0
+              ],
+              "end": [
+                20,
+                2.75,
+                -21.45
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 766,
+          "captureIntervalMs": 768.0999999996275,
+          "eventTimestampIntervalMs": 766,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 7620.7,
+              "durationMs": 50.100000000000364
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "requestedHoldMs": 693.4999998193234,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334647850,
+            "monotonicMs": 12386.412103
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334647855,
+                "monotonicMs": 12391.054234
+              },
+              "end": {
+                "wallMs": 1794334647858,
+                "monotonicMs": 12393.805454
+              },
+              "elapsedMs": 2.751220000000103
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334647858,
+                "monotonicMs": 12393.809813
+              },
+              "end": {
+                "wallMs": 1794334648552,
+                "monotonicMs": 13087.641623
+              },
+              "elapsedMs": 693.8318099999997
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334648552,
+                "monotonicMs": 13087.647029
+              },
+              "end": {
+                "wallMs": 1794334648554,
+                "monotonicMs": 13089.912096
+              },
+              "elapsedMs": 2.265067000000272
+            }
+          ],
+          "end": {
+            "wallMs": 1794334648566,
+            "monotonicMs": 13101.934583
+          },
+          "events": [
+            {
+              "id": 5,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 8512.800000000745,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334647856,
+              "pageMs": 8513.400000000373
+            },
+            {
+              "id": 5,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334647857,
+              "pageMs": 8514.200000001118
+            },
+            {
+              "id": 5,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 9209.200000001118,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334648553,
+              "pageMs": 9209.599999999627
+            },
+            {
+              "id": 5,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334648553,
+              "pageMs": 9210.099999999627,
+              "consumedHoldMs": 696.4000000003725,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334648557,
+            "pageMs": 9214.099999999627
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 6,
+            "jumps": 2,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.6964000000003725,
+              "duration": 0.394049960944836,
+              "vy": 145.45,
+              "vz": 48.24432226891978,
+              "start": [
+                20,
+                1.3345669999992427,
+                -21.45
+              ],
+              "end": [
+                39.01,
+                2.75,
+                -21.29
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 696.4000000003725,
+          "captureIntervalMs": 696.1999999992549,
+          "eventTimestampIntervalMs": 696.4000000003725,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 8737.4,
+              "durationMs": 66.60000000000036
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "requestedHoldMs": 417.3571427818388,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334649278,
+            "monotonicMs": 13814.36576
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334649280,
+                "monotonicMs": 13816.254381
+              },
+              "end": {
+                "wallMs": 1794334649288,
+                "monotonicMs": 13824.452553
+              },
+              "elapsedMs": 8.198171999998522
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334649288,
+                "monotonicMs": 13824.456371
+              },
+              "end": {
+                "wallMs": 1794334649713,
+                "monotonicMs": 14249.227022
+              },
+              "elapsedMs": 424.7706509999989
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334649713,
+                "monotonicMs": 14249.234678
+              },
+              "end": {
+                "wallMs": 1794334649717,
+                "monotonicMs": 14252.625343
+              },
+              "elapsedMs": 3.3906649999989895
+            }
+          ],
+          "end": {
+            "wallMs": 1794334649727,
+            "monotonicMs": 14262.701635
+          },
+          "events": [
+            {
+              "id": 6,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 9937.900000000373,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334649287,
+              "pageMs": 9944.099999999627
+            },
+            {
+              "id": 6,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334649288,
+              "pageMs": 9944.599999999627
+            },
+            {
+              "id": 6,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 10371.300000000745,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334649715,
+              "pageMs": 10371.700000001118
+            },
+            {
+              "id": 6,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334649715,
+              "pageMs": 10372.200000001118,
+              "consumedHoldMs": 433.40000000037253,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334649718,
+            "pageMs": 10375.300000000745
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 12,
+            "jumps": 3,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.43340000000037254,
+              "duration": 0.3867283647158912,
+              "vy": 141.5,
+              "vz": 29.814924812990498,
+              "start": [
+                39.01,
+                1.8691144999992426,
+                -21.29
+              ],
+              "end": [
+                38.93,
+                2.75,
+                -32.82
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 433.40000000037253,
+          "captureIntervalMs": 427.6000000014901,
+          "eventTimestampIntervalMs": 433.40000000037253,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 9970.6,
+              "durationMs": 50.100000000000364
+            },
+            {
+              "startMs": 10120.6,
+              "durationMs": 66.69999999999891
+            },
+            {
+              "startMs": 10203.9,
+              "durationMs": 66.80000000000109
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "requestedHoldMs": 670.2142858412117,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334650451,
+            "monotonicMs": 14986.672165
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334650463,
+                "monotonicMs": 14999.446238
+              },
+              "end": {
+                "wallMs": 1794334650467,
+                "monotonicMs": 15003.119097
+              },
+              "elapsedMs": 3.672859000000244
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334650467,
+                "monotonicMs": 15003.122647
+              },
+              "end": {
+                "wallMs": 1794334651138,
+                "monotonicMs": 15673.774445
+              },
+              "elapsedMs": 670.651797999999
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334651138,
+                "monotonicMs": 15673.784974
+              },
+              "end": {
+                "wallMs": 1794334651146,
+                "monotonicMs": 15681.99924
+              },
+              "elapsedMs": 8.214265999999043
+            }
+          ],
+          "end": {
+            "wallMs": 1794334651205,
+            "monotonicMs": 15741.026273
+          },
+          "events": [
+            {
+              "id": 7,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 11121,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334650465,
+              "pageMs": 11122
+            },
+            {
+              "id": 7,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334650466,
+              "pageMs": 11122.700000001118
+            },
+            {
+              "id": 7,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 11795.400000000373,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334651144,
+              "pageMs": 11801.099999999627
+            },
+            {
+              "id": 7,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334651145,
+              "pageMs": 11801.599999999627,
+              "consumedHoldMs": 674.4000000003725,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334651155,
+            "pageMs": 11811.800000000745
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 20,
+            "jumps": 4,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.6744000000003725,
+              "duration": 0.3934333603567012,
+              "vy": 145.12,
+              "vz": 46.80594652657936,
+              "start": [
+                38.93,
+                1.3792819999992427,
+                -32.82
+              ],
+              "end": [
+                57.34,
+                2.75,
+                -32.39
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 674.4000000003725,
+          "captureIntervalMs": 679.0999999996275,
+          "eventTimestampIntervalMs": 674.4000000003725,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 11470.5,
+              "durationMs": 100
+            },
+            {
+              "startMs": 11570.5,
+              "durationMs": 50.100000000000364
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "requestedHoldMs": 537.7857142593712,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334651791,
+            "monotonicMs": 16326.629372
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334651792,
+                "monotonicMs": 16327.96015
+              },
+              "end": {
+                "wallMs": 1794334651798,
+                "monotonicMs": 16333.998516
+              },
+              "elapsedMs": 6.0383659999988595
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334651798,
+                "monotonicMs": 16334.001634
+              },
+              "end": {
+                "wallMs": 1794334652335,
+                "monotonicMs": 16871.413395
+              },
+              "elapsedMs": 537.4117609999994
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334652335,
+                "monotonicMs": 16871.421895
+              },
+              "end": {
+                "wallMs": 1794334652340,
+                "monotonicMs": 16875.718635
+              },
+              "elapsedMs": 4.296740000001591
+            }
+          ],
+          "end": {
+            "wallMs": 1794334652352,
+            "monotonicMs": 16888.268855
+          },
+          "events": [
+            {
+              "id": 8,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 12452,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334651796,
+              "pageMs": 12453.400000000373
+            },
+            {
+              "id": 8,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334651797,
+              "pageMs": 12454
+            },
+            {
+              "id": 8,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 12994.300000000745,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334652338,
+              "pageMs": 12994.800000000745
+            },
+            {
+              "id": 8,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334652338,
+              "pageMs": 12995.400000000373,
+              "consumedHoldMs": 542.3000000007451,
+              "hit": 1,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334652341,
+            "pageMs": 12998.300000000745
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 30,
+            "jumps": 5,
+            "flight": {
+              "elapsed": 0,
+              "hold": 0.5423000000007451,
+              "duration": 0.3897272351693431,
+              "vy": 143.13,
+              "vz": 37.97652591447972,
+              "start": [
+                57.34,
+                1.6477752499984857,
+                -32.39
+              ],
+              "end": [
+                57.22,
+                2.75,
+                -47.19
+              ],
+              "hit": 1
+            }
+          },
+          "consumedHoldMs": 542.3000000007451,
+          "captureIntervalMs": 541.4000000003725,
+          "eventTimestampIntervalMs": 542.3000000007451,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 12387.2,
+              "durationMs": 66.59999999999854
+            },
+            {
+              "startMs": 12453.8,
+              "durationMs": 66.80000000000109
+            },
+            {
+              "startMs": 12520.6,
+              "durationMs": 66.60000000000036
+            },
+            {
+              "startMs": 12637.2,
+              "durationMs": 83.39999999999964
+            },
+            {
+              "startMs": 12720.6,
+              "durationMs": 66.60000000000036
+            },
+            {
+              "startMs": 12787.2,
+              "durationMs": 83.29999999999927
+            },
+            {
+              "startMs": 12870.5,
+              "durationMs": 66.70000000000073
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "requestedHoldMs": 2200,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334653186,
+            "monotonicMs": 17722.180073
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334653189,
+                "monotonicMs": 17725.202638
+              },
+              "end": {
+                "wallMs": 1794334653191,
+                "monotonicMs": 17727.502392
+              },
+              "elapsedMs": 2.299753999999666
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334653191,
+                "monotonicMs": 17727.506598
+              },
+              "end": {
+                "wallMs": 1794334655393,
+                "monotonicMs": 19928.927246
+              },
+              "elapsedMs": 2201.4206479999993
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334655393,
+                "monotonicMs": 19928.93725
+              },
+              "end": {
+                "wallMs": 1794334655398,
+                "monotonicMs": 19933.843323
+              },
+              "elapsedMs": 4.906073000001925
+            }
+          ],
+          "end": {
+            "wallMs": 1794334655429,
+            "monotonicMs": 19965.2638
+          },
+          "events": [
+            {
+              "id": 9,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 13846.599999999627,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334653190,
+              "pageMs": 13847
+            },
+            {
+              "id": 9,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334653190,
+              "pageMs": 13847.5
+            },
+            {
+              "id": 9,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 16053.300000000745,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334655397,
+              "pageMs": 16053.599999999627
+            },
+            {
+              "id": 9,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334655397,
+              "pageMs": 16054.200000001118,
+              "consumedHoldMs": 2206.7000000011176,
+              "hit": 0,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334655413,
+            "pageMs": 16070.400000000373
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 42,
+            "jumps": 6,
+            "flight": {
+              "elapsed": 0,
+              "hold": 2.2067000000011174,
+              "duration": 0.4460602123566198,
+              "vy": 168.1,
+              "vz": 151.32486182388882,
+              "start": [
+                57.22,
+                -0.6036250000000001,
+                -47.19
+              ],
+              "end": [
+                57.22,
+                2.75,
+                -114.69
+              ],
+              "hit": 0
+            }
+          },
+          "consumedHoldMs": 2206.7000000011176,
+          "captureIntervalMs": 2206.5999999996275,
+          "eventTimestampIntervalMs": 2206.7000000011176,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 14137.1,
+              "durationMs": 50.100000000000364
+            },
+            {
+              "startMs": 15420.4,
+              "durationMs": 50.100000000000364
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "requestedHoldMs": 2200,
+          "pointer": false,
+          "touch": false,
+          "start": {
+            "wallMs": 1794334656879,
+            "monotonicMs": 21414.618644
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334656882,
+                "monotonicMs": 21417.709527
+              },
+              "end": {
+                "wallMs": 1794334656887,
+                "monotonicMs": 21423.279368
+              },
+              "elapsedMs": 5.5698410000004515
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334656887,
+                "monotonicMs": 21423.283244
+              },
+              "end": {
+                "wallMs": 1794334659088,
+                "monotonicMs": 23623.696672
+              },
+              "elapsedMs": 2200.413428
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334659088,
+                "monotonicMs": 23623.702846
+              },
+              "end": {
+                "wallMs": 1794334659090,
+                "monotonicMs": 23626.577066
+              },
+              "elapsedMs": 2.8742200000015146
+            }
+          ],
+          "end": {
+            "wallMs": 1794334659106,
+            "monotonicMs": 23642.488534
+          },
+          "events": [
+            {
+              "id": 10,
+              "phase": "capture",
+              "type": "keydown",
+              "eventMs": 17539.5,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334656883,
+              "pageMs": 17540.300000000745
+            },
+            {
+              "id": 10,
+              "phase": "after-handler",
+              "type": "keydown",
+              "wallMs": 1794334656884,
+              "pageMs": 17540.700000001118
+            },
+            {
+              "id": 10,
+              "phase": "capture",
+              "type": "keyup",
+              "eventMs": 19745.300000000745,
+              "trusted": true,
+              "pointerType": null,
+              "pointerId": null,
+              "repeat": false,
+              "wallMs": 1794334659089,
+              "pageMs": 19745.599999999627
+            },
+            {
+              "id": 10,
+              "phase": "after-handler",
+              "type": "keyup",
+              "wallMs": 1794334659089,
+              "pageMs": 19746,
+              "consumedHoldMs": 2205.800000000745,
+              "hit": 0,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334639343.5,
+          "read": {
+            "wallMs": 1794334659097,
+            "pageMs": 19754
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 0,
+            "jumps": 0,
+            "flight": {
+              "elapsed": 0,
+              "hold": 2.205800000000745,
+              "duration": 0.44603107006779275,
+              "vy": 168.09,
+              "vz": 151.33474892173004,
+              "start": [
+                0,
+                -0.6036250000000001,
+                0
+              ],
+              "end": [
+                67.5,
+                2.75,
+                0
+              ],
+              "hit": 0
+            }
+          },
+          "consumedHoldMs": 2205.800000000745,
+          "captureIntervalMs": 2205.2999999988824,
+          "eventTimestampIntervalMs": 2205.800000000745,
+          "longTasks": [],
+          "rafGaps": [
+            {
+              "startMs": 19420.2,
+              "durationMs": 50.099999999998545
+            },
+            {
+              "startMs": 19637,
+              "durationMs": 66.59999999999854
+            }
+          ]
+        }
+      ],
+      "navigations": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "start": {
+            "wallMs": 1794334636440,
+            "monotonicMs": 976.259375
+          },
+          "status": 200,
+          "end": {
+            "wallMs": 1794334638129,
+            "monotonicMs": 2664.777109
+          }
+        }
+      ],
+      "pageEvents": [
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334636461,
+            "monotonicMs": 997.455263
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334636641,
+            "monotonicMs": 1177.116568
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334636741,
+            "monotonicMs": 1277.259114
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334636454.548,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": -1,
+            "responseStart": 170.704,
+            "responseEnd": 172.403
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334637828,
+            "monotonicMs": 2363.949468
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334638129,
+            "monotonicMs": 2664.703563
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334638129,
+            "monotonicMs": 2664.865156
+          },
+          "end": {
+            "wallMs": 1794334638770,
+            "monotonicMs": 3305.994311
+          }
+        },
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334639345,
+            "monotonicMs": 3880.684767
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334639350,
+            "monotonicMs": 3886.537433
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334639498,
+            "monotonicMs": 4034.245085
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334639345.8672,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": 0.397,
+            "responseStart": 2.027,
+            "responseEnd": 96.734
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334640089,
+            "monotonicMs": 4625.261046
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334640146,
+            "monotonicMs": 4682.047072
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334640146,
+            "monotonicMs": 4682.108873
+          },
+          "end": {
+            "wallMs": 1794334640673,
+            "monotonicMs": 5208.767794
+          }
+        },
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334661746,
+            "monotonicMs": 26281.773439
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334661750,
+            "monotonicMs": 26285.658448
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334661900,
+            "monotonicMs": 26436.286843
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334661742.188,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": 0.232,
+            "responseStart": 1.47,
+            "responseEnd": 93.324
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334662555,
+            "monotonicMs": 27090.667492
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334662596,
+            "monotonicMs": 27131.689174
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334662596,
+            "monotonicMs": 27131.72928
+          },
+          "end": {
+            "wallMs": 1794334663124,
+            "monotonicMs": 27660.116673
+          }
+        },
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334664023,
+            "monotonicMs": 28558.905014
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334664030,
+            "monotonicMs": 28565.896878
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334664171,
+            "monotonicMs": 28706.725956
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334664023.406,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": 0.229,
+            "responseStart": 2.566,
+            "responseEnd": 80.612
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334664788,
+            "monotonicMs": 29324.118756
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334664850,
+            "monotonicMs": 29386.078632
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334664850,
+            "monotonicMs": 29386.196506
+          },
+          "end": {
+            "wallMs": 1794334665437,
+            "monotonicMs": 29973.276793
+          }
+        },
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334666547,
+            "monotonicMs": 31082.776221
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334666553,
+            "monotonicMs": 31088.786923
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334666692,
+            "monotonicMs": 31228.265625
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334666549.1199,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": 0.21,
+            "responseStart": 1.791,
+            "responseEnd": 86.079
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334667231,
+            "monotonicMs": 31766.651534
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334667285,
+            "monotonicMs": 31820.987089
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334667285,
+            "monotonicMs": 31821.04258
+          },
+          "end": {
+            "wallMs": 1794334667899,
+            "monotonicMs": 32434.755868
+          }
+        }
+      ],
+      "errors": [],
+      "consoleIssues": [
+        {
+          "at": {
+            "wallMs": 1794334637381,
+            "monotonicMs": 1917.335842
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637391,
+            "monotonicMs": 1927.519948
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637392,
+            "monotonicMs": 1928.052678
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637611,
+            "monotonicMs": 2147.511095
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637612,
+            "monotonicMs": 2148.367369
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637612,
+            "monotonicMs": 2148.552555
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637681,
+            "monotonicMs": 2217.473179
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637684,
+            "monotonicMs": 2220.45975
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334637685,
+            "monotonicMs": 2220.606166
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334638254,
+            "monotonicMs": 2790.570317
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (100x88). Resized to 64x64 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334638470,
+            "monotonicMs": 3006.223193
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334638471,
+            "monotonicMs": 3007.346668
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334638471,
+            "monotonicMs": 3007.486112
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334638521,
+            "monotonicMs": 3057.571154
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639792,
+            "monotonicMs": 4328.350409
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639804,
+            "monotonicMs": 4339.609066
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639804,
+            "monotonicMs": 4339.756619
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639911,
+            "monotonicMs": 4446.736981
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639911,
+            "monotonicMs": 4446.775126
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334639911,
+            "monotonicMs": 4446.804317
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640009,
+            "monotonicMs": 4545.451788
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640010,
+            "monotonicMs": 4545.660187
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640010,
+            "monotonicMs": 4545.682285
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640207,
+            "monotonicMs": 4742.728181
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (100x88). Resized to 64x64 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640458,
+            "monotonicMs": 4994.196922
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640460,
+            "monotonicMs": 4996.243433
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640460,
+            "monotonicMs": 4996.473112
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640475,
+            "monotonicMs": 5010.669649
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334640657,
+            "monotonicMs": 5193.108365
+          },
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "at": {
+            "wallMs": 1794334641387,
+            "monotonicMs": 5922.766518
+          },
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "at": {
+            "wallMs": 1794334648973,
+            "monotonicMs": 13509.206605
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (144x16). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334648977,
+            "monotonicMs": 13513.185366
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (320x200). Resized to 256x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334652787,
+            "monotonicMs": 17322.770677
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (280x255). Resized to 256x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662234,
+            "monotonicMs": 26770.364373
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662235,
+            "monotonicMs": 26770.622573
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662235,
+            "monotonicMs": 26770.73532
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662362,
+            "monotonicMs": 26898.523636
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662365,
+            "monotonicMs": 26900.763959
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662365,
+            "monotonicMs": 26900.799112
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662472,
+            "monotonicMs": 27008.040346
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662472,
+            "monotonicMs": 27008.066499
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662472,
+            "monotonicMs": 27008.0898
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662620,
+            "monotonicMs": 27156.40332
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (100x88). Resized to 64x64 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662811,
+            "monotonicMs": 27347.288929
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662811,
+            "monotonicMs": 27347.508215
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662811,
+            "monotonicMs": 27347.527464
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334662923,
+            "monotonicMs": 27458.792932
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334663839,
+            "monotonicMs": 28375.03561
+          },
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "at": {
+            "wallMs": 1794334664449,
+            "monotonicMs": 28984.656888
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334664456,
+            "monotonicMs": 28991.918341
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        }
+      ],
+      "runtime": {
+        "timeOrigin": 1794334666545,
+        "now": 3061,
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 739.1000000014901,
+            "navigationId": 1984,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.8000000007450581,
+            "domainLookupStart": 0.8000000007450581,
+            "domainLookupEnd": 0.8000000007450581,
+            "connectStart": 0.8000000007450581,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.8000000007450581,
+            "requestStart": 4.300000000745058,
+            "responseStart": 5.700000001117587,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 5.700000001117587,
+            "responseEnd": 86.90000000037253,
+            "transferSize": 4498881,
+            "encodedBodySize": 4498581,
+            "decodedBodySize": 4498581,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 15.600000001490116,
+            "unloadEventEnd": 15.600000001490116,
+            "domInteractive": 682,
+            "domContentLoadedEventStart": 682.2000000011176,
+            "domContentLoadedEventEnd": 682.4000000003725,
+            "domComplete": 732.1000000014901,
+            "loadEventStart": 739,
+            "loadEventEnd": 739.1000000014901,
+            "type": "reload",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "visibility": "visible",
+        "timing": {
+          "active": null,
+          "events": [],
+          "longTasks": [
+            {
+              "startMs": 192.30000000074506,
+              "durationMs": 483,
+              "name": "self"
+            },
+            {
+              "startMs": 740.5,
+              "durationMs": 400,
+              "name": "self"
+            },
+            {
+              "startMs": 1380.6000000014901,
+              "durationMs": 157,
+              "name": "self"
+            },
+            {
+              "startMs": 1902,
+              "durationMs": 66,
+              "name": "self"
+            },
+            {
+              "startMs": 2352.60000000149,
+              "durationMs": 60,
+              "name": "self"
+            }
+          ],
+          "rafGaps": [
+            {
+              "startMs": 101.7,
+              "durationMs": 66.7
+            },
+            {
+              "startMs": 168.4,
+              "durationMs": 500
+            },
+            {
+              "startMs": 668.4,
+              "durationMs": 466.6
+            },
+            {
+              "startMs": 1151.7,
+              "durationMs": 166.5999999999999
+            },
+            {
+              "startMs": 1368.3,
+              "durationMs": 166.70000000000005
+            },
+            {
+              "startMs": 1901.6,
+              "durationMs": 50.100000000000136
+            },
+            {
+              "startMs": 2101.7,
+              "durationMs": 83.30000000000018
+            },
+            {
+              "startMs": 2418.3,
+              "durationMs": 133.29999999999973
+            },
+            {
+              "startMs": 2551.6,
+              "durationMs": 83.40000000000009
+            },
+            {
+              "startMs": 2635,
+              "durationMs": 66.69999999999982
+            },
+            {
+              "startMs": 2718.2,
+              "durationMs": 50.100000000000364
+            },
+            {
+              "startMs": 2784.9,
+              "durationMs": 83.40000000000009
+            }
+          ],
+          "marks": [
+            {
+              "name": "init",
+              "wallMs": 1794334666606,
+              "pageMs": 61.600000001490116,
+              "visibility": "visible"
+            },
+            {
+              "name": "DOMContentLoaded",
+              "wallMs": 1794334667227,
+              "pageMs": 682.2000000011176,
+              "visibility": "visible"
+            },
+            {
+              "name": "load",
+              "wallMs": 1794334667284,
+              "pageMs": 739.1000000014901,
+              "visibility": "visible"
+            }
+          ],
+          "longTaskSupported": true,
+          "armed": true
+        }
+      },
+      "metrics": {
+        "Documents": 1,
+        "Frames": 1,
+        "Nodes": 427,
+        "LayoutDuration": 0.034519,
+        "ScriptDuration": 0.727204,
+        "TaskDuration": 1.902837,
+        "JSHeapUsedSize": 20572232
+      }
+    },
+    "mobile": {
+      "label": "mobile",
+      "inputs": [
+        {
+          "id": 1,
+          "requestedHoldMs": 2200,
+          "pointer": false,
+          "touch": true,
+          "start": {
+            "wallMs": 1794334671716,
+            "monotonicMs": 36252.126956
+          },
+          "steps": [
+            {
+              "name": "down",
+              "start": {
+                "wallMs": 1794334671728,
+                "monotonicMs": 36264.288429
+              },
+              "end": {
+                "wallMs": 1794334671843,
+                "monotonicMs": 36378.704795
+              },
+              "elapsedMs": 114.41636599999765
+            },
+            {
+              "name": "waitForTimeout",
+              "start": {
+                "wallMs": 1794334671843,
+                "monotonicMs": 36378.710781
+              },
+              "end": {
+                "wallMs": 1794334674046,
+                "monotonicMs": 38581.996875
+              },
+              "elapsedMs": 2203.2860939999955
+            },
+            {
+              "name": "up",
+              "start": {
+                "wallMs": 1794334674046,
+                "monotonicMs": 38582.004844
+              },
+              "end": {
+                "wallMs": 1794334674106,
+                "monotonicMs": 38641.841459
+              },
+              "elapsedMs": 59.836615000000165
+            }
+          ],
+          "end": {
+            "wallMs": 1794334674120,
+            "monotonicMs": 38655.670461
+          },
+          "events": [
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerdown",
+              "eventMs": 1755,
+              "trusted": true,
+              "pointerType": "touch",
+              "pointerId": 3,
+              "repeat": false,
+              "wallMs": 1794334671840,
+              "pageMs": 1866.5
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerdown",
+              "wallMs": 1794334671842,
+              "pageMs": 1868
+            },
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerup",
+              "eventMs": 4073.199999999255,
+              "trusted": true,
+              "pointerType": "touch",
+              "pointerId": 3,
+              "repeat": false,
+              "wallMs": 1794334674100,
+              "pageMs": 4126.0999999996275
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerup",
+              "wallMs": 1794334674102,
+              "pageMs": 4128.39999999851,
+              "consumedHoldMs": 2318.199999999255,
+              "hit": 0,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "timeOrigin": 1794334669974.1,
+          "read": {
+            "wallMs": 1794334674113,
+            "pageMs": 4139.699999999255
+          },
+          "after": {
+            "mode": "play",
+            "status": "jump",
+            "score": 0,
+            "jumps": 0,
+            "flight": {
+              "elapsed": 0,
+              "hold": 2.318199999999255,
+              "duration": 0.4509243816810141,
+              "vy": 169.77,
+              "vz": 149.69250442472148,
+              "start": [
+                0,
+                -0.6036250000000001,
+                0
+              ],
+              "end": [
+                67.5,
+                2.75,
+                0
+              ],
+              "hit": 0
+            }
+          },
+          "consumedHoldMs": 2318.199999999255,
+          "captureIntervalMs": 2259.5999999996275,
+          "eventTimestampIntervalMs": 2318.199999999255,
+          "longTasks": [],
+          "rafGaps": []
+        }
+      ],
+      "navigations": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "start": {
+            "wallMs": 1794334669970,
+            "monotonicMs": 34506.363677
+          },
+          "status": 200,
+          "end": {
+            "wallMs": 1794334670946,
+            "monotonicMs": 35482.437312
+          }
+        }
+      ],
+      "pageEvents": [
+        {
+          "name": "request",
+          "at": {
+            "wallMs": 1794334669976,
+            "monotonicMs": 34512.279072
+          },
+          "url": "http://127.0.0.1:4173/"
+        },
+        {
+          "name": "response",
+          "at": {
+            "wallMs": 1794334669987,
+            "monotonicMs": 34523.455766
+          },
+          "url": "http://127.0.0.1:4173/",
+          "status": 200
+        },
+        {
+          "name": "requestfinished",
+          "at": {
+            "wallMs": 1794334670113,
+            "monotonicMs": 34649.425211
+          },
+          "url": "http://127.0.0.1:4173/",
+          "timing": {
+            "startTime": 1794334669976.249,
+            "domainLookupStart": -1,
+            "domainLookupEnd": -1,
+            "connectStart": -1,
+            "secureConnectionStart": -1,
+            "connectEnd": -1,
+            "requestStart": 0.258,
+            "responseStart": 4.126,
+            "responseEnd": 75.062
+          }
+        },
+        {
+          "name": "domcontentloaded",
+          "at": {
+            "wallMs": 1794334670890,
+            "monotonicMs": 35426.518365
+          }
+        },
+        {
+          "name": "load",
+          "at": {
+            "wallMs": 1794334670946,
+            "monotonicMs": 35482.281142
+          }
+        },
+        {
+          "name": "diagnostics-ready",
+          "start": {
+            "wallMs": 1794334670947,
+            "monotonicMs": 35482.587818
+          },
+          "end": {
+            "wallMs": 1794334671412,
+            "monotonicMs": 35948.498466
+          }
+        }
+      ],
+      "errors": [],
+      "consoleIssues": [
+        {
+          "at": {
+            "wallMs": 1794334670600,
+            "monotonicMs": 35136.050939
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670605,
+            "monotonicMs": 35140.669175
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670605,
+            "monotonicMs": 35140.691833
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670727,
+            "monotonicMs": 35263.282456
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670727,
+            "monotonicMs": 35263.318146
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670728,
+            "monotonicMs": 35264.382218
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670814,
+            "monotonicMs": 35349.991102
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670815,
+            "monotonicMs": 35351.207889
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670815,
+            "monotonicMs": 35351.405868
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334670972,
+            "monotonicMs": 35507.993787
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (100x88). Resized to 64x64 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334671140,
+            "monotonicMs": 35675.95808
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334671144,
+            "monotonicMs": 35679.707229
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334671144,
+            "monotonicMs": 35679.729477
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334671206,
+            "monotonicMs": 35742.529179
+          },
+          "type": "warning",
+          "text": "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node"
+        },
+        {
+          "at": {
+            "wallMs": 1794334671738,
+            "monotonicMs": 36273.61196
+          },
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        }
+      ],
+      "runtime": {
+        "timeOrigin": 1794334669974.1,
+        "now": 4914.5999999996275,
+        "navigation": [
+          {
+            "name": "http://127.0.0.1:4173/",
+            "entryType": "navigation",
+            "startTime": 0,
+            "duration": 966.6999999992549,
+            "navigationId": 1917,
+            "initiatorType": "navigation",
+            "deliveryType": "",
+            "nextHopProtocol": "http/1.1",
+            "renderBlockingStatus": "non-blocking",
+            "contentType": "text/html",
+            "contentEncoding": "",
+            "workerStart": 0,
+            "workerRouterEvaluationStart": 0,
+            "workerCacheLookupStart": 0,
+            "workerMatchedSourceType": "",
+            "workerFinalSourceType": "",
+            "redirectStart": 0,
+            "redirectEnd": 0,
+            "fetchStart": 0.7999999988824129,
+            "domainLookupStart": 0.7999999988824129,
+            "domainLookupEnd": 0.7999999988824129,
+            "connectStart": 0.7999999988824129,
+            "secureConnectionStart": 0,
+            "connectEnd": 0.7999999988824129,
+            "requestStart": 2.399999998509884,
+            "responseStart": 6.199999999254942,
+            "firstInterimResponseStart": 0,
+            "finalResponseHeadersStart": 6.199999999254942,
+            "responseEnd": 76,
+            "transferSize": 4498881,
+            "encodedBodySize": 4498581,
+            "decodedBodySize": 4498581,
+            "responseStatus": 200,
+            "serverTiming": [],
+            "unloadEventStart": 0,
+            "unloadEventEnd": 0,
+            "domInteractive": 914.1999999992549,
+            "domContentLoadedEventStart": 914.2999999988824,
+            "domContentLoadedEventEnd": 914.3999999985099,
+            "domComplete": 965,
+            "loadEventStart": 966.6999999992549,
+            "loadEventEnd": 966.6999999992549,
+            "type": "navigate",
+            "redirectCount": 0,
+            "activationStart": 0,
+            "criticalCHRestart": 0,
+            "notRestoredReasons": null,
+            "confidence": {
+              "randomizedTriggerRate": 0.4994798,
+              "value": "high"
+            }
+          }
+        ],
+        "visibility": "visible",
+        "timing": {
+          "active": null,
+          "events": [
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerdown",
+              "eventMs": 1755,
+              "trusted": true,
+              "pointerType": "touch",
+              "pointerId": 3,
+              "repeat": false,
+              "wallMs": 1794334671840,
+              "pageMs": 1866.5
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerdown",
+              "wallMs": 1794334671842,
+              "pageMs": 1868
+            },
+            {
+              "id": 1,
+              "phase": "capture",
+              "type": "pointerup",
+              "eventMs": 4073.199999999255,
+              "trusted": true,
+              "pointerType": "touch",
+              "pointerId": 3,
+              "repeat": false,
+              "wallMs": 1794334674100,
+              "pageMs": 4126.0999999996275
+            },
+            {
+              "id": 1,
+              "phase": "after-handler",
+              "type": "pointerup",
+              "wallMs": 1794334674102,
+              "pageMs": 4128.39999999851,
+              "consumedHoldMs": 2318.199999999255,
+              "hit": 0,
+              "mode": "play",
+              "status": "jump"
+            }
+          ],
+          "longTasks": [
+            {
+              "startMs": 256.3999999985099,
+              "durationMs": 651,
+              "name": "self"
+            },
+            {
+              "startMs": 968.2999999988824,
+              "durationMs": 280,
+              "name": "self"
+            },
+            {
+              "startMs": 1597.5999999996275,
+              "durationMs": 83,
+              "name": "self"
+            },
+            {
+              "startMs": 4166.39999999851,
+              "durationMs": 56,
+              "name": "self"
+            }
+          ],
+          "rafGaps": [
+            {
+              "startMs": 72.4,
+              "durationMs": 83.4
+            },
+            {
+              "startMs": 189.1,
+              "durationMs": 83.29999999999998
+            },
+            {
+              "startMs": 272.4,
+              "durationMs": 633.3000000000001
+            },
+            {
+              "startMs": 905.7,
+              "durationMs": 333.39999999999986
+            },
+            {
+              "startMs": 1255.7,
+              "durationMs": 166.70000000000005
+            },
+            {
+              "startMs": 1705.7,
+              "durationMs": 100
+            },
+            {
+              "startMs": 4155.6,
+              "durationMs": 66.69999999999982
+            },
+            {
+              "startMs": 4255.6,
+              "durationMs": 66.69999999999982
+            }
+          ],
+          "marks": [
+            {
+              "name": "init",
+              "wallMs": 1794334669999,
+              "pageMs": 25.399999998509884,
+              "visibility": "visible"
+            },
+            {
+              "name": "DOMContentLoaded",
+              "wallMs": 1794334670888,
+              "pageMs": 914.3999999985099,
+              "visibility": "visible"
+            },
+            {
+              "name": "load",
+              "wallMs": 1794334670940,
+              "pageMs": 966.6999999992549,
+              "visibility": "visible"
+            }
+          ],
+          "longTaskSupported": true,
+          "armed": true
+        }
+      },
+      "metrics": {
+        "Documents": 1,
+        "Frames": 1,
+        "Nodes": 405,
+        "LayoutDuration": 0.030196,
+        "ScriptDuration": 0.538934,
+        "TaskDuration": 1.943809,
+        "JSHeapUsedSize": 17634328
+      }
+    }
+  },
+  "checks": [
+    "Reproduced baseline: all three skin status labels overlap.",
+    "New save: independent labels, complete previews, classic selected, silver/gold locked.",
+    "Short pointer charge: current-platform landing preserves score.",
+    "Long keyboard charge: miss returns to takeoff with unchanged score.",
+    "Six manual consecutive successful jumps: real scoring and saved best, no automatic jump or centering.",
+    "Miss after consecutive jumps returns to nonzero takeoff position and resets center combo.",
+    "Menu freezes scene time; restart resets this run and keeps mode.",
+    "Normal mode: overshoot still reaches the real game-over screen.",
+    "Normal mode preference survives page reload.",
+    "Opening menu during pointer charge cancels it; late release cannot jump.",
+    "Seven skin switches: preview/selection/material maps correspond; gold survives start, restart and reload; legacy best/records retained.",
+    "Skin panel fits 320x568, 736x414 landscape and 1440x900; every card remains fully reachable through scrolling.",
+    "Mobile touch emulation: long touch overshoots and safely retries.",
+    "No page errors or remote runtime requests."
+  ],
+  "notRun": [
+    {
+      "action": "Open local index.html through file://",
+      "reason": "Skipped after observed managed-browser ERR_BLOCKED_BY_ADMINISTRATOR; no retry or bypass attempted."
+    }
+  ],
+  "flights": [
+    {
+      "elapsed": 0.049999999999999996,
+      "hold": 0.06,
+      "duration": 0.3766005057219703,
+      "vy": 135.9,
+      "vz": 4.248533859328428,
+      "start": [
+        0,
+        2.62805,
+        0
+      ],
+      "end": [
+        1.6,
+        2.75,
+        0
+      ],
+      "hit": 2
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.2187000000011174,
+      "duration": 0.4465847416108967,
+      "vy": 168.28,
+      "vz": 151.14712552989965,
+      "start": [
+        1.6,
+        -0.6036250000000001,
+        0
+      ],
+      "end": [
+        69.1,
+        2.75,
+        0
+      ],
+      "hit": 0
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.6755,
+      "duration": 0.3934456558855069,
+      "vy": 145.13,
+      "vz": 46.867972041775595,
+      "start": [
+        1.6,
+        1.3770462499999998,
+        0
+      ],
+      "end": [
+        20.04,
+        2.75,
+        0
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.766,
+      "duration": 0.395995563679686,
+      "vy": 146.49,
+      "vz": 54.16736767093937,
+      "start": [
+        20.04,
+        1.1931049999999999,
+        0
+      ],
+      "end": [
+        20,
+        2.75,
+        -21.45
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.6964000000003725,
+      "duration": 0.394049960944836,
+      "vy": 145.45,
+      "vz": 48.24432226891978,
+      "start": [
+        20,
+        1.3345669999992427,
+        -21.45
+      ],
+      "end": [
+        39.01,
+        2.75,
+        -21.29
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.43340000000037254,
+      "duration": 0.3867283647158912,
+      "vy": 141.5,
+      "vz": 29.814924812990498,
+      "start": [
+        39.01,
+        1.8691144999992426,
+        -21.29
+      ],
+      "end": [
+        38.93,
+        2.75,
+        -32.82
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.6744000000003725,
+      "duration": 0.3934333603567012,
+      "vy": 145.12,
+      "vz": 46.80594652657936,
+      "start": [
+        38.93,
+        1.3792819999992427,
+        -32.82
+      ],
+      "end": [
+        57.34,
+        2.75,
+        -32.39
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.5423000000007451,
+      "duration": 0.3897272351693431,
+      "vy": 143.13,
+      "vz": 37.97652591447972,
+      "start": [
+        57.34,
+        1.6477752499984857,
+        -32.39
+      ],
+      "end": [
+        57.22,
+        2.75,
+        -47.19
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.2067000000011174,
+      "duration": 0.4460602123566198,
+      "vy": 168.1,
+      "vz": 151.32486182388882,
+      "start": [
+        57.22,
+        -0.6036250000000001,
+        -47.19
+      ],
+      "end": [
+        57.22,
+        2.75,
+        -114.69
+      ],
+      "hit": 0
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.205800000000745,
+      "duration": 0.44603107006779275,
+      "vy": 168.09,
+      "vz": 151.33474892173004,
+      "start": [
+        0,
+        -0.6036250000000001,
+        0
+      ],
+      "end": [
+        67.5,
+        2.75,
+        0
+      ],
+      "hit": 0
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

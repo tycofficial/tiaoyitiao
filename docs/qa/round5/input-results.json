@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "productSha256": "7e0991b245b755973e25d9b655ee08b154dbcada6e4cd6453ce0679e1382c70d",
+  "checks": [
+    "Reproduced baseline: native Space cannot activate the focused silver button, while Enter can.",
+    "Locked skins are disabled and skipped by Tab; Space selects classic without starting a jump; Enter activates the historical return icon.",
+    "Keyboard Tab/Space/Enter changes unlocked selections with exactly one check mark; reopening retains gold; Escape restores the home page.",
+    "Real touch taps select silver/gold and activate the return icon; reopening keeps the selected state.",
+    "An actual touch swipe scrolls the compact panel without selecting; gold remains reachable and touch selection/return work.",
+    "Touch menu pause/resume still works after leaving the skin center."
+  ],
+  "touchScroll": {
+    "before": 0,
+    "after": 165
+  },
+  "errors": []
+}

@@ -1,0 +1,5 @@
+{
+  "node": "v24.22.1",
+  "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)",
+  "renderer": "SwiftShader via existing Chromium launch arguments"
+}

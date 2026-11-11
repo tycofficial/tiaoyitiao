@@ -1,0 +1,6 @@
+{
+  "scripts/skin-error-qa.cjs": "11ca90d7cc4000bcabcd6379ae3a8723fb23a335aca6a0d6e34e68a8cf10532f",
+  "scripts/skin-input-qa.cjs": "23c7582600c75f2055c6f20816b39bacdfcab9a0820f4168e1b10fdc7e27a480",
+  "scripts/browser-qa.cjs": "a0cd0c1c172d72b772ab29ff80db67d20437c9c63753be003f5b1c3d08de52b7",
+  "scripts/qa-telemetry.cjs": "85583c339fee8ac21e67d955aa200223e068bf6197532d800700fbe704a4b054"
+}

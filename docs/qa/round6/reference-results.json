@@ -1,0 +1,1477 @@
+{
+  "passed": true,
+  "productSha256": "ccc0d5441adc4b55551fd1283cb210e0b10ca32335969a289a987062efcac556",
+  "baselineCommit": "e4c2bdaa351e73f9c7071519793250dac71cc58a",
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "sourceHashes": {
+    "base.js": "9b9065da19c7b1d5c1984c8cfa24959c92734621b03e4e31f38fb8d422506c2f",
+    "gg.js": "2b20c640ca518975ca039a2466917f90e2a70488d598819ba3a7959f552d0840",
+    "num.ttf": "feb570ad109f1610daa8e19df7b38f9a29578fbbc1f21b3873300eba286f5f45"
+  },
+  "digitFontMatchesReference": true,
+  "scope": "Common score/backdrop/navigation; offline records and custom new-best badge are excluded. Normal invokes original d/c/p; new-best invokes n with an empty friends fixture.",
+  "results": [
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "isBest": false
+      },
+      "score": 0,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 218.578125,
+          "size": 17,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 207,
+          "y": 294.390625,
+          "size": 95.22,
+          "text": "0"
+        },
+        "best": {
+          "x": 207,
+          "y": 696.5625,
+          "size": 14,
+          "text": "历史最高分：99"
+        },
+        "home": null,
+        "replay": {
+          "left": 101.0234375,
+          "top": 564.6796875,
+          "width": 211.953125,
+          "height": 83.546875
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.8)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 84,
+          "size": 14,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 212,
+          "y": 150,
+          "size": 88,
+          "text": "0"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：99",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "本次得分",
+            "pos": [
+              207,
+              84
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 0,
+            "pos": [
+              212,
+              150
+            ],
+            "size": 88,
+            "color": "#fff",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": [
+        "label.y",
+        "label.size",
+        "score.x",
+        "score.y",
+        "score.size",
+        "best.y",
+        "home.existence",
+        "replay.left",
+        "replay.top",
+        "replay.height",
+        "backdrop"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "isBest": true
+      },
+      "score": 2,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 218.578125,
+          "size": 17,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 207,
+          "y": 294.390625,
+          "size": 95.22,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 696.5625,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": null,
+        "replay": {
+          "left": 101.0234375,
+          "top": 564.6796875,
+          "width": 211.953125,
+          "height": 83.546875
+        },
+        "flower": {
+          "left": 76.59375,
+          "top": 229.28125,
+          "width": 260.8125,
+          "height": 121.375
+        },
+        "backdrop": "rgba(0, 0, 0, 0.8)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 160,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 244.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 149.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：2",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              263,
+              354,
+              318
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "新纪录",
+            "pos": [
+              207,
+              104
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "历史最高分",
+            "pos": [
+              207,
+              160
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 2,
+            "pos": [
+              207,
+              244.5
+            ],
+            "size": 86,
+            "color": "#00c777",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/flower.png",
+            "pos": [
+              207,
+              220,
+              260,
+              141
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/pure_share.png",
+            "pos": [
+              207,
+              327.5,
+              18,
+              24
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "查看全部排行",
+            "pos": [
+              166,
+              397
+            ],
+            "size": 12,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/r_arr.png",
+            "pos": [
+              247,
+              397,
+              6.6,
+              10
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": [
+        "label.y",
+        "label.size",
+        "label.text",
+        "score.y",
+        "score.size",
+        "best.y",
+        "home.existence",
+        "replay.left",
+        "replay.top",
+        "replay.height",
+        "flower.left",
+        "flower.top",
+        "flower.width",
+        "flower.height",
+        "backdrop"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2,
+        "isBest": false
+      },
+      "score": 0,
+      "actual": {
+        "label": {
+          "x": 160,
+          "y": 171.53125,
+          "size": 17,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 160,
+          "y": 227.1875,
+          "size": 80,
+          "text": "0"
+        },
+        "best": {
+          "x": 160,
+          "y": 535.28125,
+          "size": 14,
+          "text": "历史最高分：99"
+        },
+        "home": null,
+        "replay": {
+          "left": 78.0859375,
+          "top": 435.7421875,
+          "width": 163.828125,
+          "height": 64.578125
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.8)"
+      },
+      "reference": {
+        "label": {
+          "x": 160,
+          "y": 64.82608695652173,
+          "size": 10.804347826086957,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 163.8586956521739,
+          "y": 115.76086956521739,
+          "size": 67.91304347826087,
+          "text": "0"
+        },
+        "best": {
+          "x": 160,
+          "y": 544.8478260869565,
+          "size": 10.804347826086957,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 30.34782608695652,
+          "top": 439.8913043478261,
+          "width": 57.108695652173914,
+          "height": 57.108695652173914
+        },
+        "replay": {
+          "left": 116.01086956521739,
+          "top": 436.0326086956522,
+          "width": 163.6086956521739,
+          "height": 64.82608695652173
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：99",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "本次得分",
+            "pos": [
+              207,
+              84
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 0,
+            "pos": [
+              212,
+              150
+            ],
+            "size": 88,
+            "color": "#fff",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": [
+        "label.y",
+        "label.size",
+        "score.x",
+        "score.y",
+        "score.size",
+        "best.y",
+        "best.size",
+        "home.existence",
+        "replay.left",
+        "replay.top",
+        "replay.width",
+        "replay.height",
+        "backdrop"
+      ]
+    },
+    {
+      "version": "baseline",
+      "scenario": {
+        "width": 414,
+        "height": 896,
+        "dpr": 3,
+        "isBest": true
+      },
+      "score": 2,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 263.375,
+          "size": 17,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 207,
+          "y": 358.390625,
+          "size": 95.22,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 850.171875,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": null,
+        "replay": {
+          "left": 101.0234375,
+          "top": 696.5234375,
+          "width": 211.953125,
+          "height": 83.546875
+        },
+        "flower": {
+          "left": 76.59375,
+          "top": 292.328125,
+          "width": 260.8125,
+          "height": 121.375
+        },
+        "backdrop": "rgba(0, 0, 0, 0.8)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 240,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 324.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 786,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 650,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 645,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 229.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：2",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              263,
+              354,
+              318
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "新纪录",
+            "pos": [
+              207,
+              104
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "历史最高分",
+            "pos": [
+              207,
+              160
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 2,
+            "pos": [
+              207,
+              244.5
+            ],
+            "size": 86,
+            "color": "#00c777",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/flower.png",
+            "pos": [
+              207,
+              220,
+              260,
+              141
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/pure_share.png",
+            "pos": [
+              207,
+              327.5,
+              18,
+              24
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "查看全部排行",
+            "pos": [
+              166,
+              397
+            ],
+            "size": 12,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/r_arr.png",
+            "pos": [
+              247,
+              397,
+              6.6,
+              10
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": [
+        "label.y",
+        "label.size",
+        "label.text",
+        "score.y",
+        "score.size",
+        "best.y",
+        "home.existence",
+        "replay.left",
+        "replay.top",
+        "replay.height",
+        "flower.left",
+        "flower.top",
+        "flower.width",
+        "flower.height",
+        "backdrop"
+      ]
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "isBest": false
+      },
+      "score": 0,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 84,
+          "size": 14,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 212,
+          "y": 150,
+          "size": 88,
+          "text": "0"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 84,
+          "size": 14,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 212,
+          "y": 150,
+          "size": 88,
+          "text": "0"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：99",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "本次得分",
+            "pos": [
+              207,
+              84
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 0,
+            "pos": [
+              212,
+              150
+            ],
+            "size": 88,
+            "color": "#fff",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 736,
+        "dpr": 1,
+        "isBest": true
+      },
+      "score": 2,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 160,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 244.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 149.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 160,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 244.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 706,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 570,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 565,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 149.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：2",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              263,
+              354,
+              318
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "新纪录",
+            "pos": [
+              207,
+              104
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "历史最高分",
+            "pos": [
+              207,
+              160
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 2,
+            "pos": [
+              207,
+              244.5
+            ],
+            "size": 86,
+            "color": "#00c777",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/flower.png",
+            "pos": [
+              207,
+              220,
+              260,
+              141
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/pure_share.png",
+            "pos": [
+              207,
+              327.5,
+              18,
+              24
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "查看全部排行",
+            "pos": [
+              166,
+              397
+            ],
+            "size": 12,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/r_arr.png",
+            "pos": [
+              247,
+              397,
+              6.6,
+              10
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 320,
+        "height": 568,
+        "dpr": 2,
+        "isBest": false
+      },
+      "score": 0,
+      "actual": {
+        "label": {
+          "x": 160,
+          "y": 64.8125,
+          "size": 10.8043,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 163.84375,
+          "y": 115.75,
+          "size": 67.913,
+          "text": "0"
+        },
+        "best": {
+          "x": 160,
+          "y": 544.84375,
+          "size": 10.8043,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 30.34375,
+          "top": 439.890625,
+          "width": 57.09375,
+          "height": 57.09375
+        },
+        "replay": {
+          "left": 116.015625,
+          "top": 436.03125,
+          "width": 163.59375,
+          "height": 64.8125
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)"
+      },
+      "reference": {
+        "label": {
+          "x": 160,
+          "y": 64.82608695652173,
+          "size": 10.804347826086957,
+          "text": "本次得分"
+        },
+        "score": {
+          "x": 163.8586956521739,
+          "y": 115.76086956521739,
+          "size": 67.91304347826087,
+          "text": "0"
+        },
+        "best": {
+          "x": 160,
+          "y": 544.8478260869565,
+          "size": 10.804347826086957,
+          "text": "历史最高分：99"
+        },
+        "home": {
+          "left": 30.34782608695652,
+          "top": 439.8913043478261,
+          "width": 57.108695652173914,
+          "height": 57.108695652173914
+        },
+        "replay": {
+          "left": 116.01086956521739,
+          "top": 436.0326086956522,
+          "width": 163.6086956521739,
+          "height": 64.82608695652173
+        },
+        "flower": null,
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：99",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "本次得分",
+            "pos": [
+              207,
+              84
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 0,
+            "pos": [
+              212,
+              150
+            ],
+            "size": 88,
+            "color": "#fff",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": []
+    },
+    {
+      "version": "current",
+      "scenario": {
+        "width": 414,
+        "height": 896,
+        "dpr": 3,
+        "isBest": true
+      },
+      "score": 2,
+      "actual": {
+        "label": {
+          "x": 207,
+          "y": 240,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 324.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 786,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 650,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 645,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 229.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)"
+      },
+      "reference": {
+        "label": {
+          "x": 207,
+          "y": 240,
+          "size": 14,
+          "text": "历史最高分"
+        },
+        "score": {
+          "x": 207,
+          "y": 324.5,
+          "size": 86,
+          "text": "2"
+        },
+        "best": {
+          "x": 207,
+          "y": 786,
+          "size": 14,
+          "text": "历史最高分：2"
+        },
+        "home": {
+          "left": 39,
+          "top": 650,
+          "width": 74,
+          "height": 74
+        },
+        "replay": {
+          "left": 150,
+          "top": 645,
+          "width": 212,
+          "height": 84
+        },
+        "flower": {
+          "left": 77,
+          "top": 229.5,
+          "width": 260,
+          "height": 141
+        },
+        "backdrop": "rgba(0, 0, 0, 0.45)",
+        "logs": [
+          {
+            "kind": "drawText",
+            "text": "历史最高分：2",
+            "pos": [
+              207,
+              706
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/bl3.png",
+            "pos": [
+              207,
+              263,
+              354,
+              318
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/2d/new_home.png",
+            "pos": [
+              76,
+              607,
+              74,
+              74
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/replay.png",
+            "pos": [
+              256,
+              607,
+              212,
+              84
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "新纪录",
+            "pos": [
+              207,
+              104
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "历史最高分",
+            "pos": [
+              207,
+              160
+            ],
+            "size": 14,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": 2,
+            "pos": [
+              207,
+              244.5
+            ],
+            "size": 86,
+            "color": "#00c777",
+            "special": true
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/flower.png",
+            "pos": [
+              207,
+              220,
+              260,
+              141
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/pure_share.png",
+            "pos": [
+              207,
+              327.5,
+              18,
+              24
+            ],
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawText",
+            "text": "查看全部排行",
+            "pos": [
+              166,
+              397
+            ],
+            "size": 12,
+            "color": "#fff",
+            "special": false
+          },
+          {
+            "kind": "drawImageCenter",
+            "src": "res/r_arr.png",
+            "pos": [
+              247,
+              397,
+              6.6,
+              10
+            ],
+            "color": "#fff",
+            "special": false
+          }
+        ]
+      },
+      "differences": []
+    }
+  ]
+}

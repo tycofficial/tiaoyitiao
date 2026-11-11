@@ -1,0 +1,187 @@
+{
+  "productSha256": "7639a34cb111c18c9eb7fcf5c4e74d138d97d2b157bfc1e60307a9e0c2783943",
+  "scriptSha256": "11ca90d7cc4000bcabcd6379ae3a8723fb23a335aca6a0d6e34e68a8cf10532f",
+  "baselineCommit": "68625b153a7510982b8f2067e687b7c7d7fd6117",
+  "results": [
+    {
+      "name": "skins-menu-escape",
+      "passed": true,
+      "evidence": {
+        "paused": false,
+        "dialogs": 0
+      }
+    },
+    {
+      "name": "baseline-preview-webgl-context-error",
+      "passed": true,
+      "evidence": {
+        "ready": false,
+        "loading": true,
+        "denied": 3,
+        "mainWebGL": true,
+        "error": "无法启动游戏。请用 Safari、Chrome 或 Edge 直接打开此 HTML。"
+      }
+    },
+    {
+      "name": "preview-webgl-context-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "使用",
+          "已使用（预览暂不可用）",
+          "使用（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/gold": "renderer:TypeError",
+            "preview/silver": "renderer:TypeError",
+            "preview/scarf": "renderer:TypeError"
+          },
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "after": {
+          "mode": "play",
+          "status": "stop",
+          "score": 0,
+          "best": 3200,
+          "skin": {
+            "previewIssues": {
+              "preview/gold": "renderer:TypeError",
+              "preview/silver": "renderer:TypeError",
+              "preview/scarf": "renderer:TypeError"
+            },
+            "unlocked": false,
+            "selected": "gold",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "reconstructed/gold/head",
+              "reconstructed/gold/head",
+              "reconstructed/gold/middle",
+              "reconstructed/gold/bottom"
+            ]
+          }
+        },
+        "saved": {
+          "best": 3200,
+          "records": [
+            {
+              "score": 3200,
+              "date": "2026-11-01T00:00:00.000Z"
+            }
+          ],
+          "prefs": {
+            "sound": true,
+            "quality": "high",
+            "renderVersion": 3,
+            "skin": "gold",
+            "gameplayMode": "invincible"
+          }
+        }
+      }
+    },
+    {
+      "name": "main-webgl-context-error",
+      "passed": true,
+      "evidence": "无法启动游戏。请用 Safari、Chrome 或 Edge 直接打开此 HTML。"
+    },
+    {
+      "name": "preview-decode-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用",
+          "待解锁（预览暂不可用）",
+          "待解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/gold": "decode",
+            "preview/silver": "decode",
+            "preview/scarf": "decode"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "preview-encode-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用",
+          "待解锁（预览暂不可用）",
+          "待解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/gold": "encode:EncodingError",
+            "preview/silver": "encode:EncodingError",
+            "preview/scarf": "encode:EncodingError"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "preview-display-error",
+      "passed": true,
+      "evidence": {
+        "statuses": [
+          "已使用（预览暂不可用）",
+          "待解锁（预览暂不可用）",
+          "待解锁（预览暂不可用）"
+        ],
+        "diagnostic": {
+          "previewIssues": {
+            "preview/classic": "display",
+            "preview/silver": "display",
+            "preview/gold": "display"
+          },
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "name": "embedded-image-decode-error",
+      "passed": true,
+      "evidence": "无法启动游戏。请用 Safari、Chrome 或 Edge 直接打开此 HTML。"
+    }
+  ]
+}

@@ -1,0 +1,1499 @@
+{
+  "productSha256": "44deba7fcda21e8d24625a1c3c59f7a3e6af90fcfb2142f9949b298cd4597cd2",
+  "results": [
+    {
+      "name": "flight-menu-freeze-resume",
+      "passed": true,
+      "evidence": {
+        "paused": {
+          "mode": "play",
+          "paused": true,
+          "score": 0,
+          "best": 0,
+          "status": "jump",
+          "time": 1216.6000000000006,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              3.187911755146591,
+              4.751346400000168,
+              0
+            ],
+            "scale": [
+              1.2892423725714126,
+              0.8588350400000118,
+              1.2892423725714126
+            ],
+            "head": [
+              0.210420000000002,
+              5.145840000000003,
+              0
+            ]
+          },
+          "flight": {
+            "elapsed": 0.033400000000000554,
+            "hold": 1.3751999999999533,
+            "duration": 0.41353026722642194,
+            "vy": 155.63,
+            "vz": 95.44645973492631,
+            "start": [
+              0,
+              -0.045093999999905154,
+              0
+            ],
+            "end": [
+              39.47,
+              2.75,
+              0
+            ],
+            "hit": 0
+          },
+          "current": 0,
+          "next": 1,
+          "timers": 10,
+          "tweens": 97,
+          "bonus": null
+        },
+        "after": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "status": "stop",
+          "time": 1875.300000000041,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0256666666666656,
+              0.9633333333333348,
+              1.0256666666666656
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 0,
+          "next": 1,
+          "timers": 3,
+          "tweens": 15,
+          "bonus": null
+        }
+      }
+    },
+    {
+      "name": "flight-restart-clears-old-callbacks",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 2694.199999999957,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "flight-home-new-game-clears-old-callbacks",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 2949.9000000000115,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "recovery-menu-freeze-resume",
+      "passed": true,
+      "evidence": {
+        "atPause": {
+          "mode": "play",
+          "paused": true,
+          "score": 0,
+          "best": 0,
+          "jumps": 0,
+          "combo": 0,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "classic",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "res/head.png",
+              "res/head.png",
+              "res/middle.png",
+              "res/bottom.png"
+            ]
+          },
+          "camera": {
+            "position": [
+              -17,
+              30,
+              26
+            ],
+            "projectedPawn": [
+              0.8874599924252484,
+              0.33584005407676254,
+              0.39475197603051415
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 14,
+              "stopped": 12,
+              "chargeSchedules": 4
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.8,
+            "max": 1,
+            "distance": 17
+          },
+          "status": "recover",
+          "time": 1849.8999999999933,
+          "pressAt": 50.00000000000001,
+          "current": {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              30.17910303030334,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0233022222222214,
+              0.9667111111111123,
+              1.0233022222222214
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 12,
+          "geometries": 15,
+          "active": 2,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            }
+          ],
+          "timers": 3,
+          "tweens": 52,
+          "pool": 34,
+          "revision": "88dev"
+        },
+        "after": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "status": "stop",
+          "time": 2058.499999999899,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0179822222221775,
+              0.9743111111111751,
+              1.0179822222221775
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 0,
+          "next": 1,
+          "timers": 3,
+          "tweens": 9,
+          "bonus": null
+        }
+      }
+    },
+    {
+      "name": "recovery-restart-clears-return-tween",
+      "passed": true,
+      "evidence": {
+        "atRecovery": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "jumps": 0,
+          "combo": 0,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "classic",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "res/head.png",
+              "res/head.png",
+              "res/middle.png",
+              "res/bottom.png"
+            ]
+          },
+          "camera": {
+            "position": [
+              -17,
+              30,
+              26
+            ],
+            "projectedPawn": [
+              1.2767729554224663,
+              0.46227314756858073,
+              0.5076804363771972
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 17,
+              "stopped": 15,
+              "chargeSchedules": 5
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.8,
+            "max": 1,
+            "distance": 17
+          },
+          "status": "recover",
+          "time": 1815.1999999999482,
+          "pressAt": 0,
+          "current": {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              39.47,
+              2.75,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 19,
+          "geometries": 15,
+          "active": 2,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            }
+          ],
+          "timers": 3,
+          "tweens": 70,
+          "pool": 34,
+          "revision": "88dev"
+        },
+        "after": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "status": "stop",
+          "time": 2660.9999999999086,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              2.75,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 0,
+          "next": 1,
+          "timers": 0,
+          "tweens": 0,
+          "bonus": null
+        }
+      }
+    },
+    {
+      "name": "recovery-home-new-game-clears-return-tween",
+      "passed": true,
+      "evidence": {
+        "atRecovery": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "jumps": 0,
+          "combo": 0,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "classic",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "res/head.png",
+              "res/head.png",
+              "res/middle.png",
+              "res/bottom.png"
+            ]
+          },
+          "camera": {
+            "position": [
+              -17,
+              30,
+              26
+            ],
+            "projectedPawn": [
+              1.0226271915535796,
+              0.3797368896530843,
+              0.43396008143091164
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 21,
+              "stopped": 18,
+              "chargeSchedules": 6
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.8,
+            "max": 1,
+            "distance": 17
+          },
+          "status": "recover",
+          "time": 1799.899999999993,
+          "pressAt": 50.00000000000001,
+          "current": {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              33.404848484848536,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0155555555555553,
+              0.977777777777778,
+              1.0155555555555553
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 15,
+          "geometries": 15,
+          "active": 2,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            }
+          ],
+          "timers": 3,
+          "tweens": 40,
+          "pool": 34,
+          "revision": "88dev"
+        },
+        "after": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 0,
+          "status": "stop",
+          "time": 2683.200000000004,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              2.75,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 0,
+          "next": 1,
+          "timers": 0,
+          "tweens": 0,
+          "bonus": null
+        }
+      }
+    },
+    {
+      "name": "recovery-mode-off-completes-current-return",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 2012.2999999998544,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": false,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0044022222221782,
+            0.9937111111111739,
+            1.0044022222221782
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 3,
+        "tweens": 33,
+        "bonus": null
+      }
+    },
+    {
+      "name": "flight-mode-off-produces-normal-failure",
+      "passed": true,
+      "evidence": {
+        "mode": "over",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 3860.7999999999297,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": false,
+        "bottle": {
+          "position": [
+            39,
+            -3.05,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "flight-mode-on-retries",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 2100.5999999999926,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0062066666666645,
+            0.9911333333333365,
+            1.0062066666666645
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 3,
+        "tweens": 9,
+        "bonus": null
+      }
+    },
+    {
+      "name": "falling-mode-on-should-retry",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 0,
+        "status": "stop",
+        "time": 4316.6999999999225,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "normal-progress-persists-when-rescued",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "mode": "play",
+          "paused": false,
+          "score": 2,
+          "best": 0,
+          "status": "stop",
+          "time": 1177.4999999999568,
+          "jumps": 1,
+          "combo": 1,
+          "invincible": false,
+          "bottle": {
+            "position": [
+              20.26,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0077466666666695,
+              0.9889333333333294,
+              1.0077466666666695
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 1,
+          "next": 12,
+          "timers": 3,
+          "tweens": 105,
+          "bonus": null
+        },
+        "rescued": {
+          "mode": "play",
+          "paused": true,
+          "score": 2,
+          "best": 2,
+          "status": "recover",
+          "time": 2994.0999999999626,
+          "jumps": 1,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              19.61,
+              2.75,
+              -39.83
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 1,
+          "next": 12,
+          "timers": 3,
+          "tweens": 64,
+          "bonus": null
+        },
+        "savedBest": 2
+      }
+    },
+    {
+      "name": "falling-restart-cancels-endgame",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 2,
+        "status": "stop",
+        "time": 2549.9000000000033,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": false,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "late-pointer-up-after-restart",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 2,
+        "status": "stop",
+        "time": 566.699999999997,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "rapid-repeat-start-home-menu",
+      "passed": true,
+      "evidence": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 2,
+        "status": "stop",
+        "time": 2556.900000000047,
+        "jumps": 0,
+        "combo": 0,
+        "invincible": true,
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "current": 0,
+        "next": 1,
+        "timers": 0,
+        "tweens": 0,
+        "bonus": null
+      }
+    },
+    {
+      "name": "blur-handler-freezes-flight-until-resume",
+      "passed": true,
+      "evidence": {
+        "background": {
+          "mode": "play",
+          "paused": true,
+          "score": 0,
+          "best": 2,
+          "status": "jump",
+          "time": 1414.600000000092,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              -0.05342725000009496,
+              0
+            ],
+            "scale": [
+              1.5793060000000194,
+              0.586209999999986,
+              1.5793060000000194
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": {
+            "elapsed": 0,
+            "hold": 1.3793000000000466,
+            "duration": 0.41364623707173614,
+            "vy": 155.69,
+            "vz": 95.70980333403625,
+            "start": [
+              0,
+              -0.05342725000009496,
+              0
+            ],
+            "end": [
+              39.59,
+              2.75,
+              0
+            ],
+            "hit": 0
+          },
+          "current": 0,
+          "next": 1,
+          "timers": 6,
+          "tweens": 67,
+          "bonus": null
+        },
+        "after": {
+          "mode": "play",
+          "paused": false,
+          "score": 0,
+          "best": 2,
+          "status": "stop",
+          "time": 2071.699999999991,
+          "jumps": 0,
+          "combo": 0,
+          "invincible": true,
+          "bottle": {
+            "position": [
+              0,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0101577777777764,
+              0.9854888888888909,
+              1.0101577777777764
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "current": 0,
+          "next": 1,
+          "timers": 3,
+          "tweens": 9,
+          "bonus": null
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "skins-menu-escape",
+    "passed": false,
+    "observed": {
+      "menu": true,
+      "skins": false,
+      "paused": false,
+      "time": 533.2999999999993,
+      "timeAfter350ms": 1011.8000000001875
+    },
+    "errors": []
+  },
+  {
+    "name": "preview-decode-error",
+    "passed": false,
+    "observed": {
+      "ready": false,
+      "loadingVisible": true,
+      "message": "准备开始",
+      "failures": 4
+    },
+    "errors": []
+  },
+  {
+    "name": "embedded-image-decode-error",
+    "passed": true,
+    "observed": {
+      "ready": false,
+      "message": "无法启动游戏。请用 Safari、Chrome 或 Edge 直接打开此 HTML。"
+    },
+    "errors": []
+  }
+]

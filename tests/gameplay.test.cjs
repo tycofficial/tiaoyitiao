@@ -33,6 +33,7 @@ class Vector {
   copy(v) { return this.set(v.x, v.y, v.z); }
   sub(v) { this.x -= v.x; this.y -= v.y; this.z -= v.z; return this; }
   add(v) { this.x += v.x; this.y += v.y; this.z += v.z; return this; }
+  addScaledVector(v, n) { return this.add(v.clone().multiplyScalar(n)); }
   multiplyScalar(n) { this.x *= n; this.y *= n; this.z *= n; return this; }
   dot(v) { return this.x * v.x + this.y * v.y + this.z * v.z; }
   length() { return Math.hypot(this.x, this.y, this.z); }
@@ -46,8 +47,8 @@ function jumpHarness(hold, left = false) {
   const y = 2.75 - .033875 * Math.min(99, hold * 60);
   const context = vm.createContext({
     Math, performance: { now: () => hold * 1000 },
-    activePointer: 'test', mode: 'play', paused: false, pressWall: 0,
-    centerMode: false, invincible: false, relay: null, lastSucceed: -Infinity,
+    activePointer: 'test', mode: 'play', paused: false, pressWall: 0, pressInput: null, inputBoundary: 0,
+    centerMode: false, invincible: false, relay: null, lastSucceed: -Infinity, graphicsUnavailable:()=>false,
     clock: { time: 1000, tweens: [], update() {} },
     current: { rebound() {} }, next: { obj: { position: new Vector(left ? 0 : 20, 0, left ? -20 : 0) } },
     applyCharge() {}, stopAudio() {}, platformTop: () => 2.75,
@@ -65,10 +66,48 @@ function jumpHarness(hold, left = false) {
     updateFailure() {}, updateClockPlatform() {}
   });
   context.land = f => { context.landing = { f, position: context.bottle.obj.position.clone() }; context.flight = null; };
-  vm.runInContext(extractFunction('endCharge') + '\n' + extractFunction('advanceFrame'), context);
+  vm.runInContext(extractFunction('eventInputTime') + '\n' + extractFunction('chargeHoldAt') + '\n' + extractFunction('endCharge') + '\n' + extractFunction('advanceFrame'), context);
   vm.runInContext("endCharge('test')", context);
   return context;
 }
+
+test('event clocks accept page-relative and epoch timestamps and reject unsupported values', () => {
+  const origin=1700000000000,context=vm.createContext({performance:{now:()=>500,timeOrigin:origin}});
+  vm.runInContext(extractFunction('eventInputTime'),context);
+  assert.equal(context.eventInputTime(100),100);assert.equal(context.eventInputTime(origin+100),100);
+  for(const stamp of [undefined,null,0,-1,NaN,Infinity,500.1,origin-1,origin+501,'100'])assert.equal(context.eventInputTime(stamp),null);
+  context.performance.timeOrigin=undefined;assert.equal(context.eventInputTime(origin+100),null);assert.equal(context.eventInputTime(100),100);
+});
+
+test('charge duration uses complete native timestamp pairs and complete processing pairs as fallback', () => {
+  const origin=1700000000000,context=vm.createContext({performance:{now:()=>1000,timeOrigin:origin},pressWall:250,pressInput:{eventTime:100},inputBoundary:50});
+  vm.runInContext(extractFunction('eventInputTime')+'\n'+extractFunction('chargeHoldAt'),context);
+  near(context.chargeHoldAt(150),.05,'Queued release');near(context.chargeHoldAt(origin+150),.05,'Converted epoch release');
+  for(const stamp of [undefined,0,NaN,origin+2000])near(context.chargeHoldAt(stamp),.75,'Invalid release uses both processing samples');
+  context.pressInput.eventTime=null;near(context.chargeHoldAt(150),.75,'Invalid start does not mix clocks');
+  context.pressInput={eventTime:100};near(context.chargeHoldAt(5000,5010),4.9,'Genuine long hold is not truncated');
+});
+
+test('stale or duplicate releases cannot consume a newer active charge', () => {
+  const context=jumpHarness(.05);context.activePointer='test';context.flight=null;context.bottle.status='prepare';context.pressInput={eventTime:100};context.inputBoundary=90;context.pressWall=200;context.performance.now=()=>500;
+  let applied=0;context.applyCharge=()=>applied++;
+  assert.equal(context.endCharge('test',undefined,99),false);assert.equal(context.activePointer,'test');assert.equal(context.flight,null);assert.equal(applied,0);
+  assert.equal(context.endCharge('other',undefined,150),false);assert.equal(context.activePointer,'test');
+  assert.equal(context.endCharge('test',undefined,150),true);assert.equal(context.pressInput,null);assert.equal(applied,1);
+  const flight=context.flight;assert.equal(context.endCharge('test',undefined,151),false);assert.equal(context.flight,flight);assert.equal(applied,1);
+});
+
+test('queued release applies the actual hold to the release pose and unchanged trajectory calculation', () => {
+  const context=jumpHarness(.05),expected=context.flight;context.activePointer='test';context.flight=null;context.bottle.status='prepare';context.pressInput={eventTime:100};context.inputBoundary=0;context.pressWall=300;context.performance.now=()=>900;
+  let applied;context.applyCharge=hold=>{applied=hold;context.bottle.obj.position.y=2.75-.033875*Math.min(99,hold*60);};
+  assert.equal(context.endCharge('test',undefined,150),true);near(applied,.05,'Final compression');near(context.flight.hold,.05,'Physical interval');near(context.flight.vy,expected.vy,'Original vertical speed');near(context.flight.duration,expected.duration,'Original flight time');near(context.flight.end.x,expected.end.x,'Original rounded range');
+});
+
+test('queued starts from before a pause boundary and duplicate starts are rejected before state changes', () => {
+  const context=vm.createContext({performance:{now:()=>1000,timeOrigin:1700000000000},ready:true,mode:'play',paused:false,activePointer:null,bottle:{status:'stop'},flight:null,relay:null,inputBoundary:900,graphicsUnavailable:()=>false,unlockPlatformAudio(){assert.fail('Rejected start must not change state');}});
+  vm.runInContext(extractFunction('eventInputTime')+'\n'+extractFunction('beginCharge'),context);
+  assert.equal(context.beginCharge(1,800),false);context.activePointer=1;assert.equal(context.beginCharge(1,950),false);context.activePointer=null;context.paused=true;assert.equal(context.beginCharge(1,950),false);
+});
 
 test('normal jumps retain the classic rounded range while the visible trajectory reaches the same endpoint', () => {
   for (const left of [false, true]) for (const hold of [.001, .05, .2, .719, 1, 1.65, 2, 3]) {
@@ -135,7 +174,7 @@ test('a cancelled press releases input and cannot turn a later pointer-up into a
   let stopped = 0, rebounded = 0;
   const context = vm.createContext({
     relay: null, mode: 'play', paused: false, activePointer: 'finger', keyHeld: true,
-    score: 12, flight: null, platformTop: () => 2.75,
+    score: 12, flight: null, pressInput: {eventTime:10}, inputBoundary:0, performance:{now:()=>1000}, platformTop: () => 2.75,
     stopAudio(preserve) { assert.equal(preserve, false); stopped++; },
     current: { rebound() { rebounded++; } },
     bottle: { status: 'prepare', obj: { position: new Vector(0, 1.5, 0) }, stopPrepare() { this.status = 'stop'; } }
@@ -146,9 +185,10 @@ test('a cancelled press releases input and cannot turn a later pointer-up into a
   assert.equal(context.activePointer, null); assert.equal(context.keyHeld, false);
   assert.equal(context.bottle.status, 'stop'); assert.equal(context.bottle.obj.position.y, 2.75);
   assert.equal(context.flight, null); assert.equal(context.score, 12);
+  assert.equal(context.pressInput,null);assert.equal(context.inputBoundary,1000);
 });
 
-test('loading an older save preserves normal preferences without restoring cheat modes or locked skins', () => {
+test('older saves migrate to retry mode, preserving progress without enabling unrelated cheats or locked skins', () => {
   const previous = { best: 64, records: [{ score: 64, date: '2026-11-03' }], prefs: { sound: false, quality: 'standard', renderVersion: 3, invincible: true, centerMode: true, scoreScale: true, allSkins: true, skin: 'scarf' } };
   const context = vm.createContext({
     localStorage: { getItem: () => JSON.stringify(previous) },
@@ -160,7 +200,92 @@ test('loading an older save preserves normal preferences without restoring cheat
   vm.runInContext('readStore()', context);
   assert.equal(context.best, 64); assert.equal(context.records.length, 1);
   assert.equal(context.soundEnabled, false); assert.equal(context.quality, 'standard');
-  assert.equal(context.invincible, false); assert.equal(context.centerMode, false);
+  assert.equal(context.invincible, true); assert.equal(context.centerMode, false);
   assert.equal(context.scoreScale, false); assert.equal(context.allSkins, false);
   assert.equal(context.selectedSkin, 'classic');
+});
+
+test('explicit normal and invincible preferences survive reload without changing saved progress', () => {
+  for (const gameplayMode of ['classic', 'invincible']) {
+    const previous = { best: 3200, records: [{ score: 42, date: '2026-11-03' }], prefs: { gameplayMode, skin: 'gold', sound: false } };
+    let saved;
+    const context = vm.createContext({
+      localStorage: { getItem: () => JSON.stringify(previous), setItem: (key, value) => { saved = JSON.parse(value); } },
+      best: 0, score: 0, records: [], prefs: {}, soundEnabled: true, quality: 'high',
+      invincible: true, centerMode: false, scoreScale: false, allSkins: false, selectedSkin: 'classic', updateSettings() {}
+    });
+    vm.runInContext(['skinUnlocked', 'readStore', 'saveStore'].map(extractFunction).join('\n') + '\nreadStore();saveStore();', context);
+    assert.equal(context.invincible, gameplayMode === 'invincible');
+    assert.equal(context.selectedSkin, 'gold');
+    assert.deepEqual(saved.records, previous.records); assert.equal(saved.best, 3200);
+    assert.equal(saved.prefs.gameplayMode, gameplayMode);
+    assert.equal(saved.prefs.sound, false);
+  }
+});
+
+test('manual trajectories keep their intermediate parabolic positions at different frame rates', () => {
+  for (const left of [false, true]) for (const hold of [.05, .719, 2]) for (const dt of [1/30, 1/60, 1/120, .137]) {
+    const h = jumpHarness(hold, left), f = h.flight;
+    for (const fraction of [.1, .3, .5, .8]) {
+      const target = f.duration * fraction;
+      while (f.elapsed < target - 1e-9) h.advanceFrame(Math.min(dt, target - f.elapsed));
+      const expected = f.start.clone().addScaledVector(f.axis, f.vz * target);
+      expected.y += f.vy * target - 360 * target * target;
+      for (const axis of ['x','y','z']) near(h.bottle.obj.position[axis], expected[axis], 'parabola ' + axis);
+    }
+  }
+});
+
+test('every miss retries in invincible mode and retains normal failure behavior when disabled', () => {
+  for (const invincible of [false, true]) for (const hit of [0,3,4,5,6]) {
+    const recovered=[],failed=[];
+    const context = vm.createContext({
+      invincible, flight: {}, score: 15, current: {}, next: {}, platformTop: () => 2.75,
+      bottle: { obj: { position: new Vector() }, human: { rotation: new Vector() } },
+      recoverMiss(f) { recovered.push(f.hit); }, fail(hit) { failed.push(hit); }
+    });
+    vm.runInContext(extractFunction('land') + `\nland({hit:${hit},start:newStart,end:newEnd});`.replace('newStart', '({x:0,y:2.75,z:0})').replace('newEnd','({x:60,y:2.75,z:0})'), context);
+    assert.equal(context.score, 15);
+    assert.equal(recovered.length, invincible ? 1 : 0);
+    assert.equal(failed.length, invincible ? 0 : 1);
+    assert.equal(context.flight, null);
+  }
+});
+
+test('miss recovery returns to the actual takeoff position and resets the combo without giving points', () => {
+  let tween, settled = 0, tailCorrections = 0;
+  const context = vm.createContext({
+    score: 17, combo: 4, multiplier: 8, lastSucceed: 1200, centerMarker: { visible: true },
+    failedFlight: null, clock: {timers: new Map(),tweens: []}, suspendTimer: null,
+    stopAudio() {}, squeezeAt() { settled++; }, platformTop: () => 2.75, textFeedback() {},
+    tail: { correctPosition() { tailCorrections++; } },
+    bottle: { obj: { position: new Vector(60,2.75,-20), rotation: new Vector() }, stop() { this.status='stop'; } },
+    animations: { customAnimation: { to(target, duration, props) { tween={target,duration,props}; } } }
+  });
+  vm.runInContext(extractFunction('recoverMiss'), context);
+  context.f = { start: new Vector(12, -0.5, -8) };context.recoverMiss(context.f);
+  assert.equal(context.bottle.status, 'recover');assert.equal(context.score, 17);
+  assert.equal(context.combo, 0);assert.equal(context.multiplier, 1);assert.equal(context.lastSucceed, -Infinity);
+  assert.equal(context.centerMarker.visible, false);assert.equal(tween.duration, .22);
+  assert.deepEqual([tween.props.x,tween.props.y,tween.props.z], [12,2.75,-8]);
+  tween.props.onComplete();
+  assert.equal(context.bottle.status, 'stop');assert.equal(context.score, 17);
+  assert.deepEqual([context.bottle.obj.position.x,context.bottle.obj.position.y,context.bottle.obj.position.z],[12,2.75,-8]);
+  assert.equal(tailCorrections, 1);assert.equal(settled, 2);
+});
+
+test('both home demonstration jumps reach their intended endpoints without a landing snap', () => {
+  const context = vm.createContext({
+    mode:'home', C:{GAME:{gravity:720}}, current:{shrink(){},rebound(){}}, next:{obj:{position:new Vector(20,0,0)}},
+    bottle:{obj:{position:new Vector(-10,-2.75,0)},bottle:{rotation:{}},prepare(){},jump(){}},
+    THREE:{Vector3:Vector},tail:{correctPosition(){}},homeBlocks:Array.from({length:7},()=>({hitObj:{material:{}},obj:{position:{}}})),
+    animations:{customAnimation:{to(){}}}, clock:{time:0,setTimeout(fn,delay){if(delay===719)context.release=fn;}},
+    applyCharge(){context.bottle.obj.position.y=2.75-.033875*.719*60;},flight:null
+  });
+  vm.runInContext(extractFunction('introJump')+'\n'+extractFunction('demoJump'),context);
+  context.introJump();let f=context.flight;
+  near(f.start.x+f.vz*f.duration,0,'intro endpoint');
+  context.bottle.obj.position.set(0,2.75,0);context.demoJump();context.release();f=context.flight;
+  near(f.start.x+f.vz*f.duration,f.end.x,'demo endpoint');
+  near(f.start.y+f.vy*f.duration-360*f.duration*f.duration,2.75,'demo height');
 });

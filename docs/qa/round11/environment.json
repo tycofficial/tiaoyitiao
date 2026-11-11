@@ -1,0 +1,18 @@
+{
+  "node": "v24.22.1",
+  "playwright": "1.62.1",
+  "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "os": "linux",
+  "architecture": "x64",
+  "headless": true,
+  "angle": "swiftshader",
+  "deviceScaleFactor": 2,
+  "referenceCommit": "4ef17b5fabec6a33e38501df4c75bae80950dccc",
+  "referenceVersion": "4.0.6",
+  "time": "2026-11-10T18:19:27.020Z",
+  "baseUrl": "http://127.0.0.1:4173/",
+  "recording": "Core QA on; resource and skin-input QA do not record.",
+  "scope": "Main-to-branch high-impact audit; secondary WebGL construction failure and affected startup/skin/core paths.",
+  "baselineCommit": "68625b153a7510982b8f2067e687b7c7d7fd6117"
+}

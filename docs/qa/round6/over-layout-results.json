@@ -1,0 +1,261 @@
+{
+  "passed": true,
+  "productSha256": "ccc0d5441adc4b55551fd1283cb210e0b10ca32335969a289a987062efcac556",
+  "checks": [
+    "Normal zero-score settlement preserves best, records and silver; local records opens and returns to the settlement.",
+    "Restored home icon works with Space; the historical replay button works with Enter.",
+    "A real successful jump followed by failure shows new-best decoration and saves exactly the earned score once.",
+    "Compact replay/new settlement resets scroll and removes stale new-best decoration without duplicating records.",
+    "Menu returns to the settlement, and home preserves the earned best.",
+    "Touch hold reaches normal failure; an actual swipe scrolls the compact settlement, and replay/home respond to taps."
+  ],
+  "layouts": [
+    {
+      "viewport": {
+        "width": 414,
+        "height": 736
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736
+      },
+      "scrollTop": 0,
+      "clientWidth": 414,
+      "scrollWidth": 414,
+      "caption": {
+        "left": 155,
+        "right": 259,
+        "top": 153,
+        "bottom": 167
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 180.125,
+        "right": 233.875,
+        "top": 201.5,
+        "bottom": 287.5
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568
+      },
+      "scrollTop": 0,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "caption": {
+        "left": 119.875,
+        "right": 200.125,
+        "top": 118.0703125,
+        "bottom": 128.8671875
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 139.2578125,
+        "right": 180.7421875,
+        "top": 155.5,
+        "bottom": 221.875
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 414,
+        "height": 896
+      },
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 896
+      },
+      "scrollTop": 0,
+      "clientWidth": 414,
+      "scrollWidth": 414,
+      "caption": {
+        "left": 155,
+        "right": 259,
+        "top": 233,
+        "bottom": 247
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 180.125,
+        "right": 233.875,
+        "top": 281.5,
+        "bottom": 367.5
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 736,
+        "height": 414
+      },
+      "stage": {
+        "left": 192.046875,
+        "right": 543.9375,
+        "top": 0,
+        "bottom": 414
+      },
+      "scrollTop": 0,
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "caption": {
+        "left": 332.984375,
+        "right": 402.984375,
+        "top": 96,
+        "bottom": 110
+      },
+      "capsule": {
+        "left": 437.9375,
+        "right": 533.9375,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 346,
+        "right": 389.984375,
+        "top": 128,
+        "bottom": 198.375
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 200
+      },
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200
+      },
+      "scrollTop": 0,
+      "clientWidth": 170,
+      "scrollWidth": 170,
+      "caption": {
+        "left": 125,
+        "right": 195,
+        "top": 96,
+        "bottom": 110
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 146.25,
+        "right": 173.75,
+        "top": 128,
+        "bottom": 172
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 200,
+        "height": 320
+      },
+      "stage": {
+        "left": 0,
+        "right": 200,
+        "top": 0,
+        "bottom": 320
+      },
+      "scrollTop": 0,
+      "clientWidth": 200,
+      "scrollWidth": 200,
+      "caption": {
+        "left": 65,
+        "right": 135,
+        "top": 96,
+        "bottom": 110
+      },
+      "capsule": {
+        "left": 94,
+        "right": 190,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 86.25,
+        "right": 113.75,
+        "top": 128,
+        "bottom": 172
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    },
+    {
+      "viewport": {
+        "width": 240,
+        "height": 320
+      },
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320
+      },
+      "scrollTop": 0,
+      "clientWidth": 240,
+      "scrollWidth": 240,
+      "caption": {
+        "left": 85,
+        "right": 155,
+        "top": 96,
+        "bottom": 110
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49
+      },
+      "score": {
+        "left": 104.984375,
+        "right": 135,
+        "top": 128,
+        "bottom": 176
+      },
+      "best": "历史最高分：2",
+      "state": "over"
+    }
+  ],
+  "touchScroll": 44,
+  "errors": []
+}

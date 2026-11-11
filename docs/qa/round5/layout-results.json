@@ -1,0 +1,3312 @@
+{
+  "passed": true,
+  "productSha256": "7e0991b245b755973e25d9b655ee08b154dbcada6e4cd6453ce0679e1382c70d",
+  "errors": [],
+  "results": [
+    {
+      "version": "baseline",
+      "overflow": {
+        "heading": {
+          "left": 96,
+          "right": 224,
+          "top": 28,
+          "bottom": 62,
+          "width": 128,
+          "height": 34
+        },
+        "capsule": {
+          "left": 156,
+          "right": 252,
+          "top": 17,
+          "bottom": 49,
+          "width": 96,
+          "height": 32
+        },
+        "dpr": 1,
+        "fonts": "loaded",
+        "stage": {
+          "left": 58,
+          "right": 262,
+          "top": 0,
+          "bottom": 240,
+          "width": 204,
+          "height": 240
+        },
+        "panel": {
+          "left": 76,
+          "right": 244,
+          "top": 12,
+          "bottom": 228,
+          "width": 168,
+          "height": 216,
+          "scrollTop": 0,
+          "clientWidth": 168,
+          "scrollWidth": 168,
+          "clientHeight": 216,
+          "scrollHeight": 364
+        },
+        "columns": 3,
+        "cards": [
+          {
+            "id": "skin-classic",
+            "card": {
+              "left": 96,
+              "right": 132,
+              "top": 72,
+              "bottom": 298.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 95,
+              "right": 133,
+              "top": 87,
+              "bottom": 169,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 101,
+              "right": 127,
+              "top": 179,
+              "bottom": 227,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 101,
+              "right": 127,
+              "top": 237,
+              "bottom": 267.78125,
+              "width": 26,
+              "height": 30.78125
+            },
+            "selected": "true",
+            "disabled": false
+          },
+          {
+            "id": "skin-silver",
+            "card": {
+              "left": 142,
+              "right": 178,
+              "top": 72,
+              "bottom": 298.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 141,
+              "right": 179,
+              "top": 87,
+              "bottom": 169,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 147,
+              "right": 173,
+              "top": 179,
+              "bottom": 227,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 147,
+              "right": 173,
+              "top": 237,
+              "bottom": 283.171875,
+              "width": 26,
+              "height": 46.171875
+            },
+            "selected": "false",
+            "disabled": true
+          },
+          {
+            "id": "skin-gold",
+            "card": {
+              "left": 188,
+              "right": 224,
+              "top": 72,
+              "bottom": 298.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 187,
+              "right": 225,
+              "top": 87,
+              "bottom": 169,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 193,
+              "right": 219,
+              "top": 179,
+              "bottom": 227,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 193,
+              "right": 219,
+              "top": 237,
+              "bottom": 283.171875,
+              "width": 26,
+              "height": 46.171875
+            },
+            "selected": "false",
+            "disabled": true
+          }
+        ],
+        "paused": true,
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      },
+      "reopened": {
+        "heading": {
+          "left": 96,
+          "right": 224,
+          "top": -120,
+          "bottom": -86,
+          "width": 128,
+          "height": 34
+        },
+        "capsule": {
+          "left": 156,
+          "right": 252,
+          "top": 17,
+          "bottom": 49,
+          "width": 96,
+          "height": 32
+        },
+        "dpr": 1,
+        "fonts": "loaded",
+        "stage": {
+          "left": 58,
+          "right": 262,
+          "top": 0,
+          "bottom": 240,
+          "width": 204,
+          "height": 240
+        },
+        "panel": {
+          "left": 76,
+          "right": 244,
+          "top": 12,
+          "bottom": 228,
+          "width": 168,
+          "height": 216,
+          "scrollTop": 148,
+          "clientWidth": 168,
+          "scrollWidth": 168,
+          "clientHeight": 216,
+          "scrollHeight": 364
+        },
+        "columns": 3,
+        "cards": [
+          {
+            "id": "skin-classic",
+            "card": {
+              "left": 96,
+              "right": 132,
+              "top": -76,
+              "bottom": 150.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 95,
+              "right": 133,
+              "top": -61,
+              "bottom": 21,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 101,
+              "right": 127,
+              "top": 31,
+              "bottom": 79,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 101,
+              "right": 127,
+              "top": 89,
+              "bottom": 119.78125,
+              "width": 26,
+              "height": 30.78125
+            },
+            "selected": "true",
+            "disabled": false
+          },
+          {
+            "id": "skin-silver",
+            "card": {
+              "left": 142,
+              "right": 178,
+              "top": -76,
+              "bottom": 150.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 141,
+              "right": 179,
+              "top": -61,
+              "bottom": 21,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 147,
+              "right": 173,
+              "top": 31,
+              "bottom": 79,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 147,
+              "right": 173,
+              "top": 89,
+              "bottom": 135.171875,
+              "width": 26,
+              "height": 46.171875
+            },
+            "selected": "false",
+            "disabled": true
+          },
+          {
+            "id": "skin-gold",
+            "card": {
+              "left": 188,
+              "right": 224,
+              "top": -76,
+              "bottom": 150.171875,
+              "width": 36,
+              "height": 226.171875
+            },
+            "image": {
+              "left": 187,
+              "right": 225,
+              "top": -61,
+              "bottom": 21,
+              "width": 38,
+              "height": 82
+            },
+            "label": {
+              "left": 193,
+              "right": 219,
+              "top": 31,
+              "bottom": 79,
+              "width": 26,
+              "height": 48
+            },
+            "status": {
+              "left": 193,
+              "right": 219,
+              "top": 89,
+              "bottom": 135.171875,
+              "width": 26,
+              "height": 46.171875
+            },
+            "selected": "false",
+            "disabled": true
+          }
+        ],
+        "paused": true,
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "classic",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "res/head.png",
+            "res/head.png",
+            "res/middle.png",
+            "res/bottom.png"
+          ]
+        }
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 414,
+        "height": 736
+      },
+      "heading": {
+        "left": 162.9921875,
+        "right": 251.0078125,
+        "top": 78,
+        "bottom": 100,
+        "width": 88.015625,
+        "height": 22
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736
+      },
+      "panel": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736,
+        "scrollTop": 0,
+        "clientWidth": 414,
+        "scrollWidth": 414,
+        "clientHeight": 736,
+        "scrollHeight": 736
+      },
+      "columns": 2,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 217,
+            "right": 364,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 274.5,
+            "right": 307.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 290.5,
+            "right": 291.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 217,
+            "right": 363,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 344,
+            "bottom": 511,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 374,
+            "bottom": 440,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 427.5,
+            "bottom": 428.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 458,
+            "bottom": 508,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "heading": {
+        "left": 126.0625,
+        "right": 193.9375,
+        "top": 60.1796875,
+        "bottom": 77.1640625,
+        "width": 67.875,
+        "height": 16.984375
+      },
+      "capsule": {
+        "left": 214,
+        "right": 310,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568,
+        "width": 320,
+        "height": 568
+      },
+      "panel": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 568,
+        "width": 320,
+        "height": 568,
+        "scrollTop": 0,
+        "clientWidth": 320,
+        "scrollWidth": 320,
+        "clientHeight": 568,
+        "scrollHeight": 568
+      },
+      "columns": 2,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 38.828125,
+            "right": 152.265625,
+            "top": 121.15625,
+            "bottom": 250.03125,
+            "width": 113.4375,
+            "height": 128.875
+          },
+          "image": {
+            "left": 83.1953125,
+            "right": 108.6484375,
+            "top": 144.296875,
+            "bottom": 195.21875,
+            "width": 25.453125,
+            "height": 50.921875
+          },
+          "label": {
+            "left": 95.546875,
+            "right": 96.546875,
+            "top": 185.59375,
+            "bottom": 186.59375,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 38.8203125,
+            "right": 151.4921875,
+            "top": 209.1328125,
+            "bottom": 247.7109375,
+            "width": 112.671875,
+            "height": 38.578125
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 167.6875,
+            "right": 281.125,
+            "top": 121.15625,
+            "bottom": 250.03125,
+            "width": 113.4375,
+            "height": 128.875
+          },
+          "image": {
+            "left": 212.0546875,
+            "right": 237.5078125,
+            "top": 144.296875,
+            "bottom": 195.21875,
+            "width": 25.453125,
+            "height": 50.921875
+          },
+          "label": {
+            "left": 224.40625,
+            "right": 225.40625,
+            "top": 185.59375,
+            "bottom": 186.59375,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 167.6796875,
+            "right": 280.3515625,
+            "top": 209.1328125,
+            "bottom": 247.7109375,
+            "width": 112.671875,
+            "height": 38.578125
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 38.828125,
+            "right": 152.265625,
+            "top": 265.453125,
+            "bottom": 394.328125,
+            "width": 113.4375,
+            "height": 128.875
+          },
+          "image": {
+            "left": 83.1953125,
+            "right": 108.6484375,
+            "top": 288.59375,
+            "bottom": 339.515625,
+            "width": 25.453125,
+            "height": 50.921875
+          },
+          "label": {
+            "left": 95.546875,
+            "right": 96.546875,
+            "top": 329.890625,
+            "bottom": 330.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 38.8203125,
+            "right": 151.4921875,
+            "top": 353.4296875,
+            "bottom": 392.0078125,
+            "width": 112.671875,
+            "height": 38.578125
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 240,
+        "height": 320
+      },
+      "heading": {
+        "left": 38,
+        "right": 202,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 164,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 134,
+        "right": 230,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 240,
+        "top": 0,
+        "bottom": 320,
+        "width": 240,
+        "height": 320
+      },
+      "panel": {
+        "left": 18,
+        "right": 222,
+        "top": 56,
+        "bottom": 302,
+        "width": 204,
+        "height": 246,
+        "scrollTop": 0,
+        "clientWidth": 204,
+        "scrollWidth": 204,
+        "clientHeight": 246,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 46.5,
+            "right": 193.5,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 103.5,
+            "right": 136.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 120,
+            "right": 121,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 48.5,
+            "right": 191.5,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 143,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 46.5,
+            "right": 193.5,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 103.5,
+            "right": 136.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 120,
+            "right": 121,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 48.5,
+            "right": 191.5,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 143,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 46.5,
+            "right": 193.5,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 103.5,
+            "right": 136.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 120,
+            "right": 121,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 48.5,
+            "right": 191.5,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 143,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 240
+      },
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 640,
+        "height": 240
+      },
+      "heading": {
+        "left": 256,
+        "right": 384,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 316,
+        "right": 412,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 218,
+        "right": 422,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 236,
+        "right": 404,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 256,
+            "right": 384,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 303.5,
+            "right": 336.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 320,
+            "right": 321,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 258,
+            "right": 382,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 256,
+            "right": 384,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 303.5,
+            "right": 336.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 320,
+            "right": 321,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 258,
+            "right": 382,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 256,
+            "right": 384,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 303.5,
+            "right": 336.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 320,
+            "right": 321,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 258,
+            "right": 382,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 200
+      },
+      "heading": {
+        "left": 113,
+        "right": 207,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 94,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200,
+        "width": 170,
+        "height": 200
+      },
+      "panel": {
+        "left": 93,
+        "right": 227,
+        "top": 56,
+        "bottom": 182,
+        "width": 134,
+        "height": 126,
+        "scrollTop": 0,
+        "clientWidth": 134,
+        "scrollWidth": 134,
+        "clientHeight": 126,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 200,
+        "height": 320
+      },
+      "heading": {
+        "left": 38,
+        "right": 162,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 124,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 94,
+        "right": 190,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 200,
+        "top": 0,
+        "bottom": 320,
+        "width": 200,
+        "height": 320
+      },
+      "panel": {
+        "left": 18,
+        "right": 182,
+        "top": 56,
+        "bottom": 302,
+        "width": 164,
+        "height": 246,
+        "scrollTop": 0,
+        "clientWidth": 164,
+        "scrollWidth": 164,
+        "clientHeight": 246,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 38,
+            "right": 162,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 124,
+            "height": 167
+          },
+          "image": {
+            "left": 83.5,
+            "right": 116.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 100,
+            "right": 101,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 40,
+            "right": 160,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 120,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 38,
+            "right": 162,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 124,
+            "height": 167
+          },
+          "image": {
+            "left": 83.5,
+            "right": 116.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 100,
+            "right": 101,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 40,
+            "right": 160,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 120,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 38,
+            "right": 162,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 124,
+            "height": 167
+          },
+          "image": {
+            "left": 83.5,
+            "right": 116.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 100,
+            "right": 101,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 40,
+            "right": 160,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 120,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "action": "scroll-close-reopen",
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "action": "scroll-close-reopen-tiny",
+      "heading": {
+        "left": 113,
+        "right": 207,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 94,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 1,
+      "fonts": "loaded",
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200,
+        "width": 170,
+        "height": 200
+      },
+      "panel": {
+        "left": 93,
+        "right": 227,
+        "top": 56,
+        "bottom": 182,
+        "width": 134,
+        "height": 126,
+        "scrollTop": 0,
+        "clientWidth": 134,
+        "scrollWidth": 134,
+        "clientHeight": 126,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "dpr": 1,
+      "action": "saved-gold-rotate-switch-silver",
+      "passed": true
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 414,
+        "height": 736
+      },
+      "heading": {
+        "left": 162.9921875,
+        "right": 251.0078125,
+        "top": 78,
+        "bottom": 100,
+        "width": 88.015625,
+        "height": 22
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 2,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736
+      },
+      "panel": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736,
+        "scrollTop": 0,
+        "clientWidth": 414,
+        "scrollWidth": 414,
+        "clientHeight": 736,
+        "scrollHeight": 736
+      },
+      "columns": 2,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 217,
+            "right": 364,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 274.5,
+            "right": 307.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 290.5,
+            "right": 291.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 217,
+            "right": 363,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 344,
+            "bottom": 511,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 374,
+            "bottom": 440,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 427.5,
+            "bottom": 428.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 458,
+            "bottom": 508,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 240
+      },
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 2,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 200
+      },
+      "heading": {
+        "left": 113,
+        "right": 207,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 94,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 2,
+      "fonts": "loaded",
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200,
+        "width": 170,
+        "height": 200
+      },
+      "panel": {
+        "left": 93,
+        "right": 227,
+        "top": 56,
+        "bottom": 182,
+        "width": 134,
+        "height": 126,
+        "scrollTop": 0,
+        "clientWidth": 134,
+        "scrollWidth": 134,
+        "clientHeight": 126,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "action": "scroll-close-reopen",
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 2,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "dpr": 2,
+      "action": "saved-gold-rotate-switch-silver",
+      "passed": true
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 414,
+        "height": 736
+      },
+      "heading": {
+        "left": 162.9921875,
+        "right": 251.0078125,
+        "top": 78,
+        "bottom": 100,
+        "width": 88.015625,
+        "height": 22
+      },
+      "capsule": {
+        "left": 308,
+        "right": 404,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 3,
+      "fonts": "loaded",
+      "stage": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736
+      },
+      "panel": {
+        "left": 0,
+        "right": 414,
+        "top": 0,
+        "bottom": 736,
+        "width": 414,
+        "height": 736,
+        "scrollTop": 0,
+        "clientWidth": 414,
+        "scrollWidth": 414,
+        "clientHeight": 736,
+        "scrollHeight": 736
+      },
+      "columns": 2,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 217,
+            "right": 364,
+            "top": 157,
+            "bottom": 324,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 274.5,
+            "right": 307.5,
+            "top": 187,
+            "bottom": 253,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 290.5,
+            "right": 291.5,
+            "top": 240.5,
+            "bottom": 241.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 217,
+            "right": 363,
+            "top": 271,
+            "bottom": 321,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 50,
+            "right": 197,
+            "top": 344,
+            "bottom": 511,
+            "width": 147,
+            "height": 167
+          },
+          "image": {
+            "left": 107.5,
+            "right": 140.5,
+            "top": 374,
+            "bottom": 440,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 123.5,
+            "right": 124.5,
+            "top": 427.5,
+            "bottom": 428.5,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 50,
+            "right": 196,
+            "top": 458,
+            "bottom": 508,
+            "width": 146,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 240
+      },
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 3,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "viewport": {
+        "width": 320,
+        "height": 200
+      },
+      "heading": {
+        "left": 113,
+        "right": 207,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 94,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 139,
+        "right": 235,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 3,
+      "fonts": "loaded",
+      "stage": {
+        "left": 75,
+        "right": 245,
+        "top": 0,
+        "bottom": 200,
+        "width": 170,
+        "height": 200
+      },
+      "panel": {
+        "left": 93,
+        "right": 227,
+        "top": 56,
+        "bottom": 182,
+        "width": 134,
+        "height": 126,
+        "scrollTop": 0,
+        "clientWidth": 134,
+        "scrollWidth": 134,
+        "clientHeight": 126,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 113,
+            "right": 207,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 94,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 115,
+            "right": 205,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 90,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "action": "scroll-close-reopen",
+      "heading": {
+        "left": 96,
+        "right": 224,
+        "top": 78,
+        "bottom": 104.390625,
+        "width": 128,
+        "height": 26.390625
+      },
+      "capsule": {
+        "left": 156,
+        "right": 252,
+        "top": 17,
+        "bottom": 49,
+        "width": 96,
+        "height": 32
+      },
+      "dpr": 3,
+      "fonts": "loaded",
+      "stage": {
+        "left": 58,
+        "right": 262,
+        "top": 0,
+        "bottom": 240,
+        "width": 204,
+        "height": 240
+      },
+      "panel": {
+        "left": 76,
+        "right": 244,
+        "top": 56,
+        "bottom": 222,
+        "width": 168,
+        "height": 166,
+        "scrollTop": 0,
+        "clientWidth": 168,
+        "scrollWidth": 168,
+        "clientHeight": 166,
+        "scrollHeight": 723
+      },
+      "columns": 1,
+      "cards": [
+        {
+          "id": "skin-classic",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 126.390625,
+            "bottom": 293.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 156.390625,
+            "bottom": 222.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 209.890625,
+            "bottom": 210.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 240.390625,
+            "bottom": 290.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "true",
+          "disabled": false
+        },
+        {
+          "id": "skin-silver",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 313.390625,
+            "bottom": 480.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 343.390625,
+            "bottom": 409.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 396.890625,
+            "bottom": 397.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 427.390625,
+            "bottom": 477.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        },
+        {
+          "id": "skin-gold",
+          "card": {
+            "left": 96,
+            "right": 224,
+            "top": 500.390625,
+            "bottom": 667.390625,
+            "width": 128,
+            "height": 167
+          },
+          "image": {
+            "left": 143.5,
+            "right": 176.5,
+            "top": 530.390625,
+            "bottom": 596.390625,
+            "width": 33,
+            "height": 66
+          },
+          "label": {
+            "left": 160,
+            "right": 161,
+            "top": 583.890625,
+            "bottom": 584.890625,
+            "width": 1,
+            "height": 1
+          },
+          "status": {
+            "left": 98,
+            "right": 222,
+            "top": 614.390625,
+            "bottom": 664.390625,
+            "width": 124,
+            "height": 50
+          },
+          "selected": "false",
+          "disabled": true
+        }
+      ],
+      "paused": true,
+      "skin": {
+        "previewIssues": {},
+        "unlocked": false,
+        "selected": "classic",
+        "scarf": false,
+        "hat": false,
+        "maps": [
+          "res/head.png",
+          "res/head.png",
+          "res/middle.png",
+          "res/bottom.png"
+        ]
+      }
+    },
+    {
+      "version": "current",
+      "dpr": 3,
+      "action": "saved-gold-rotate-switch-silver",
+      "passed": true
+    }
+  ]
+}

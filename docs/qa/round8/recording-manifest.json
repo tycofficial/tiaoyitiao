@@ -1,0 +1,21 @@
+[
+  {
+    "condition": {
+      "video": true,
+      "keep": true
+    },
+    "file": "page@755cf8dd5433c7a5d3469fa704d5d8b6.webm",
+    "bytes": 704128,
+    "sha256": "a08fea4ea7d7167525e59597141af9c7a809da1765c6dce1dc95cc9f876b7069",
+    "savedAs": "recording-desktop-kept.webm"
+  },
+  {
+    "condition": {
+      "video": true,
+      "keep": false
+    },
+    "file": "page@95a7ccb6ad59f48ada76d562a385ccd0.webm",
+    "bytes": 336176,
+    "sha256": "073d1aabfb83341bdf63a120e2169007290d9fd154c5c54299cecee19fe21055"
+  }
+]

@@ -1,0 +1,7952 @@
+{
+  "passed": true,
+  "baselineCommit": "1a7f1fb8f45dfbca4f0e0008d5e6b4e7ab90ff37",
+  "baselineSha256": "7639a34cb111c18c9eb7fcf5c4e74d138d97d2b157bfc1e60307a9e0c2783943",
+  "productSha256": "5ccb13c14b6d537525bc2cb565421cb4d41a0352c189060c21ccb420ed057607",
+  "scriptSha256": "ab485a98a38b8add34ded949c962498d25cfe2a87d59963e0150620c22fb6796",
+  "method": "Real Chromium WEBGL_lose_context loseContext/restoreContext and browser-generated trusted events. Actual keyboard/mouse actions; no dispatchEvent or timestamp overrides.",
+  "cases": [
+    {
+      "name": "baseline-hidden-play",
+      "version": "baseline",
+      "passed": true,
+      "errors": [],
+      "before": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.3771236166328249,
+            -0.07484551991837496,
+            0.02793274953689133
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 23,
+            "failures": 0,
+            "started": 1,
+            "stopped": 0,
+            "chargeSchedules": 0
+          },
+          "voices": [
+            {
+              "name": "start",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 0.10158730158730159,
+              "media": false
+            }
+          ],
+          "nativeMedia": false,
+          "playing": [
+            {
+              "name": "start",
+              "offset": 0,
+              "startedAt": 0.10158730158730159
+            }
+          ],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 299.99999999999966,
+        "pressAt": 0,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 12,
+        "geometries": 19,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 0,
+        "tweens": 0,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "lost": {
+        "mode": "play",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.3771236166328249,
+            -0.07484551991837496,
+            0.02793274953689133
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 1,
+            "stopped": 1,
+            "chargeSchedules": 0
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 449.9999999999993,
+        "pressAt": 0,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 12,
+        "geometries": 19,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 0,
+        "tweens": 0,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": false
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "afterInput": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.3771236166328249,
+            -0.08924470248442035,
+            0.034363334570150575
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "jump",
+        "time": 709.5000000000701,
+        "pressAt": 459.50000000006935,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            0,
+            2.220940250000142,
+            0
+          ],
+          "scale": [
+            1.1093259999999707,
+            0.921910000000021,
+            1.1093259999999707
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": {
+          "elapsed": 0,
+          "hold": 0.26029999999993014,
+          "duration": 0.38198604509985323,
+          "vy": 138.9,
+          "vz": 18.613245408327437,
+          "start": [
+            0,
+            2.220940250000142,
+            0
+          ],
+          "end": [
+            7.11,
+            2.75,
+            0
+          ],
+          "hit": 0
+        },
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 12,
+        "geometries": 19,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 9,
+        "tweens": 49,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": false
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "restored": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.23415991349682622,
+            0.3209270781507173,
+            -0.08661235230024916
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "jump",
+        "time": 892.8000000000711,
+        "pressAt": 459.50000000006935,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            3.411807883346424,
+            15.585709850000148,
+            0
+          ],
+          "scale": [
+            1.1387666666666703,
+            0.7834999999999951,
+            1.1387666666666703
+          ],
+          "head": [
+            -0.3596400000000106,
+            4.005719999999979,
+            0
+          ]
+        },
+        "flight": {
+          "elapsed": 0.18330000000000019,
+          "hold": 0.26029999999993014,
+          "duration": 0.38198604509985323,
+          "vy": 138.9,
+          "vz": 18.613245408327437,
+          "start": [
+            0,
+            2.220940250000142,
+            0
+          ],
+          "end": [
+            7.11,
+            2.75,
+            0
+          ],
+          "hit": 0
+        },
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 21,
+        "geometries": 27,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 49,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true,
+          "timestamp": 4369,
+          "consumed": 4378.5
+        },
+        {
+          "type": "webglcontextrestored",
+          "trusted": true,
+          "timestamp": 4807.699999999953,
+          "consumed": 4826.399999999907
+        }
+      ]
+    },
+    {
+      "name": "flight-and-earned-progress",
+      "version": "current",
+      "passed": true,
+      "errors": [],
+      "earned": {
+        "mode": "play",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -15.76795399197023,
+            30,
+            24.506144215263905
+          ],
+          "target": [
+            -7,
+            30,
+            13.875
+          ],
+          "duration": 785.8365367555774,
+          "start": 1416.599999999998,
+          "projectedPawn": [
+            0.486984326090025,
+            0.16512416164746513,
+            0.24227067262874225
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 6,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [
+            {
+              "name": "combo1",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.4512471655328798,
+              "media": false
+            },
+            {
+              "name": "success",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.4512471655328798,
+              "media": false
+            },
+            {
+              "name": "pop",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.4512471655328798,
+              "media": false
+            }
+          ],
+          "nativeMedia": false,
+          "playing": [
+            {
+              "name": "combo1",
+              "offset": 0,
+              "startedAt": 1.4512471655328798
+            },
+            {
+              "name": "success",
+              "offset": 0,
+              "startedAt": 1.4512471655328798
+            },
+            {
+              "name": "pop",
+              "offset": 0,
+              "startedAt": 1.4512471655328798
+            }
+          ],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "stop",
+        "time": 1466.5999999999976,
+        "pressAt": 283.4000000000002,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 9,
+          "position": [
+            20,
+            0,
+            -24.25
+          ],
+          "radius": 4.3,
+          "scale": [
+            0.86,
+            1,
+            0.86
+          ],
+          "vertices": [
+            [
+              24.3,
+              -19.95
+            ],
+            [
+              24.3,
+              -28.55
+            ],
+            [
+              15.7,
+              -28.55
+            ],
+            [
+              15.7,
+              -19.95
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.36,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.1122222222222253,
+            0.8873015873015846,
+            1.1122222222222253
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [
+          {
+            "position": [
+              20.36,
+              3.75,
+              0
+            ],
+            "scale": 1.2999999999999972,
+            "opacity": 0.9000000000000009
+          }
+        ],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 39,
+        "geometries": 22,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "radius": 4.3,
+            "nativeScale": 0.86,
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 87,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "before": {
+        "mode": "play",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -13.893060865985515,
+            30,
+            22.23283630000744
+          ],
+          "target": [
+            -7,
+            30,
+            13.875
+          ],
+          "duration": 785.8365367555774,
+          "start": 1416.599999999998,
+          "projectedPawn": [
+            0.5036789512289326,
+            0.10578671454461691,
+            0.19313993273446317
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 8,
+            "stopped": 8,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "jump",
+        "time": 1549.999999999997,
+        "pressAt": 1483.2999999999977,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 9,
+          "position": [
+            20,
+            0,
+            -24.25
+          ],
+          "radius": 4.3,
+          "scale": [
+            0.86,
+            1,
+            0.86
+          ],
+          "vertices": [
+            [
+              24.3,
+              -19.95
+            ],
+            [
+              24.3,
+              -28.55
+            ],
+            [
+              15.7,
+              -28.55
+            ],
+            [
+              15.7,
+              -19.95
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.36,
+            2.6439035000000946,
+            0
+          ],
+          "scale": [
+            1.0219239999999805,
+            0.984340000000014,
+            1.0219239999999805
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": {
+          "elapsed": 0,
+          "hold": 0.052199999999953436,
+          "duration": 0.37638365578010485,
+          "vy": 135.78,
+          "vz": 3.6934221533689655,
+          "start": [
+            20.36,
+            2.6439035000000946,
+            0
+          ],
+          "end": [
+            20.34,
+            2.75,
+            -1.39
+          ],
+          "hit": 2
+        },
+        "waves": [
+          {
+            "position": [
+              20.36,
+              3.75,
+              0
+            ],
+            "scale": 1.8003999999999936,
+            "opacity": 0.7332000000000021
+          }
+        ],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 31,
+        "geometries": 22,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "radius": 4.3,
+            "nativeScale": 0.86,
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          }
+        ],
+        "timers": 16,
+        "tweens": 105,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "lost": {
+        "mode": "play",
+        "paused": true,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": true
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -13.54470249266179,
+            30,
+            21.810451772352422
+          ],
+          "target": [
+            -7,
+            30,
+            13.875
+          ],
+          "duration": 785.8365367555774,
+          "start": 1416.599999999998,
+          "projectedPawn": [
+            0.5041582014600032,
+            0.15510672906195977,
+            0.15816939288652146
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 8,
+            "stopped": 8,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "jump",
+        "time": 1566.6999999999966,
+        "pressAt": 1483.2999999999977,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 9,
+          "position": [
+            20,
+            0,
+            -24.25
+          ],
+          "radius": 4.3,
+          "scale": [
+            0.86,
+            1,
+            0.86
+          ],
+          "vertices": [
+            [
+              24.3,
+              -19.95
+            ],
+            [
+              24.3,
+              -28.55
+            ],
+            [
+              15.7,
+              -28.55
+            ],
+            [
+              15.7,
+              -19.95
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.359084436800625,
+            4.811029100000073,
+            -0.061673354402623455
+          ],
+          "scale": [
+            0.9593390240675381,
+            1.0559018272533478,
+            0.9593390240675381
+          ],
+          "head": [
+            0,
+            4.904160480000012,
+            -0.0901799999999978
+          ]
+        },
+        "flight": {
+          "elapsed": 0.01669999999999982,
+          "hold": 0.052199999999953436,
+          "duration": 0.37638365578010485,
+          "vy": 135.78,
+          "vz": 3.6934221533689655,
+          "start": [
+            20.36,
+            2.6439035000000946,
+            0
+          ],
+          "end": [
+            20.34,
+            2.75,
+            -1.39
+          ],
+          "hit": 2
+        },
+        "waves": [
+          {
+            "position": [
+              20.36,
+              3.75,
+              0
+            ],
+            "scale": 1.9005999999999914,
+            "opacity": 0.6998000000000029
+          }
+        ],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 22,
+        "geometries": 21,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "radius": 4.3,
+            "nativeScale": 0.86,
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          }
+        ],
+        "timers": 14,
+        "tweens": 109,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": true,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rejected": {
+        "after": {
+          "mode": "play",
+          "paused": true,
+          "score": 2,
+          "best": 3200,
+          "jumps": 1,
+          "combo": 1,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1,
+            "contextLost": true
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "silver",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "reconstructed/silver/head",
+              "reconstructed/silver/head",
+              "reconstructed/silver/middle",
+              "reconstructed/silver/bottom"
+            ]
+          },
+          "camera": {
+            "position": [
+              -13.54470249266179,
+              30,
+              21.810451772352422
+            ],
+            "target": [
+              -7,
+              30,
+              13.875
+            ],
+            "duration": 785.8365367555774,
+            "start": 1416.599999999998,
+            "projectedPawn": [
+              0.5041582014600032,
+              0.15510672906195977,
+              0.15816939288652146
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 8,
+              "stopped": 8,
+              "chargeSchedules": 2
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.795,
+            "max": 0.995,
+            "distance": 17.03
+          },
+          "status": "jump",
+          "time": 1566.6999999999966,
+          "pressAt": 1483.2999999999977,
+          "current": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "radius": 4.3,
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              20.359084436800625,
+              4.811029100000073,
+              -0.061673354402623455
+            ],
+            "scale": [
+              0.9593390240675381,
+              1.0559018272533478,
+              0.9593390240675381
+            ],
+            "head": [
+              0,
+              4.904160480000012,
+              -0.0901799999999978
+            ]
+          },
+          "flight": {
+            "elapsed": 0.01669999999999982,
+            "hold": 0.052199999999953436,
+            "duration": 0.37638365578010485,
+            "vy": 135.78,
+            "vz": 3.6934221533689655,
+            "start": [
+              20.36,
+              2.6439035000000946,
+              0
+            ],
+            "end": [
+              20.34,
+              2.75,
+              -1.39
+            ],
+            "hit": 2
+          },
+          "waves": [
+            {
+              "position": [
+                20.36,
+                3.75,
+                0
+              ],
+              "scale": 1.9005999999999914,
+              "opacity": 0.6998000000000029
+            }
+          ],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 22,
+          "geometries": 21,
+          "active": 3,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 9,
+              "position": [
+                20,
+                0,
+                -24.25
+              ],
+              "scale": [
+                0.86,
+                1,
+                0.86
+              ],
+              "radius": 4.3,
+              "nativeScale": 0.86,
+              "vertices": [
+                [
+                  24.3,
+                  -19.95
+                ],
+                [
+                  24.3,
+                  -28.55
+                ],
+                [
+                  15.7,
+                  -28.55
+                ],
+                [
+                  15.7,
+                  -19.95
+                ]
+              ]
+            }
+          ],
+          "timers": 14,
+          "tweens": 109,
+          "pool": 33,
+          "revision": "88dev",
+          "rawContextLost": true,
+          "notice": {
+            "visible": true,
+            "role": "status",
+            "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+          },
+          "oldHintVisible": false,
+          "menuVisible": true
+        },
+        "accessibility": "- status:\n  - paragraph: 画面暂时不可用，游戏已暂停。 正在等待画面恢复，恢复后可点击继续。",
+        "attempted": [
+          {
+            "id": "resume-button",
+            "x": 207,
+            "y": 505.5
+          },
+          {
+            "id": "restart-button",
+            "x": 207,
+            "y": 433.5
+          },
+          {
+            "id": "home-button",
+            "x": 379.75,
+            "y": 33
+          }
+        ]
+      },
+      "restored": {
+        "mode": "play",
+        "paused": true,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -13.54470249266179,
+            30,
+            21.810451772352422
+          ],
+          "target": [
+            -7,
+            30,
+            13.875
+          ],
+          "duration": 785.8365367555774,
+          "start": 1416.599999999998,
+          "projectedPawn": [
+            0.5041582014600032,
+            0.15510672906195977,
+            0.15816939288652146
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 8,
+            "stopped": 8,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "jump",
+        "time": 1566.6999999999966,
+        "pressAt": 1483.2999999999977,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 9,
+          "position": [
+            20,
+            0,
+            -24.25
+          ],
+          "radius": 4.3,
+          "scale": [
+            0.86,
+            1,
+            0.86
+          ],
+          "vertices": [
+            [
+              24.3,
+              -19.95
+            ],
+            [
+              24.3,
+              -28.55
+            ],
+            [
+              15.7,
+              -28.55
+            ],
+            [
+              15.7,
+              -19.95
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.359084436800625,
+            4.811029100000073,
+            -0.061673354402623455
+          ],
+          "scale": [
+            0.9593390240675381,
+            1.0559018272533478,
+            0.9593390240675381
+          ],
+          "head": [
+            0,
+            4.904160480000012,
+            -0.0901799999999978
+          ]
+        },
+        "flight": {
+          "elapsed": 0.01669999999999982,
+          "hold": 0.052199999999953436,
+          "duration": 0.37638365578010485,
+          "vy": 135.78,
+          "vz": 3.6934221533689655,
+          "start": [
+            20.36,
+            2.6439035000000946,
+            0
+          ],
+          "end": [
+            20.34,
+            2.75,
+            -1.39
+          ],
+          "hit": 2
+        },
+        "waves": [
+          {
+            "position": [
+              20.36,
+              3.75,
+              0
+            ],
+            "scale": 1.9005999999999914,
+            "opacity": 0.6998000000000029
+          }
+        ],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 22,
+        "geometries": 34,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "radius": 4.3,
+            "nativeScale": 0.86,
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          }
+        ],
+        "timers": 14,
+        "tweens": 109,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rendered": {
+        "width": 414,
+        "height": 736,
+        "nontransparent": 304704,
+        "error": 0,
+        "lost": false
+      },
+      "after": {
+        "mode": "play",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -7.223707912768795,
+            30,
+            14.146245844232164
+          ],
+          "target": [
+            -7,
+            30,
+            13.875
+          ],
+          "duration": 785.8365367555774,
+          "start": 1416.599999999998,
+          "projectedPawn": [
+            0.5039822215778514,
+            -0.07348532157100568,
+            0.029147661716070555
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": true,
+          "position": [
+            20,
+            2.9,
+            -24.25
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 8,
+            "stopped": 8,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "stop",
+        "time": 2084.899999999947,
+        "pressAt": 1483.2999999999977,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 9,
+          "position": [
+            20,
+            0,
+            -24.25
+          ],
+          "radius": 4.3,
+          "scale": [
+            0.86,
+            1,
+            0.86
+          ],
+          "vertices": [
+            [
+              24.3,
+              -19.95
+            ],
+            [
+              24.3,
+              -28.55
+            ],
+            [
+              15.7,
+              -28.55
+            ],
+            [
+              15.7,
+              -19.95
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.34,
+            2.75,
+            -1.39
+          ],
+          "scale": [
+            1.0661733333333336,
+            0.9054666666666663,
+            1.0661733333333336
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 18,
+        "geometries": 35,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 9,
+            "position": [
+              20,
+              0,
+              -24.25
+            ],
+            "scale": [
+              0.86,
+              1,
+              0.86
+            ],
+            "radius": 4.3,
+            "nativeScale": 0.86,
+            "vertices": [
+              [
+                24.3,
+                -19.95
+              ],
+              [
+                24.3,
+                -28.55
+              ],
+              [
+                15.7,
+                -28.55
+              ],
+              [
+                15.7,
+                -19.95
+              ]
+            ]
+          }
+        ],
+        "timers": 0,
+        "tweens": 14,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "saved": {
+        "best": 3200,
+        "records": [
+          {
+            "score": 3200,
+            "date": "2026-11-01T00:00:00.000Z"
+          }
+        ],
+        "prefs": {
+          "sound": true,
+          "quality": "high",
+          "renderVersion": 3,
+          "skin": "silver",
+          "gameplayMode": "invincible"
+        }
+      },
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true,
+          "timestamp": 3972.4000000000233,
+          "consumed": 3982.1999999999534
+        },
+        {
+          "type": "webglcontextrestored",
+          "trusted": true,
+          "timestamp": 4504.300000000047,
+          "consumed": 4511.900000000023
+        }
+      ]
+    },
+    {
+      "name": "home-already-paused",
+      "version": "current",
+      "passed": true,
+      "errors": [],
+      "before": {
+        "mode": "home",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "numbered",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.7961498573359642,
+            -0.3606193232430791,
+            -0.026763591754757426
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "issue": "",
+          "cacheSize": 0,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 0,
+            "failures": 0,
+            "started": 0,
+            "stopped": 0,
+            "chargeSchedules": 0
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 449.9999999999997,
+        "pressAt": 0,
+        "current": {
+          "order": -1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            0.7,
+            1,
+            0.7
+          ],
+          "vertices": [
+            [
+              3.507000160217285,
+              3.507000160217285
+            ],
+            [
+              3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              3.507000160217285
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            -10,
+            -2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 17,
+        "geometries": 12,
+        "active": 2,
+        "platforms": [
+          {
+            "order": -1,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              1,
+              0.7
+            ],
+            "radius": 5,
+            "nativeScale": 0.7,
+            "vertices": [
+              [
+                3.507000160217285,
+                3.507000160217285
+              ],
+              [
+                3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                3.507000160217285
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 5,
+        "tweens": 6,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "lost": {
+        "mode": "home",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "numbered",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": true
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.7961498573359642,
+            -0.3606193232430791,
+            -0.026763591754757426
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "issue": "",
+          "cacheSize": 0,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 0,
+            "failures": 0,
+            "started": 0,
+            "stopped": 0,
+            "chargeSchedules": 0
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 449.9999999999997,
+        "pressAt": 0,
+        "current": {
+          "order": -1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            0.7,
+            1,
+            0.7
+          ],
+          "vertices": [
+            [
+              3.507000160217285,
+              3.507000160217285
+            ],
+            [
+              3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              3.507000160217285
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            -10,
+            -2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 17,
+        "geometries": 11,
+        "active": 2,
+        "platforms": [
+          {
+            "order": -1,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              1,
+              0.7
+            ],
+            "radius": 5,
+            "nativeScale": 0.7,
+            "vertices": [
+              [
+                3.507000160217285,
+                3.507000160217285
+              ],
+              [
+                3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                3.507000160217285
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 5,
+        "tweens": 6,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": true,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rejected": {
+        "after": {
+          "mode": "home",
+          "paused": true,
+          "score": 0,
+          "best": 3200,
+          "jumps": 0,
+          "combo": 0,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "numbered",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1,
+            "contextLost": true
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "silver",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "reconstructed/silver/head",
+              "reconstructed/silver/head",
+              "reconstructed/silver/middle",
+              "reconstructed/silver/bottom"
+            ]
+          },
+          "camera": {
+            "position": [
+              -17,
+              30,
+              26
+            ],
+            "projectedPawn": [
+              -0.7961498573359642,
+              -0.3606193232430791,
+              -0.026763591754757426
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "issue": "",
+            "cacheSize": 0,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 0,
+              "failures": 0,
+              "started": 0,
+              "stopped": 0,
+              "chargeSchedules": 0
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.8,
+            "max": 1,
+            "distance": 17
+          },
+          "status": "stop",
+          "time": 449.9999999999997,
+          "pressAt": 0,
+          "current": {
+            "order": -1,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              0.7,
+              1,
+              0.7
+            ],
+            "vertices": [
+              [
+                3.507000160217285,
+                3.507000160217285
+              ],
+              [
+                3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                3.507000160217285
+              ]
+            ]
+          },
+          "next": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              -10,
+              -2.75,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 17,
+          "geometries": 11,
+          "active": 2,
+          "platforms": [
+            {
+              "order": -1,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                0.7,
+                1,
+                0.7
+              ],
+              "radius": 5,
+              "nativeScale": 0.7,
+              "vertices": [
+                [
+                  3.507000160217285,
+                  3.507000160217285
+                ],
+                [
+                  3.507000160217285,
+                  -3.507000160217285
+                ],
+                [
+                  -3.507000160217285,
+                  -3.507000160217285
+                ],
+                [
+                  -3.507000160217285,
+                  3.507000160217285
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            }
+          ],
+          "timers": 5,
+          "tweens": 6,
+          "pool": 34,
+          "revision": "88dev",
+          "rawContextLost": true,
+          "notice": {
+            "visible": true,
+            "role": "status",
+            "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+          },
+          "oldHintVisible": false,
+          "menuVisible": true
+        },
+        "accessibility": "- status:\n  - paragraph: 画面暂时不可用，游戏已暂停。 正在等待画面恢复，恢复后可点击继续。",
+        "attempted": [
+          {
+            "id": "resume-button",
+            "x": 207,
+            "y": 505.5
+          },
+          {
+            "id": "restart-button",
+            "x": 207,
+            "y": 433.5
+          },
+          {
+            "id": "home-button",
+            "x": 379.75,
+            "y": 33
+          }
+        ]
+      },
+      "restored": {
+        "mode": "home",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "numbered",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.7961498573359642,
+            -0.3606193232430791,
+            -0.026763591754757426
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "issue": "",
+          "cacheSize": 0,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 0,
+            "failures": 0,
+            "started": 0,
+            "stopped": 0,
+            "chargeSchedules": 0
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 449.9999999999997,
+        "pressAt": 0,
+        "current": {
+          "order": -1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            0.7,
+            1,
+            0.7
+          ],
+          "vertices": [
+            [
+              3.507000160217285,
+              3.507000160217285
+            ],
+            [
+              3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              3.507000160217285
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            -10,
+            -2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 17,
+        "geometries": 23,
+        "active": 2,
+        "platforms": [
+          {
+            "order": -1,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              1,
+              0.7
+            ],
+            "radius": 5,
+            "nativeScale": 0.7,
+            "vertices": [
+              [
+                3.507000160217285,
+                3.507000160217285
+              ],
+              [
+                3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                3.507000160217285
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 5,
+        "tweens": 6,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rendered": {
+        "width": 414,
+        "height": 736,
+        "nontransparent": 304704,
+        "error": 0,
+        "lost": false
+      },
+      "after": {
+        "mode": "home",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "numbered",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.7961498573359642,
+            -0.3606193232430791,
+            -0.026763591754757426
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 0,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 0,
+            "failures": 0,
+            "started": 0,
+            "stopped": 0,
+            "chargeSchedules": 0
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 573.6000000000698,
+        "pressAt": 0,
+        "current": {
+          "order": -1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            0.7,
+            1,
+            0.7
+          ],
+          "vertices": [
+            [
+              3.507000160217285,
+              3.507000160217285
+            ],
+            [
+              3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              -3.507000160217285
+            ],
+            [
+              -3.507000160217285,
+              3.507000160217285
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            -10,
+            -2.75,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 17,
+        "geometries": 23,
+        "active": 2,
+        "platforms": [
+          {
+            "order": -1,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.7,
+              1,
+              0.7
+            ],
+            "radius": 5,
+            "nativeScale": 0.7,
+            "vertices": [
+              [
+                3.507000160217285,
+                3.507000160217285
+              ],
+              [
+                3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                -3.507000160217285
+              ],
+              [
+                -3.507000160217285,
+                3.507000160217285
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 5,
+        "tweens": 4,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "saved": {
+        "best": 3200,
+        "records": [
+          {
+            "score": 3200,
+            "date": "2026-11-01T00:00:00.000Z"
+          }
+        ],
+        "prefs": {
+          "skin": "silver",
+          "gameplayMode": "invincible"
+        }
+      },
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true,
+          "timestamp": 2151.1999999999534,
+          "consumed": 2151.899999999907
+        },
+        {
+          "type": "webglcontextrestored",
+          "trusted": true,
+          "timestamp": 2630.79999999993,
+          "consumed": 2637.1999999999534
+        }
+      ]
+    },
+    {
+      "name": "invincible-recovery",
+      "version": "current",
+      "passed": true,
+      "errors": [],
+      "before": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            2.2361716268069163,
+            0.7738470057345701,
+            0.785974315892515
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "recover",
+        "time": 2949.900000000008,
+        "pressAt": 283.3000000000003,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            62.365909090909156,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0078088888888888,
+            0.9888444444444446,
+            1.0078088888888888
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 8,
+        "geometries": 17,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 52,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "lost": {
+        "mode": "play",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": true
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            2.2361716268069163,
+            0.7738470057345701,
+            0.785974315892515
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "recover",
+        "time": 2949.900000000008,
+        "pressAt": 283.3000000000003,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            62.365909090909156,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0078088888888888,
+            0.9888444444444446,
+            1.0078088888888888
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 8,
+        "geometries": 16,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 52,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": true,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rejected": {
+        "after": {
+          "mode": "play",
+          "paused": true,
+          "score": 0,
+          "best": 3200,
+          "jumps": 0,
+          "combo": 0,
+          "centerMode": false,
+          "invincible": true,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1,
+            "contextLost": true
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "silver",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "reconstructed/silver/head",
+              "reconstructed/silver/head",
+              "reconstructed/silver/middle",
+              "reconstructed/silver/bottom"
+            ]
+          },
+          "camera": {
+            "position": [
+              -17,
+              30,
+              26
+            ],
+            "projectedPawn": [
+              2.2361716268069163,
+              0.7738470057345701,
+              0.785974315892515
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 3,
+              "stopped": 3,
+              "chargeSchedules": 1
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.8,
+            "max": 1,
+            "distance": 17
+          },
+          "status": "recover",
+          "time": 2949.900000000008,
+          "pressAt": 283.3000000000003,
+          "current": {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              62.365909090909156,
+              2.75,
+              0
+            ],
+            "scale": [
+              1.0078088888888888,
+              0.9888444444444446,
+              1.0078088888888888
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 8,
+          "geometries": 16,
+          "active": 2,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            }
+          ],
+          "timers": 3,
+          "tweens": 52,
+          "pool": 34,
+          "revision": "88dev",
+          "rawContextLost": true,
+          "notice": {
+            "visible": true,
+            "role": "status",
+            "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+          },
+          "oldHintVisible": false,
+          "menuVisible": true
+        },
+        "accessibility": "- status:\n  - paragraph: 画面暂时不可用，游戏已暂停。 正在等待画面恢复，恢复后可点击继续。",
+        "attempted": [
+          {
+            "id": "resume-button",
+            "x": 207,
+            "y": 505.5
+          },
+          {
+            "id": "restart-button",
+            "x": 207,
+            "y": 433.5
+          },
+          {
+            "id": "home-button",
+            "x": 379.75,
+            "y": 33
+          }
+        ]
+      },
+      "restored": {
+        "mode": "play",
+        "paused": true,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            2.2361716268069163,
+            0.7738470057345701,
+            0.785974315892515
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "recover",
+        "time": 2949.900000000008,
+        "pressAt": 283.3000000000003,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            62.365909090909156,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0078088888888888,
+            0.9888444444444446,
+            1.0078088888888888
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 8,
+        "geometries": 21,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 52,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rendered": {
+        "width": 414,
+        "height": 736,
+        "nontransparent": 304704,
+        "error": 0,
+        "lost": false
+      },
+      "after": {
+        "mode": "play",
+        "paused": false,
+        "score": 0,
+        "best": 3200,
+        "jumps": 0,
+        "combo": 0,
+        "centerMode": false,
+        "invincible": true,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -17,
+            30,
+            26
+          ],
+          "projectedPawn": [
+            -0.3771236166328249,
+            -0.07484551991837496,
+            0.02793274953689133
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 3,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.8,
+          "max": 1,
+          "distance": 17
+        },
+        "status": "stop",
+        "time": 3290.19999999999,
+        "pressAt": 283.3000000000003,
+        "current": {
+          "order": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              -5
+            ],
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            0,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.0639488888888804,
+            0.9086444444444566,
+            1.0639488888888804
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 12,
+        "geometries": 24,
+        "active": 2,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 9,
+        "pool": 34,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "saved": {
+        "best": 3200,
+        "records": [
+          {
+            "score": 3200,
+            "date": "2026-11-01T00:00:00.000Z"
+          }
+        ],
+        "prefs": {
+          "skin": "silver",
+          "gameplayMode": "invincible"
+        }
+      },
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true,
+          "timestamp": 4849.400000000023,
+          "consumed": 4857.099999999977
+        },
+        {
+          "type": "webglcontextrestored",
+          "trusted": true,
+          "timestamp": 5372.599999999977,
+          "consumed": 5386.20000000007
+        }
+      ]
+    },
+    {
+      "name": "ordinary-failure",
+      "version": "current",
+      "passed": true,
+      "errors": [],
+      "earned": {
+        "mode": "play",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": false,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -15.84771609438267,
+            30,
+            25.411759066182352
+          ],
+          "target": [
+            -7,
+            30,
+            20.895
+          ],
+          "duration": 561.3845050408855,
+          "start": 1333.2666666666657,
+          "projectedPawn": [
+            0.45447406003545804,
+            0.17921385735356576,
+            0.2548554128964966
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 6,
+            "stopped": 3,
+            "chargeSchedules": 1
+          },
+          "voices": [
+            {
+              "name": "combo1",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.3728798185941042,
+              "media": false
+            },
+            {
+              "name": "success",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.3728798185941042,
+              "media": false
+            },
+            {
+              "name": "pop",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 1.3728798185941042,
+              "media": false
+            }
+          ],
+          "nativeMedia": false,
+          "playing": [
+            {
+              "name": "combo1",
+              "offset": 0,
+              "startedAt": 1.3728798185941042
+            },
+            {
+              "name": "success",
+              "offset": 0,
+              "startedAt": 1.3728798185941042
+            },
+            {
+              "name": "pop",
+              "offset": 0,
+              "startedAt": 1.3728798185941042
+            }
+          ],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "stop",
+        "time": 1366.5999999999988,
+        "pressAt": 200.00000000000009,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 4,
+          "position": [
+            20,
+            0,
+            -10.21
+          ],
+          "radius": 4.050000000000001,
+          "scale": [
+            0.81,
+            1,
+            0.81
+          ],
+          "vertices": [
+            [
+              24.05,
+              -6.16
+            ],
+            [
+              24.05,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -6.16
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            20.41,
+            2.75,
+            0
+          ],
+          "scale": [
+            1.1193975308642001,
+            0.8850617283950596,
+            1.1193975308642001
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [
+          {
+            "position": [
+              20.41,
+              3.75,
+              0
+            ],
+            "scale": 1.1999999999999982,
+            "opacity": 0.9333333333333339
+          }
+        ],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 43,
+        "geometries": 24,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "radius": 4.050000000000001,
+            "nativeScale": 0.81,
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          }
+        ],
+        "timers": 3,
+        "tweens": 99,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "before": {
+        "mode": "falling",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": false,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -7,
+            30,
+            20.895
+          ],
+          "target": [
+            -7,
+            30,
+            20.895
+          ],
+          "duration": 561.3845050408855,
+          "start": 1333.2666666666657,
+          "projectedPawn": [
+            -2.6668925089551285,
+            0.8717820180315543,
+            0.8822432099118681
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 9,
+            "stopped": 8,
+            "chargeSchedules": 2
+          },
+          "voices": [
+            {
+              "name": "fall",
+              "charge": false,
+              "offset": 0,
+              "scheduledAt": 3.982222222222222,
+              "media": false
+            }
+          ],
+          "nativeMedia": false,
+          "playing": [
+            {
+              "name": "fall",
+              "offset": 0,
+              "startedAt": 3.982222222222222
+            }
+          ],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "fall",
+        "time": 4066.5000000000255,
+        "pressAt": 1399.9999999999986,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 4,
+          "position": [
+            20,
+            0,
+            -10.21
+          ],
+          "radius": 4.050000000000001,
+          "scale": [
+            0.81,
+            1,
+            0.81
+          ],
+          "vertices": [
+            [
+              24.05,
+              -6.16
+            ],
+            [
+              24.05,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -6.16
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            17.7,
+            2.508816666666675,
+            -67.45
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 11,
+        "geometries": 24,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "radius": 4.050000000000001,
+            "nativeScale": 0.81,
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          }
+        ],
+        "timers": 1,
+        "tweens": 53,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "lost": {
+        "mode": "falling",
+        "paused": true,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": false,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": true
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -7,
+            30,
+            20.895
+          ],
+          "target": [
+            -7,
+            30,
+            20.895
+          ],
+          "duration": 561.3845050408855,
+          "start": 1333.2666666666657,
+          "projectedPawn": [
+            -2.6668925089551285,
+            0.8651915297958321,
+            0.8851864808104845
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 9,
+            "stopped": 9,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "fall",
+        "time": 4083.2000000000266,
+        "pressAt": 1399.9999999999986,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 4,
+          "position": [
+            20,
+            0,
+            -10.21
+          ],
+          "radius": 4.050000000000001,
+          "scale": [
+            0.81,
+            1,
+            0.81
+          ],
+          "vertices": [
+            [
+              24.05,
+              -6.16
+            ],
+            [
+              24.05,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -6.16
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            17.7,
+            2.2666666666666577,
+            -67.45
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 11,
+        "geometries": 23,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "radius": 4.050000000000001,
+            "nativeScale": 0.81,
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          }
+        ],
+        "timers": 1,
+        "tweens": 53,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": true,
+        "notice": {
+          "visible": true,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rejected": {
+        "after": {
+          "mode": "falling",
+          "paused": true,
+          "score": 2,
+          "best": 3200,
+          "jumps": 1,
+          "combo": 1,
+          "centerMode": false,
+          "invincible": false,
+          "scoreScale": false,
+          "blockScale": 1,
+          "multiplayer": null,
+          "demo": {
+            "phase": "none",
+            "jumps": 0,
+            "press": null
+          },
+          "render": {
+            "quality": "high",
+            "width": 414,
+            "height": 736,
+            "pixelRatio": 1,
+            "contextLost": true
+          },
+          "skin": {
+            "previewIssues": {},
+            "unlocked": false,
+            "selected": "silver",
+            "scarf": false,
+            "hat": false,
+            "maps": [
+              "reconstructed/silver/head",
+              "reconstructed/silver/head",
+              "reconstructed/silver/middle",
+              "reconstructed/silver/bottom"
+            ]
+          },
+          "camera": {
+            "position": [
+              -7,
+              30,
+              20.895
+            ],
+            "target": [
+              -7,
+              30,
+              20.895
+            ],
+            "duration": 561.3845050408855,
+            "start": 1333.2666666666657,
+            "projectedPawn": [
+              -2.6668925089551285,
+              0.8651915297958321,
+              0.8851864808104845
+            ]
+          },
+          "sourceVersion": "4.0.6",
+          "releaseVersion": "1.0.0",
+          "centerMarker": {
+            "visible": false,
+            "position": [
+              0,
+              0,
+              0
+            ]
+          },
+          "ui": {
+            "messages": 0
+          },
+          "audio": {
+            "context": "running",
+            "issue": "",
+            "cacheSize": 25,
+            "mediaFallback": false,
+            "stats": {
+              "decoded": 25,
+              "failures": 0,
+              "started": 9,
+              "stopped": 9,
+              "chargeSchedules": 2
+            },
+            "voices": [],
+            "nativeMedia": false,
+            "playing": [],
+            "bonus": null
+          },
+          "difficulty": {
+            "min": 0.795,
+            "max": 0.995,
+            "distance": 17.03
+          },
+          "status": "fall",
+          "time": 4083.2000000000266,
+          "pressAt": 1399.9999999999986,
+          "current": {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "radius": 5,
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          "next": {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "radius": 4.050000000000001,
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          },
+          "bottle": {
+            "position": [
+              17.7,
+              2.2666666666666577,
+              -67.45
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "head": [
+              0,
+              4.725,
+              0
+            ]
+          },
+          "flight": null,
+          "waves": [],
+          "background": {
+            "current": 0,
+            "top": [
+              215,
+              219,
+              230
+            ],
+            "bottom": [
+              188,
+              190,
+              199
+            ]
+          },
+          "drawCalls": 11,
+          "geometries": 23,
+          "active": 3,
+          "platforms": [
+            {
+              "order": 0,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  -5
+                ],
+                [
+                  -5,
+                  -5
+                ],
+                [
+                  -5,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 1,
+              "position": [
+                20,
+                0,
+                0
+              ],
+              "scale": [
+                1,
+                1,
+                1
+              ],
+              "radius": 5,
+              "nativeScale": 1,
+              "vertices": [
+                [
+                  25,
+                  5
+                ],
+                [
+                  25,
+                  -5
+                ],
+                [
+                  15,
+                  -5
+                ],
+                [
+                  15,
+                  5
+                ]
+              ]
+            },
+            {
+              "order": 4,
+              "position": [
+                20,
+                0,
+                -10.21
+              ],
+              "scale": [
+                0.81,
+                1,
+                0.81
+              ],
+              "radius": 4.050000000000001,
+              "nativeScale": 0.81,
+              "vertices": [
+                [
+                  24.05,
+                  -6.16
+                ],
+                [
+                  24.05,
+                  -14.260000000000002
+                ],
+                [
+                  15.95,
+                  -14.260000000000002
+                ],
+                [
+                  15.95,
+                  -6.16
+                ]
+              ]
+            }
+          ],
+          "timers": 1,
+          "tweens": 53,
+          "pool": 33,
+          "revision": "88dev",
+          "rawContextLost": true,
+          "notice": {
+            "visible": true,
+            "role": "status",
+            "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+          },
+          "oldHintVisible": false,
+          "menuVisible": true
+        },
+        "accessibility": "- status:\n  - paragraph: 画面暂时不可用，游戏已暂停。 正在等待画面恢复，恢复后可点击继续。",
+        "attempted": [
+          {
+            "id": "resume-button",
+            "x": 207,
+            "y": 505.5
+          },
+          {
+            "id": "restart-button",
+            "x": 207,
+            "y": 433.5
+          },
+          {
+            "id": "home-button",
+            "x": 379.75,
+            "y": 33
+          }
+        ]
+      },
+      "restored": {
+        "mode": "falling",
+        "paused": true,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": false,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -7,
+            30,
+            20.895
+          ],
+          "target": [
+            -7,
+            30,
+            20.895
+          ],
+          "duration": 561.3845050408855,
+          "start": 1333.2666666666657,
+          "projectedPawn": [
+            -2.6668925089551285,
+            0.8651915297958321,
+            0.8851864808104845
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 9,
+            "stopped": 9,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "fall",
+        "time": 4083.2000000000266,
+        "pressAt": 1399.9999999999986,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 4,
+          "position": [
+            20,
+            0,
+            -10.21
+          ],
+          "radius": 4.050000000000001,
+          "scale": [
+            0.81,
+            1,
+            0.81
+          ],
+          "vertices": [
+            [
+              24.05,
+              -6.16
+            ],
+            [
+              24.05,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -6.16
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            17.7,
+            2.2666666666666577,
+            -67.45
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 11,
+        "geometries": 29,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "radius": 4.050000000000001,
+            "nativeScale": 0.81,
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          }
+        ],
+        "timers": 1,
+        "tweens": 53,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": true
+      },
+      "rendered": {
+        "width": 414,
+        "height": 736,
+        "nontransparent": 304704,
+        "error": 0,
+        "lost": false
+      },
+      "after": {
+        "mode": "over",
+        "paused": false,
+        "score": 2,
+        "best": 3200,
+        "jumps": 1,
+        "combo": 1,
+        "centerMode": false,
+        "invincible": false,
+        "scoreScale": false,
+        "blockScale": 1,
+        "multiplayer": null,
+        "demo": {
+          "phase": "none",
+          "jumps": 0,
+          "press": null
+        },
+        "render": {
+          "quality": "high",
+          "width": 414,
+          "height": 736,
+          "pixelRatio": 1,
+          "contextLost": false
+        },
+        "skin": {
+          "previewIssues": {},
+          "unlocked": false,
+          "selected": "silver",
+          "scarf": false,
+          "hat": false,
+          "maps": [
+            "reconstructed/silver/head",
+            "reconstructed/silver/head",
+            "reconstructed/silver/middle",
+            "reconstructed/silver/bottom"
+          ]
+        },
+        "camera": {
+          "position": [
+            -7,
+            30,
+            20.895
+          ],
+          "target": [
+            -7,
+            30,
+            20.895
+          ],
+          "duration": 561.3845050408855,
+          "start": 1333.2666666666657,
+          "projectedPawn": [
+            -2.6668925089551285,
+            0.7204901912869743,
+            0.9498091951513582
+          ]
+        },
+        "sourceVersion": "4.0.6",
+        "releaseVersion": "1.0.0",
+        "centerMarker": {
+          "visible": false,
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ui": {
+          "messages": 0
+        },
+        "audio": {
+          "context": "running",
+          "issue": "",
+          "cacheSize": 25,
+          "mediaFallback": false,
+          "stats": {
+            "decoded": 25,
+            "failures": 0,
+            "started": 9,
+            "stopped": 9,
+            "chargeSchedules": 2
+          },
+          "voices": [],
+          "nativeMedia": false,
+          "playing": [],
+          "bonus": null
+        },
+        "difficulty": {
+          "min": 0.795,
+          "max": 0.995,
+          "distance": 17.03
+        },
+        "status": "stop",
+        "time": 6191.300000000008,
+        "pressAt": 1399.9999999999986,
+        "current": {
+          "order": 1,
+          "position": [
+            20,
+            0,
+            0
+          ],
+          "radius": 5,
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "vertices": [
+            [
+              25,
+              5
+            ],
+            [
+              25,
+              -5
+            ],
+            [
+              15,
+              -5
+            ],
+            [
+              15,
+              5
+            ]
+          ]
+        },
+        "next": {
+          "order": 4,
+          "position": [
+            20,
+            0,
+            -10.21
+          ],
+          "radius": 4.050000000000001,
+          "scale": [
+            0.81,
+            1,
+            0.81
+          ],
+          "vertices": [
+            [
+              24.05,
+              -6.16
+            ],
+            [
+              24.05,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -14.260000000000002
+            ],
+            [
+              15.95,
+              -6.16
+            ]
+          ]
+        },
+        "bottle": {
+          "position": [
+            17.7,
+            -3.05,
+            -67.45
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "head": [
+            0,
+            4.725,
+            0
+          ]
+        },
+        "flight": null,
+        "waves": [],
+        "background": {
+          "current": 0,
+          "top": [
+            215,
+            219,
+            230
+          ],
+          "bottom": [
+            188,
+            190,
+            199
+          ]
+        },
+        "drawCalls": 10,
+        "geometries": 29,
+        "active": 3,
+        "platforms": [
+          {
+            "order": 0,
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                -5
+              ],
+              [
+                -5,
+                -5
+              ],
+              [
+                -5,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 1,
+            "position": [
+              20,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "radius": 5,
+            "nativeScale": 1,
+            "vertices": [
+              [
+                25,
+                5
+              ],
+              [
+                25,
+                -5
+              ],
+              [
+                15,
+                -5
+              ],
+              [
+                15,
+                5
+              ]
+            ]
+          },
+          {
+            "order": 4,
+            "position": [
+              20,
+              0,
+              -10.21
+            ],
+            "scale": [
+              0.81,
+              1,
+              0.81
+            ],
+            "radius": 4.050000000000001,
+            "nativeScale": 0.81,
+            "vertices": [
+              [
+                24.05,
+                -6.16
+              ],
+              [
+                24.05,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -14.260000000000002
+              ],
+              [
+                15.95,
+                -6.16
+              ]
+            ]
+          }
+        ],
+        "timers": 0,
+        "tweens": 0,
+        "pool": 33,
+        "revision": "88dev",
+        "rawContextLost": false,
+        "notice": {
+          "visible": false,
+          "role": "status",
+          "text": "画面暂时不可用，游戏已暂停。正在等待画面恢复，恢复后可点击继续。"
+        },
+        "oldHintVisible": false,
+        "menuVisible": false
+      },
+      "saved": {
+        "best": 3200,
+        "records": [
+          {
+            "score": 3200,
+            "date": "2026-11-01T00:00:00.000Z"
+          },
+          {
+            "score": 2,
+            "date": "2026-11-11T10:46:14.478Z"
+          }
+        ],
+        "prefs": {
+          "sound": true,
+          "quality": "high",
+          "renderVersion": 3,
+          "skin": "silver",
+          "gameplayMode": "classic"
+        }
+      },
+      "events": [
+        {
+          "type": "webglcontextlost",
+          "trusted": true,
+          "timestamp": 6565.79999999993,
+          "consumed": 6570.900000000023
+        },
+        {
+          "type": "webglcontextrestored",
+          "trusted": true,
+          "timestamp": 7028,
+          "consumed": 7036.79999999993
+        }
+      ]
+    }
+  ]
+}

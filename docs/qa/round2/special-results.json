@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "productSha256": "44deba7fcda21e8d24625a1c3c59f7a3e6af90fcfb2142f9949b298cd4597cd2",
+  "events": [
+    {
+      "jumps": 1,
+      "score": 2,
+      "current": 1,
+      "bonus": null
+    },
+    {
+      "jumps": 2,
+      "score": 6,
+      "current": 2,
+      "bonus": null
+    },
+    {
+      "jumps": 3,
+      "score": 12,
+      "current": 7,
+      "bonus": null
+    },
+    {
+      "jumps": 4,
+      "score": 20,
+      "current": 31,
+      "bonus": {
+        "order": 31,
+        "triggered": false,
+        "repeatPending": false
+      }
+    }
+  ],
+  "pause": {
+    "order": 31,
+    "score": 20,
+    "time": 5199.799999999989
+  },
+  "frozen": {
+    "score": 20,
+    "time": 5199.799999999989
+  },
+  "awarded": {
+    "score": 40,
+    "bonus": {
+      "order": 31,
+      "triggered": true,
+      "repeatPending": false
+    }
+  },
+  "once": {
+    "score": 40
+  },
+  "restarted": {
+    "mode": "play",
+    "score": 0,
+    "timers": 0
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "checks": [
+    "Reproduced baseline: all three skin status labels overlap.",
+    "New save: independent labels, complete previews, classic selected, silver/gold locked.",
+    "Short pointer charge: current-platform landing preserves score.",
+    "Long keyboard charge: miss returns to takeoff with unchanged score.",
+    "Six manual consecutive successful jumps: real scoring and saved best, no automatic jump or centering.",
+    "Miss after consecutive jumps returns to nonzero takeoff position and resets center combo.",
+    "Menu freezes scene time; restart resets this run and keeps mode.",
+    "Normal mode: overshoot still reaches the real game-over screen.",
+    "Normal mode preference survives page reload.",
+    "Opening menu during pointer charge cancels it; late release cannot jump.",
+    "Seven skin switches: preview/selection/material maps correspond; gold survives start, restart and reload; legacy best/records retained.",
+    "Skin panel fits 320x568, 736x414 landscape and 1440x900.",
+    "Mobile touch emulation: long touch overshoots and safely retries.",
+    "No page errors or remote runtime requests."
+  ],
+  "notRun": [
+    {
+      "action": "Open local index.html through file://",
+      "reason": "Skipped after observed managed-browser ERR_BLOCKED_BY_ADMINISTRATOR; no retry or bypass attempted."
+    }
+  ],
+  "flights": [
+    {
+      "elapsed": 0.049999999999999996,
+      "hold": 0.06260000000009314,
+      "duration": 0.37667281891448884,
+      "vy": 135.94,
+      "vz": 4.4070076645929905,
+      "start": [
+        0,
+        2.6227654999998107,
+        0
+      ],
+      "end": [
+        1.66,
+        2.75,
+        0
+      ],
+      "hit": 2
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.207399999999907,
+      "duration": 0.44608935445840847,
+      "vy": 168.11,
+      "vz": 151.31497608130755,
+      "start": [
+        1.66,
+        -0.6036250000000001,
+        0
+      ],
+      "end": [
+        69.16,
+        2.75,
+        0
+      ],
+      "hit": 0
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.7531999999997206,
+      "duration": 0.3956421130968737,
+      "vy": 146.3,
+      "vz": 53.30575108630075,
+      "start": [
+        1.66,
+        1.219324250000757,
+        0
+      ],
+      "end": [
+        22.75,
+        2.75,
+        0
+      ],
+      "hit": 7
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.2958000000002794,
+      "duration": 0.38297261025475426,
+      "vy": 139.44,
+      "vz": 21.09811454825755,
+      "start": [
+        22.75,
+        2.1487864999994324,
+        0
+      ],
+      "end": [
+        30.83,
+        2.75,
+        0
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.5341999999997206,
+      "duration": 0.38950686518979455,
+      "vy": 143.01,
+      "vz": 37.4319461427095,
+      "start": [
+        30.83,
+        1.6642385000005677,
+        0
+      ],
+      "end": [
+        45.41,
+        2.75,
+        0
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.4068000000002794,
+      "duration": 0.3859942916844678,
+      "vy": 141.1,
+      "vz": 28.040225937809776,
+      "start": [
+        45.41,
+        1.9231789999994322,
+        0
+      ],
+      "end": [
+        45.14,
+        2.75,
+        -10.82
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0.016800000000001092,
+      "hold": 0.8625,
+      "duration": 0.39873189948299553,
+      "vy": 147.94,
+      "vz": 60.56930243542067,
+      "start": [
+        45.14,
+        0.99696875,
+        -10.82
+      ],
+      "end": [
+        69.29,
+        2.75,
+        -10.61
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 0.41120000000018625,
+      "duration": 0.3861264368916716,
+      "vy": 141.17,
+      "vz": 28.332688349617545,
+      "start": [
+        69.29,
+        1.9142359999996215,
+        -10.61
+      ],
+      "end": [
+        80.23,
+        2.75,
+        -10.61
+      ],
+      "hit": 1
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.2047999999998136,
+      "duration": 0.4459727849288622,
+      "vy": 168.07,
+      "vz": 151.3549007763544,
+      "start": [
+        80.23,
+        -0.6036250000000001,
+        -10.61
+      ],
+      "end": [
+        80.08,
+        2.75,
+        -78.11
+      ],
+      "hit": 0
+    },
+    {
+      "elapsed": 0,
+      "hold": 2.2023999999999067,
+      "duration": 0.44588535581667127,
+      "vy": 168.04,
+      "vz": 151.38420475005032,
+      "start": [
+        0,
+        -0.6036250000000001,
+        0
+      ],
+      "end": [
+        67.5,
+        2.75,
+        0
+      ],
+      "hit": 0
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

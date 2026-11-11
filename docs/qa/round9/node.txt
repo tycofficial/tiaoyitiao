@@ -1,0 +1,46 @@
+✔ jump rotation joins at 140 ms and follows the same curve at 30, 60, 120 Hz and stalled frames (11.446729ms)
+✔ a delayed body rebound captures the completed squash before recovering (1.30895ms)
+✔ timer cancellation and restart remove pending animations and callbacks (1.112348ms)
+✔ a pending decode cannot start a voice after stopAudio invalidates its generation (10.169201ms)
+✔ charge intro and loop share an exact audio-clock boundary and both cancel on release (2.844258ms)
+✔ release during cold charge decoding prevents intro and loop from ever starting (1.710768ms)
+✔ a superseded media play promise cannot pause the newer platform song (2.032177ms)
+✔ late silent-unlock completion cannot pause a song which already owns the element (2.07857ms)
+✔ a caller can mark a media voice cancelled before asking it to stop (1.669951ms)
+✔ failed audio decoding is evicted so the next gesture can retry (1.729273ms)
+✔ active Web Audio voices fade before stop, disconnect, and never fire cancelled callbacks (1.287947ms)
+✔ iOS prefers ambient Web Audio and routes simultaneous sounds through the peak limiter (1.889265ms)
+✔ a rejected context resume does not queue a sound which could unexpectedly play later (2.173261ms)
+✔ muted and paused playback create no sources or media elements (1.446755ms)
+✔ event clocks accept page-relative and epoch timestamps and reject unsupported values (5.745542ms)
+✔ charge duration uses complete native timestamp pairs and complete processing pairs as fallback (4.42238ms)
+✔ stale or duplicate releases cannot consume a newer active charge (7.301579ms)
+✔ queued release applies the actual hold to the release pose and unchanged trajectory calculation (8.025081ms)
+✔ queued starts from before a pause boundary and duplicate starts are rejected before state changes (4.492891ms)
+✔ normal jumps retain the classic rounded range while the visible trajectory reaches the same endpoint (104.400291ms)
+✔ variable frame lengths clamp the final physics step without an early or penetrating landing (112.559065ms)
+✔ clock platform keeps working after scene time resets and refreshes the real minute (2.628299ms)
+✔ landing back on the current platform settles the complete pose without changing score or platforms (6.265101ms)
+✔ a cancelled press releases input and cannot turn a later pointer-up into a jump (4.56276ms)
+✔ older saves migrate to retry mode, preserving progress without enabling unrelated cheats or locked skins (4.162961ms)
+✔ explicit normal and invincible preferences survive reload without changing saved progress (11.012395ms)
+✔ manual trajectories keep their intermediate parabolic positions at different frame rates (170.22745ms)
+✔ every miss retries in invincible mode and retains normal failure behavior when disabled (29.647373ms)
+✔ miss recovery returns to the actual takeoff position and resets the combo without giving points (2.757521ms)
+✔ both home demonstration jumps reach their intended endpoints without a landing snap (5.306686ms)
+✔ a successful landing preserves the airborne body scale at contact and settles in 300 ms (569.941186ms)
+✔ current-platform landings and safety recovery still reset an incomplete pose (41.093381ms)
+✔ enabling invincible during every native failure pose cancels its descendants and preserves unrelated work (243.811867ms)
+✔ rapid mode toggles during a rescue do not revive a failed jump (19.025022ms)
+✔ normal mode still completes its original failure when no rescue is requested (15.45221ms)
+✔ a special platform awards its stay bonus once, and release/restart cancels an old award (16.792569ms)
+✔ a late special-platform audio completion cannot register effects or schedule repeats in a new run (9.67524ms)
+✔ menu navigation dismisses an existing dialog while keeping the game paused (11.126536ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 864.779188
