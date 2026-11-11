@@ -1,0 +1,15 @@
+{
+  "node": "v24.22.1",
+  "playwright": "1.62.1",
+  "chromium": "Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "platform": "linux",
+  "architecture": "x64",
+  "time": "2026-11-11T10:49:49.433Z",
+  "headless": true,
+  "angle": "swiftshader",
+  "contextExtension": "WEBGL_lose_context",
+  "events": "Browser-generated, isTrusted=true; no manual dispatch",
+  "recording": "Targeted context QA and core on; lifecycle and skin-input scripts do not record.",
+  "scope": "Baseline plus 4 targeted loss/restore cases; existing affected core/lifecycle/skin-input paths."
+}

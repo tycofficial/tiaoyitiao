@@ -1,0 +1,44 @@
+{
+  "baselineCommit": "1a7f1fb8f45dfbca4f0e0008d5e6b4e7ab90ff37",
+  "productSha256": "5ccb13c14b6d537525bc2cb565421cb4d41a0352c189060c21ccb420ed057607",
+  "assetsAndEmbeddedEngineByteIdentical": true,
+  "unchangedFunctions": {
+    "readStore": "efa681afad6b6405c7364e6c0d8c1cb2aa7967694d67ea53b0fa52c194a9b255",
+    "saveStore": "af955bb0bd736ba0c6aaa2454decc5f4b3255d8cffeb73b3b57507b08d8fb979",
+    "increaseScore": "cb9ce269884e359fb83410ba7d6c83528d383d2edb98d18ef8dacdbf4344d80e",
+    "land": "062aa3f53a72d0b995aad6674fbb1efceb241ebfe7b65888225df0f5257d5d6c",
+    "recoverMiss": "cc7644f62821d4004f4d8defef3f01932f9648ea486cb532f15ba0d1524dcfbd",
+    "runFailureWork": "44ae3c5c4ced6d09c08af2a9c7fad16e6045119788a4cb61fd516b5a4b78611b",
+    "fail": "43b410f7335c05551b29e5117c4ed6ded96865842221cc4b07ecbf24be6ba56b",
+    "setInvincible": "dc8477c2d3ed23b78505d8969de7d763fc65231ab3934190ed86366fc4766b57",
+    "endGame": "affe6c721cddf2608e34a10011aa2757548b382cb1fa1c2f582c5f407c143913",
+    "squeezeAt": "97724a0ad58a7daf77ebd1c31640fb57e856068e6fa065ffd7ec608d6094454e",
+    "applyCharge": "7782dfe0d88ceb8733b4ede8eb40e1b74212b09d25408af8896683b44b36c32f",
+    "eventInputTime": "92470ff5008facb201b0b6e97e2b7f138c7cf33f2f73a9f9600aafe4429c03fd",
+    "chargeHoldAt": "bf6d98e6026f46a0a639b3e70b47b8f2da148a4e07bae9fdf886a32bb7bdc793",
+    "introJump": "53bbbfbe2ec70ebbebcd063953e7089b4ab9567061aa8e89a685e237983a1b31",
+    "demoJump": "fe1bff37165a45ecf78e984463bd61f5db98ad318ecb1aa3b51964ea5a4b2feb",
+    "landDemo": "d71f2c29091201075e5e414541f2972245540d10a8a1c5a3987e05de5b7d43fc",
+    "followPlatforms": "cd12d2e8212585ac689b5d2516eb916cb8e2502ca092834a9992c35d7831c730",
+    "startBonus": "499ea26cb7bb408c751ea73eb00127ada6959ecb02890e6104b699f476864234",
+    "playBonusAudio": "589e9256cb607deffd891c7197457efddd66071f34ef35b41d9ec61a8b639cad",
+    "clearScene": "564e6dadf7cd78fe45e4c1c56b34d3f253739488b06ae965aa389315d3f50b19",
+    "buildSkinArt": "1361fa27ee13d5a77fd0437440467ee85f21f1b60cfc48e2e4af1e752e5a7587"
+  },
+  "guardOnlyFunctions": [
+    "beginCharge",
+    "endCharge",
+    "startGame",
+    "home",
+    "resize",
+    "frame"
+  ],
+  "scriptHashes": {
+    "scripts/graphics-context-qa.cjs": "ab485a98a38b8add34ded949c962498d25cfe2a87d59963e0150620c22fb6796",
+    "scripts/browser-qa.cjs": "a0cd0c1c172d72b772ab29ff80db67d20437c9c63753be003f5b1c3d08de52b7",
+    "scripts/lifecycle-qa.cjs": "4f4908f468920a08dcd6ea8b69ab9ed103a97330dfd7a0de3cba269eb3a2a811",
+    "scripts/skin-input-qa.cjs": "23c7582600c75f2055c6f20816b39bacdfcab9a0820f4168e1b10fdc7e27a480",
+    "scripts/qa-telemetry.cjs": "85583c339fee8ac21e67d955aa200223e068bf6197532d800700fbe704a4b054"
+  },
+  "inputListenerChanges": "Ignore Space/Enter/Escape activation while graphics are unavailable; native timestamp calculation remains unchanged."
+}

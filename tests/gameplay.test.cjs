@@ -48,7 +48,7 @@ function jumpHarness(hold, left = false) {
   const context = vm.createContext({
     Math, performance: { now: () => hold * 1000 },
     activePointer: 'test', mode: 'play', paused: false, pressWall: 0, pressInput: null, inputBoundary: 0,
-    centerMode: false, invincible: false, relay: null, lastSucceed: -Infinity,
+    centerMode: false, invincible: false, relay: null, lastSucceed: -Infinity, graphicsUnavailable:()=>false,
     clock: { time: 1000, tweens: [], update() {} },
     current: { rebound() {} }, next: { obj: { position: new Vector(left ? 0 : 20, 0, left ? -20 : 0) } },
     applyCharge() {}, stopAudio() {}, platformTop: () => 2.75,
@@ -104,7 +104,7 @@ test('queued release applies the actual hold to the release pose and unchanged t
 });
 
 test('queued starts from before a pause boundary and duplicate starts are rejected before state changes', () => {
-  const context=vm.createContext({performance:{now:()=>1000,timeOrigin:1700000000000},ready:true,mode:'play',paused:false,activePointer:null,bottle:{status:'stop'},flight:null,relay:null,inputBoundary:900,unlockPlatformAudio(){assert.fail('Rejected start must not change state');}});
+  const context=vm.createContext({performance:{now:()=>1000,timeOrigin:1700000000000},ready:true,mode:'play',paused:false,activePointer:null,bottle:{status:'stop'},flight:null,relay:null,inputBoundary:900,graphicsUnavailable:()=>false,unlockPlatformAudio(){assert.fail('Rejected start must not change state');}});
   vm.runInContext(extractFunction('eventInputTime')+'\n'+extractFunction('beginCharge'),context);
   assert.equal(context.beginCharge(1,800),false);context.activePointer=1;assert.equal(context.beginCharge(1,950),false);context.activePointer=null;context.paused=true;assert.equal(context.beginCharge(1,950),false);
 });

@@ -1,0 +1,51 @@
+{
+  "samples": [
+    {
+      "before": 1282,
+      "after": 0,
+      "draws": 12,
+      "program": true,
+      "framebuffer": 36053
+    },
+    {
+      "before": 0,
+      "after": 0,
+      "draws": 12,
+      "program": true,
+      "framebuffer": 36053
+    },
+    {
+      "before": 0,
+      "after": 0,
+      "draws": 12,
+      "program": true,
+      "framebuffer": 36053
+    }
+  ],
+  "messages": [
+    "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (100x88). Resized to 64x64 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "WebGL: INVALID_OPERATION: delete: object does not belong to this context",
+    "THREE.WebGLRenderer: image is not power of two (160x160). Resized to 128x128 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x30). Resized to 128x16 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (160x60). Resized to 128x32 JSHandle@node",
+    "THREE.WebGLRenderer: image is not power of two (293x289). Resized to 256x256 JSHandle@node"
+  ]
+}

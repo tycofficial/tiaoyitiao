@@ -45,11 +45,13 @@ node scripts/check.cjs
 node --test
 ```
 
-当前分支包含 **38 项回归测试**，覆盖跳跃射程、运动中间位置、动画衔接、无敌重试、普通失败、存档及音频生命周期。中断、模式切换与皮肤资源异常的复现和结果见 [第二批验收](docs/ACCEPTANCE-ROUND2.md)。落地形变与历史运动参数的核对见 [第三批验收](docs/ACCEPTANCE-ROUND3.md)。皮肤中心的小窗口布局与选择状态见 [第四批验收](docs/ACCEPTANCE-ROUND4.md)。两列皮肤页、历史可执行源码对照、原始海报与键盘/触控验证见 [第五批验收](docs/ACCEPTANCE-ROUND5.md)。普通模式结算得分区与导航对照见 [第六批验收](docs/ACCEPTANCE-ROUND6.md)。HUD 历史核对与窄容器模式提示遮挡修复见 [第七批验收](docs/ACCEPTANCE-ROUND7.md)。加载/输入时序诊断、录屏与上下文对照及短按验收修正见 [第八批记录](docs/ACCEPTANCE-ROUND8.md)。原生事件时间计时及排队输入修复见 [第九批验收](docs/ACCEPTANCE-ROUND9.md)。另有可选真实浏览器脚本 `node scripts/browser-qa.cjs`；复现条件、画面和未完成对照项见 [本批验收记录](docs/ACCEPTANCE.md)。测试通过不代表 Pages 已完成部署，应查看工作流的 `deploy` 结果。
+当前分支包含 **41 项回归测试**，覆盖跳跃射程、运动中间位置、动画衔接、无敌重试、普通失败、存档及音频生命周期。中断、模式切换与皮肤资源异常的复现和结果见 [第二批验收](docs/ACCEPTANCE-ROUND2.md)。落地形变与历史运动参数的核对见 [第三批验收](docs/ACCEPTANCE-ROUND3.md)。皮肤中心的小窗口布局与选择状态见 [第四批验收](docs/ACCEPTANCE-ROUND4.md)。两列皮肤页、历史可执行源码对照、原始海报与键盘/触控验证见 [第五批验收](docs/ACCEPTANCE-ROUND5.md)。普通模式结算得分区与导航对照见 [第六批验收](docs/ACCEPTANCE-ROUND6.md)。HUD 历史核对与窄容器模式提示遮挡修复见 [第七批验收](docs/ACCEPTANCE-ROUND7.md)。加载/输入时序诊断、录屏与上下文对照及短按验收修正见 [第八批记录](docs/ACCEPTANCE-ROUND8.md)。原生事件时间计时及排队输入修复见 [第九批验收](docs/ACCEPTANCE-ROUND9.md)。另有可选真实浏览器脚本 `node scripts/browser-qa.cjs`；复现条件、画面和未完成对照项见 [本批验收记录](docs/ACCEPTANCE.md)。测试通过不代表 Pages 已完成部署，应查看工作流的 `deploy` 结果。
 
 主页历史绘制/出现时序核对、小高度窗口标题遮挡与过小控件的修复，以及触控、入口返回、开始/重启验证见 [第十批验收](docs/ACCEPTANCE-ROUND10.md)。
 
 无敌、输入、失败回调和存档的有界风险审计，额外皮肤预览 WebGL 不可用时继续启动的修复，以及原请求剩余对照资料见 [第十一批验收](docs/ACCEPTANCE-ROUND11.md)。
+
+主画布真实 WebGL 上下文丢失时阻止不可见游玩、可访问等待状态、恢复后保留当前局并手动继续的验证见 [第十二批验收](docs/ACCEPTANCE-ROUND12.md)。
 
 这些检查可以在无浏览器环境中执行。音频实际听感、设备静音开关及手机浏览器表现仍应在对应设备上验证。
 
